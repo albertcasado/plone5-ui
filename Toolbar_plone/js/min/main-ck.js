@@ -1,0 +1,1 @@
+$(document).ready(function(){var e=$(window).height();$("#edit-zone nav").css("max-height",e)});
