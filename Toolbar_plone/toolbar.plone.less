@@ -18,7 +18,13 @@
 @plone-media-mobile-break-width:			480px;
 @plone-media-mobile-max-width:				767px;
 
+/*remove it with a website*/
+html, body {margin: 0; padding:0;}
 
+
+/****
+EDIT ZONE PLONE
+****/
 
 #edit-zone {
 	position: fixed;
@@ -283,7 +289,9 @@
 	#edit-zone.plone-toolbar-left.compressed, #edit-zone.plone-toolbar-top.compressed {
 		height: 100%;
 		width: 120px;
-		nav { display: block; }
+		nav { 
+			display: block; 
+		}
 	}
 	#edit-zone, #edit-zone.expanded {
 		.plone-toolbar-logo {
@@ -302,6 +310,10 @@
 		right: 0;
 		left: inherit;
 		nav ul  ul {width: 200px;}
+		nav { 
+			overflow-y: scroll;
+			
+		}
 	}
 }
 @media (min-width: @plone-media-mobile-break-width) {

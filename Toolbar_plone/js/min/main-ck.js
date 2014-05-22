@@ -1,1 +1,1 @@
-$(document).ready(function(){var e=$(window).height();$("#edit-zone nav").css("max-height",e)});
+$(document).ready(function(){var e=$(window).height();$("#edit-zone nav").css("max-height",e),$("#edit-zone").css("right","-120px")}),$(document).ready(function(){$("#edit-zone .plone-toolbar-logo").click(function(){$("#edit-zone").css("right","0px")}),$("#edit-zone nav li a").has(".plone-toolbar-caret").click(function(){$("#edit-zone").css("right","200px")})});

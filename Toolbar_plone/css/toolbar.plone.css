@@ -1,5 +1,14 @@
 /*states*/
 /*mobile*/
+/*remove it with a website*/
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+/****
+EDIT ZONE PLONE
+****/
 #edit-zone {
   position: fixed;
   height: 100%;
@@ -558,5 +567,8 @@
   }
   #edit-zone nav ul ul {
     width: 200px;
+  }
+  #edit-zone nav {
+    overflow-y: scroll;
   }
 }
