@@ -23,6 +23,7 @@ $(document).ready(function() {
 		$( "#edit-zone" ).css("right", "0px");
 	});
 	$( "#edit-zone nav li" ).has( "a .plone-toolbar-caret" ).click(function() {
+		$( "#edit-zone nav li" ).removeClass("active");
 		$(this).addClass("active");
 		$( "#edit-zone" ).css("right", "200px");
 	});
