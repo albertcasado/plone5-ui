@@ -9,6 +9,12 @@ body {
 /****
 EDIT ZONE PLONE
 ****/
+body.userrole-authenticated {
+  left: 60px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
 #edit-zone {
   position: fixed;
   height: 100%;
@@ -365,10 +371,10 @@ EDIT ZONE PLONE
 #edit-zone.plone-toolbar-top.compressed nav {
   display: none;
 }
-#edit-zone li.active {
+#edit-zone nav > ul > li.active {
   /*a:hover { background: none; }*/
 }
-#edit-zone li.active a:after {
+#edit-zone nav > ul > li.active a:after {
   content: "";
   border-right: 10px solid #2a2a2a;
   border-bottom: 10px solid transparent;
@@ -377,29 +383,29 @@ EDIT ZONE PLONE
   right: 0;
   margin-top: -35px;
 }
-#edit-zone li.active a > span {
+#edit-zone nav > ul > li.active a > span {
   margin-top: -50px;
 }
-#edit-zone li.active > a {
+#edit-zone nav > ul > li.active > a {
   background: #0792d9;
   /*state icon on white*/
 }
-#edit-zone li.active > a span:before {
+#edit-zone nav > ul > li.active > a span:before {
   color: rgba(255, 255, 255, 0.9) !important;
 }
-#edit-zone li.active > a.label-state-published {
+#edit-zone nav > ul > li.active > a.label-state-published {
   background: #0792d9;
 }
-#edit-zone li.active > a.label-state-pending {
+#edit-zone nav > ul > li.active > a.label-state-pending {
   background: #e7ce17;
 }
-#edit-zone li.active > a.label-state-private {
+#edit-zone nav > ul > li.active > a.label-state-private {
   background: #b40c33;
 }
-#edit-zone li.active > a.label-state-draft {
+#edit-zone nav > ul > li.active > a.label-state-draft {
   background: #d2810f;
 }
-#edit-zone li.active ul {
+#edit-zone nav > ul > li.active ul {
   display: block;
 }
 /*plone-toolbar-top*/
@@ -581,5 +587,5 @@ EDIT ZONE PLONE
 /* transitions for menu opening*/
 #edit-zone,
 body {
-  transition: all .25s;
+  transition: all .15s;
 }

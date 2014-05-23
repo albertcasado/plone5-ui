@@ -25,7 +25,12 @@ html, body {margin: 0; padding:0;}
 /****
 EDIT ZONE PLONE
 ****/
-
+body.userrole-authenticated {
+	left: 60px;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
 #edit-zone {
 	position: fixed;
 	height: 100%;
@@ -196,7 +201,7 @@ EDIT ZONE PLONE
 	nav {display: none;}
 }
 
-#edit-zone li.active {
+#edit-zone nav > ul > li.active {
 	a:after {
 		content:"";
 		border-right: 10px solid #2a2a2a;
@@ -329,7 +334,7 @@ EDIT ZONE PLONE
 
 /* transitions for menu opening*/
 #edit-zone, body {
-	transition: all .25s;
+	transition: all .15s;
 }
 
 
