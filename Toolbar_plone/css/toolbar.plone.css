@@ -14,6 +14,7 @@ body.userrole-authenticated {
   position: absolute;
   width: 100%;
   height: 100%;
+  right: inherit;
 }
 #edit-zone {
   position: fixed;
@@ -577,11 +578,12 @@ body.userrole-authenticated {
   #edit-zone nav {
     overflow-y: scroll;
   }
-  body {
+  body.userrole-authenticated {
     right: 0;
     position: absolute;
     width: 100%;
     height: 100%;
+    left: inherit;
   }
 }
 /* transitions for menu opening*/

@@ -6,8 +6,8 @@ $(document).ready(function() {
 });
 
 
-$(document).ready(function() {
-	if ($(window).height() < "768") { //mobile
+$(document).ready(function(){
+	if ($(window).height() < "768"){
 		$( "#edit-zone .plone-toolbar-logo" ).click(function() {
 			if ($(this).hasClass("open")){
 				$( "#edit-zone" ).css("right", "-120px");
@@ -37,7 +37,7 @@ $(document).ready(function() {
 		if ($("#edit-zone").hasClass("expanded")){
 			$("body").css("left", "120px");
 		}
-		$( "#edit-zone.plone-toolbar-left .plone-toolbar-logo" ).click(function() {
+		$( "#edit-zone.plone-toolbar-left:not(.compressed) .plone-toolbar-logo" ).click(function() {
 			if ($(this).hasClass("open")){
 				$( "#edit-zone" ).addClass("expanded");
 				$( "body" ).css("left", "120px");
@@ -47,6 +47,16 @@ $(document).ready(function() {
 				$( "#edit-zone" ).removeClass("expanded");
 				$(this).addClass("open");
 				$( "body" ).css("left", "60px");
+				$( "#edit-zone nav li" ).removeClass("active");
+			}
+		});
+		$( "#edit-zone.plone-toolbar-left .plone-toolbar-logo" ).dblclick(function() {
+			if ($("body").hasClass("compressed")){
+				$( "#edit-zone" ).removeClass("compressed");
+				$( "body" ).css("left", "60px");
+			} else {
+				$( "#edit-zone" ).addClass("compressed");
+				$( "body" ).css("left", "0");
 			}
 		});
 		$( "#edit-zone nav li" ).has( "a .plone-toolbar-caret" ).click(function() {
@@ -59,14 +69,6 @@ $(document).ready(function() {
 		});
 	}
 });
-
-
-
-
-
-
-
-
 
 
 
