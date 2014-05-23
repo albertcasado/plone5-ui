@@ -315,11 +315,22 @@ EDIT ZONE PLONE
 			
 		}
 	}
+	body {
+		right: 0;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+	}
 }
 @media (min-width: @plone-media-mobile-break-width) {
 
 }
 
+
+/* transitions for menu opening*/
+#edit-zone, body {
+	transition: all .25s;
+}
 
 
 

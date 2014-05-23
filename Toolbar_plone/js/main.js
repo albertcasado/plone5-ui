@@ -20,11 +20,37 @@ $(document).ready(function() {
 //encara es per tots això, s'ha d'arreglar
 $(document).ready(function() {
 	$( "#edit-zone .plone-toolbar-logo" ).click(function() {
-		$( "#edit-zone" ).css("right", "0px");
+		if ($(this).hasClass("open")){
+			$( "#edit-zone" ).css("right", "-120px");
+			$( "body" ).css("right", "0");
+			$(this).removeClass("open");
+		} else {
+			$( "#edit-zone" ).css("right", "0");
+			$(this).addClass("open");
+			$( "body" ).css("right", "120px");
+		}
 	});
 	$( "#edit-zone nav li" ).has( "a .plone-toolbar-caret" ).click(function() {
-		$( "#edit-zone nav li" ).removeClass("active");
-		$(this).addClass("active");
-		$( "#edit-zone" ).css("right", "200px");
+		if ($(this).hasClass("active")) {
+			$( "#edit-zone" ).css("right", "0px");
+			$( "body" ).css("right", "120px");
+			$( "#edit-zone nav li" ).removeClass("active");
+		} else {
+			$( "#edit-zone nav li" ).removeClass("active");
+			$(this).addClass("active");
+			$( "#edit-zone" ).css("right", "200px");
+			$( "body" ).css("right", "320px");
+		}
 	});
 });
+
+
+
+
+
+
+
+
+
+
+

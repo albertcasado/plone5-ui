@@ -571,4 +571,15 @@ EDIT ZONE PLONE
   #edit-zone nav {
     overflow-y: scroll;
   }
+  body {
+    right: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+}
+/* transitions for menu opening*/
+#edit-zone,
+body {
+  transition: all .25s;
 }
