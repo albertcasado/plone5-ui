@@ -1,10 +1,11 @@
 // fix edit-zone for screens smallers than 480px on mobile (scroll inside first level)
+/*
 $(document).ready(function() {
     var viewportHeight = $(window).height();
 	$( "#edit-zone nav" ).css("max-height", viewportHeight);
 	$( "#edit-zone" ).css("right", "-120px");
 });
-
+*/
 
 $(document).ready(function(){
 	if ($(window).width() < "768"){//mobile
@@ -34,74 +35,53 @@ $(document).ready(function(){
 		});
 	}
 	else { //not mobile
-		//left
-		/*
-		$( "#edit-zone.plone-toolbar-left .plone-toolbar-logo" ).click(function() {
-			if ($("#edit-zone").hasClass("expanded")){
-				$( "#edit-zone" ).removeClass("expanded");
-				$( "#edit-zone nav li" ).removeClass("active");
-			} else {
-				$( "#edit-zone" ).addClass("expanded");
-				$( "#edit-zone nav li" ).removeClass("active");
-			}
-			if ($("#edit-zone").hasClass("expanded") && !$("#edit-zone").hasClass("compressed")){
-				$("body").css("left", "120px");
-			} else if (!$("#edit-zone").hasClass("expanded") && !$("#edit-zone").hasClass("compressed")) {
-				$("body").css("left", "60px");
-			}
-		});
-		$( "#edit-zone.plone-toolbar-left .plone-toolbar-logo" ).dblclick(function() {
-			if ($("#edit-zone").hasClass("compressed")){
-				$( "#edit-zone" ).removeClass("compressed");
-			} else {
-				$( "#edit-zone" ).addClass("compressed");
-			}
-			$("body").css("left", "0px");
-		});
-		*/
 		//left i top
-		$( ".plone-toolbar-logo" ).click(function() {
-			if ($("#edit-zone").hasClass("expanded")){
-				$( "#edit-zone" ).removeClass("expanded");
-				$( "#edit-zone nav li" ).removeClass("active");
-			} else {
-				$( "#edit-zone" ).addClass("expanded");
-				$( "#edit-zone nav li" ).removeClass("active");
-			}
-		});
-		//left
-		$( "#edit-zone.plone-toolbar-left .plone-toolbar-logo" ).dblclick(function() {
-			if ($("#edit-zone").hasClass("compressed")){
-				$( "#edit-zone" ).removeClass("compressed");
-				$("body").css("left", "120px");
-			} else {
-				$( "#edit-zone" ).addClass("compressed");
-				$("body").css("left", "60px");
-			}
-			
-		});
-		//top
-		$("body").css("top", "60px");
-		/*
-		$( "#edit-zone.plone-toolbar-top .plone-toolbar-logo" ).click(function() {
-			if ($("#edit-zone").hasClass("expanded")){
-				$( "#edit-zone" ).removeClass("expanded");
-				$( "#edit-zone nav li" ).removeClass("active");
-			} else {
-				$( "#edit-zone" ).addClass("expanded");
-				$( "#edit-zone nav li" ).removeClass("active");
-			}
-		});
-		*/
-		$( "#edit-zone.plone-toolbar-top .plone-toolbar-logo" ).dblclick(function() {
-			if ($("#edit-zone").hasClass("compressed")){
-				$( "#edit-zone" ).removeClass("compressed");
-				$("body").css("top", "60px");
-			} else {
-				$( "#edit-zone" ).addClass("compressed");
-				$("body").css("top", "0px");
-			}
-		});
+		if ($("#edit-zone").hasClass("plone-toolbar-left")) { //left
+			$( "#edit-zone .plone-toolbar-logo" ).click(function() {
+				$("body").removeAttr("style");
+				if ($("#edit-zone").hasClass("expanded")){
+					$( "#edit-zone" ).removeClass("expanded");
+					$( "#edit-zone nav li" ).removeClass("active");
+					$("body").css("left", "120px");
+				} else {
+					$( "#edit-zone" ).addClass("expanded");
+					$( "#edit-zone nav li" ).removeClass("active");
+					$("body").css("left", "60px");
+				}
+			});
+			$( "#edit-zone .plone-toolbar-logo" ).dblclick(function() {
+				$("body").removeAttr("style");
+				if ($("#edit-zone").hasClass("compressed")){
+					$( "#edit-zone" ).removeClass("compressed");
+				} else {
+					$( "#edit-zone" ).addClass("compressed");
+					$("body").css("left", "0");
+				}
+			});
+		} else { //top
+			$( "#edit-zone .plone-toolbar-logo" ).click(function() {
+				$("body").removeAttr("style");
+				if ($("#edit-zone").hasClass("expanded")){
+					$( "#edit-zone" ).removeClass("expanded");
+					$( "#edit-zone nav li" ).removeClass("active");
+					$("body").css("top", "60px");
+				} else {
+					$( "#edit-zone" ).addClass("expanded");
+					$( "#edit-zone nav li" ).removeClass("active");
+					$("body").removeAttr("style");
+					$("body").css("top", "60px");
+				}
+			});
+			$( "#edit-zone .plone-toolbar-logo" ).dblclick(function() {
+				$("body").removeAttr("style");
+				if ($("#edit-zone").hasClass("compressed")){
+					$( "#edit-zone" ).removeClass("compressed");
+				} else {
+					$( "#edit-zone" ).addClass("compressed");
+					$("body").removeAttr("style");
+				}
+			});
+		}
 		
 		//active
 		$( "#edit-zone nav li" ).has( "a .plone-toolbar-caret" ).click(function() {
@@ -114,15 +94,15 @@ $(document).ready(function(){
 		});
 
 		//switcher -- provisional
-		$( "#edit-zone.plone-toolbar-top .plone-toolbar-switcher" ).click(function() {
-			$( "#edit-zone" ).addClass("plone-toolbar-left");
-			$( "#edit-zone" ).removeClass("plone-toolbar-top");
+		$( "#edit-zone .plone-toolbar-switcher" ).click(function() {
+			if ($("#edit-zone").hasClass("plone-toolbar-top")) {
+				$( "#edit-zone" ).addClass("plone-toolbar-left");
+				$( "#edit-zone" ).removeClass("plone-toolbar-top");
+			} else {
+				$( "#edit-zone" ).addClass("plone-toolbar-top");
+				$( "#edit-zone" ).removeClass("plone-toolbar-left");
+			}
 		});
-		$( "#edit-zone.plone-toolbar-left .plone-toolbar-switcher" ).click(function() {
-			$( "#edit-zone" ).addClass("plone-toolbar-top");
-			$( "#edit-zone" ).removeClass("plone-toolbar-left");
-		});
-
 	}
 });
 
