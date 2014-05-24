@@ -51,7 +51,7 @@ $(document).ready(function(){
 			}
 		});
 		$( "#edit-zone.plone-toolbar-left .plone-toolbar-logo" ).dblclick(function() {
-			if ($("body").hasClass("compressed")){
+			if ($("#edit-zone").hasClass("compressed")){
 				$( "#edit-zone" ).removeClass("compressed");
 				$( "body" ).css("left", "60px");
 			} else {
