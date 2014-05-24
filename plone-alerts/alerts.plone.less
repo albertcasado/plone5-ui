@@ -44,7 +44,6 @@ ALERTS
 	font-size: 16px;
 	font-weight: 300;
 	text-shadow: 0 1px rgba(255,255,255,.1);
-
 	> strong, > dt {
 		font-weight: 900;
 		padding-right: 5px;
@@ -60,7 +59,7 @@ ALERTS
 		margin-left: -30px;
 		margin-right: 10px;
 		display: inline-block; 
-		border-radius: 20px; 
+		border-radius: 20px;
 		text-align:center;
 		color:rgba(255, 255, 255, 0.9); 
 		width:20px; 
@@ -76,16 +75,31 @@ ALERTS
 
 .portalMessage.info {
 	.portalMessage-variant(@plone-alert-info-bg; @plone-alert-info-border; @plone-alert-info-text);
-	& > strong:before, & > dt:before {background: @plone-alert-info-bullet; content:"i";}
+	& > strong:before, & > dt:before {background-color: @plone-alert-info-bullet; content:"i";}
 }
 
 .portalMessage.warning {
 	.portalMessage-variant(@plone-alert-warning-bg; @plone-alert-warning-border; @plone-alert-warning-text);
-	& > strong:before, & > dt:before {background: @plone-alert-warning-bullet; content:"!";}
+	& > strong:before, & > dt:before {background-color: @plone-alert-warning-bullet; content:"!";}
 }
 
 .portalMessage.error {
 	.portalMessage-variant(@plone-alert-error-bg; @plone-alert-error-border; @plone-alert-error-text);
-	& > strong:before, & > dt:before {background: @plone-alert-error-bullet; content:"×";}
+	& > strong:before, & > dt:before {background-color: @plone-alert-error-bullet; content:"×";}
 }
 
+/* special shape for error ? 
+.portalMessage.error {
+	& > strong:before, & > dt:before {
+		border-radius: 8px; //soften border
+		background: @plone-alert-error-bullet;
+		background:
+			linear-gradient(135deg, transparent 4px, @plone-alert-error-bullet 0) top left,
+			linear-gradient(225deg, transparent 4px, @plone-alert-error-bullet 0) top right,
+			linear-gradient(315deg, transparent 4px, @plone-alert-error-bullet 0) bottom right,
+			linear-gradient(45deg,  transparent 4px, @plone-alert-error-bullet 0) bottom left;
+		background-size: 50% 50%;
+		background-repeat: no-repeat;
+	}
+}
+*/
