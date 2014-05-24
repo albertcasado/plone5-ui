@@ -166,7 +166,7 @@ body.userrole-authenticated {
 	.plone-toolbar-submenu-header :after {font-size: 30px; right:13px;}
 }
 #edit-zone.plone-toolbar-left nav > ul ul {width: 0; height: 100%}
-#edit-zone.plone-toolbar-top nav > ul ul {height: 0; width: 180px}
+#edit-zone.plone-toolbar-top nav > ul ul {height: 0; max-height: 0; width: 180px}
 
 
 #edit-zone.expanded { 
@@ -269,6 +269,7 @@ body.userrole-authenticated {
 	}
 	nav > ul li.active ul {
 		height: inherit;
+		max-height: 1000px; // trick to activate transition
 	}
 	li.active > a:after {
 		border-bottom: 10px solid #2a2a2a;
@@ -289,12 +290,18 @@ body.userrole-authenticated {
 }
 
 /*container*/
-/*Edit plone-toolbar-container to adapt it to your site width*/
-/*
 #edit-zone.plone-toolbar-top .plone-toolbar-container {margin: 0 auto; width: 960px; height: 50px;}
 #edit-zone.plone-toolbar-top.compressed .plone-toolbar-container {width: auto;}
-*/
 
+/*switcher*/
+#edit-zone .plone-toolbar-switcher {
+	position: absolute;
+	width: 10px; height: 10px;
+	background: rgba(0,0,0,.2);
+	border-radius: 0 0 100% 0;
+	top: 0;
+	span {font-size: 0;}
+}
 
 /*mobile*/
 @media (max-width: @plone-media-mobile-max-width) {
@@ -347,18 +354,10 @@ body.userrole-authenticated {
 
 
 /* transitions for menu openings*/
-#edit-zone, body  {
-	transition: all .15s ease-in-out;
-}
-#edit-zone nav > ul ul {
-	transition: all .1s ease-in;
-
-}
-#edit-zone nav > ul li.active ul {
-	transition: all .25s ease-out;
-
-}
-
+#edit-zone, body  {	transition: all .15s ease-in-out;}
+#edit-zone nav > ul ul { transition: all .1s ease-in;}
+#edit-zone nav > ul li.active ul {transition: all .25s ease-out;}
+#edit-zone.plone-toolbar-top nav > ul li.active ul {transition: all .25s ease-in-out;}
 
 
 

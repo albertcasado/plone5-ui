@@ -312,6 +312,7 @@ body.userrole-authenticated {
 }
 #edit-zone.plone-toolbar-top nav > ul ul {
   height: 0;
+  max-height: 0;
   width: 180px;
 }
 #edit-zone.expanded {
@@ -477,6 +478,7 @@ body.userrole-authenticated {
 }
 #edit-zone.plone-toolbar-top nav > ul li.active ul {
   height: inherit;
+  max-height: 1000px;
 }
 #edit-zone.plone-toolbar-top li.active > a:after {
   border-bottom: 10px solid #2a2a2a;
@@ -506,11 +508,26 @@ body.userrole-authenticated {
   margin-left: 10px;
 }
 /*container*/
-/*Edit plone-toolbar-container to adapt it to your site width*/
-/*
-#edit-zone.plone-toolbar-top .plone-toolbar-container {margin: 0 auto; width: 960px; height: 50px;}
-#edit-zone.plone-toolbar-top.compressed .plone-toolbar-container {width: auto;}
-*/
+#edit-zone.plone-toolbar-top .plone-toolbar-container {
+  margin: 0 auto;
+  width: 960px;
+  height: 50px;
+}
+#edit-zone.plone-toolbar-top.compressed .plone-toolbar-container {
+  width: auto;
+}
+/*switcher*/
+#edit-zone .plone-toolbar-switcher {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 100% 0;
+  top: 0;
+}
+#edit-zone .plone-toolbar-switcher span {
+  font-size: 0;
+}
 /*mobile*/
 @media (max-width: 767px) {
   #edit-zone.plone-toolbar-left.compressed,
@@ -618,4 +635,7 @@ body {
 }
 #edit-zone nav > ul li.active ul {
   transition: all 0.25s ease-out;
+}
+#edit-zone.plone-toolbar-top nav > ul li.active ul {
+  transition: all 0.25s ease-in-out;
 }

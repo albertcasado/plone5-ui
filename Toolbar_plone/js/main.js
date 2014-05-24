@@ -34,6 +34,8 @@ $(document).ready(function(){
 		});
 	}
 	else { //not mobile
+		//left
+		/*
 		$( "#edit-zone.plone-toolbar-left .plone-toolbar-logo" ).click(function() {
 			if ($("#edit-zone").hasClass("expanded")){
 				$( "#edit-zone" ).removeClass("expanded");
@@ -48,7 +50,6 @@ $(document).ready(function(){
 				$("body").css("left", "60px");
 			}
 		});
-
 		$( "#edit-zone.plone-toolbar-left .plone-toolbar-logo" ).dblclick(function() {
 			if ($("#edit-zone").hasClass("compressed")){
 				$( "#edit-zone" ).removeClass("compressed");
@@ -57,6 +58,52 @@ $(document).ready(function(){
 			}
 			$("body").css("left", "0px");
 		});
+		*/
+		//left i top
+		$( ".plone-toolbar-logo" ).click(function() {
+			if ($("#edit-zone").hasClass("expanded")){
+				$( "#edit-zone" ).removeClass("expanded");
+				$( "#edit-zone nav li" ).removeClass("active");
+			} else {
+				$( "#edit-zone" ).addClass("expanded");
+				$( "#edit-zone nav li" ).removeClass("active");
+			}
+		});
+		//left
+		$( "#edit-zone.plone-toolbar-left .plone-toolbar-logo" ).dblclick(function() {
+			if ($("#edit-zone").hasClass("compressed")){
+				$( "#edit-zone" ).removeClass("compressed");
+				$("body").css("left", "120px");
+			} else {
+				$( "#edit-zone" ).addClass("compressed");
+				$("body").css("left", "60px");
+			}
+			
+		});
+		//top
+		$("body").css("top", "60px");
+		/*
+		$( "#edit-zone.plone-toolbar-top .plone-toolbar-logo" ).click(function() {
+			if ($("#edit-zone").hasClass("expanded")){
+				$( "#edit-zone" ).removeClass("expanded");
+				$( "#edit-zone nav li" ).removeClass("active");
+			} else {
+				$( "#edit-zone" ).addClass("expanded");
+				$( "#edit-zone nav li" ).removeClass("active");
+			}
+		});
+		*/
+		$( "#edit-zone.plone-toolbar-top .plone-toolbar-logo" ).dblclick(function() {
+			if ($("#edit-zone").hasClass("compressed")){
+				$( "#edit-zone" ).removeClass("compressed");
+				$("body").css("top", "60px");
+			} else {
+				$( "#edit-zone" ).addClass("compressed");
+				$("body").css("top", "0px");
+			}
+		});
+		
+		//active
 		$( "#edit-zone nav li" ).has( "a .plone-toolbar-caret" ).click(function() {
 			if ($(this).hasClass("active")) {
 				$( "#edit-zone nav li" ).removeClass("active");
@@ -65,8 +112,17 @@ $(document).ready(function(){
 				$(this).addClass("active");
 			}
 		});
+
+		//switcher -- provisional
+		$( "#edit-zone.plone-toolbar-top .plone-toolbar-switcher" ).click(function() {
+			$( "#edit-zone" ).addClass("plone-toolbar-left");
+			$( "#edit-zone" ).removeClass("plone-toolbar-top");
+		});
+		$( "#edit-zone.plone-toolbar-left .plone-toolbar-switcher" ).click(function() {
+			$( "#edit-zone" ).addClass("plone-toolbar-top");
+			$( "#edit-zone" ).removeClass("plone-toolbar-left");
+		});
+
 	}
 });
-
-
 
