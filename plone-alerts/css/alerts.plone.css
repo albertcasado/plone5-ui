@@ -48,7 +48,7 @@ ALERTS
 }
 .portalMessage.info {
   background-color: #aad6ea;
-  border: 1px solid #96cce5;
+  border: 1px solid #9acee6;
   color: rgba(0, 0, 0, 0.5);
 }
 .portalMessage.info > strong,
@@ -62,7 +62,7 @@ ALERTS
 }
 .portalMessage.warning {
   background-color: #ebd380;
-  border: 1px solid #e6c861;
+  border: 1px solid #e7ca66;
   color: rgba(0, 0, 0, 0.5);
 }
 .portalMessage.warning > strong,
@@ -76,7 +76,7 @@ ALERTS
 }
 .portalMessage.error {
   background-color: #ec9c8d;
-  border: 1px solid #ea9180;
+  border: 1px solid #eb9484;
   color: rgba(0, 0, 0, 0.5);
 }
 .portalMessage.error > strong,
