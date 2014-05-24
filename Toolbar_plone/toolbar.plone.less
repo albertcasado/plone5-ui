@@ -96,11 +96,12 @@ body.userrole-authenticated {
 	}
 	/*second-level*/
 	nav > ul ul {
-		font-family:@plone-toolbar-font-secundary; font-size: 14px; list-style: none; margin:0; padding: 0 0 5px 0; line-height: 30px;
+		font-family:@plone-toolbar-font-secundary; font-size: 14px; list-style: none; padding:0; margin:0; line-height: 30px;
 		a {
 			color: @plone-toolbar-submenu-text-color; 
 			&:hover {color: lighten(@plone-toolbar-submenu-text-color, 25%); background: lighten(@plone-toolbar-bg, 10%);}
 		}
+		li:last-child {margin-bottom: 5px; }
 		li > span {display: block;}
 		.plone-toolbar-submenu-header > a {
 			color: @plone-toolbar-link; font-weight: 500;
@@ -145,8 +146,6 @@ body.userrole-authenticated {
 	background: @plone-toolbar-submenu-bg;
 	top: 0;
 	overflow-y: auto;
-	width: 0px; //180
-	height: 100%;
 	li {width: 180px}
 	li > a, li > span {padding: 5px 15px; height: auto; line-height: 20px;}
 	li:not(.plone-toolbar-submenu-header) > a, li:not(.plone-toolbar-submenu-header) > span {padding: 5px 15px 5px 30px; height: auto;}
@@ -166,6 +165,9 @@ body.userrole-authenticated {
 	/*current*/
 	.plone-toolbar-submenu-header :after {font-size: 30px; right:13px;}
 }
+#edit-zone.plone-toolbar-left nav > ul ul {width: 0; height: 100%}
+#edit-zone.plone-toolbar-top nav > ul ul {height: 0; width: 180px}
+
 
 #edit-zone.expanded { 
 	width:120px;
@@ -204,7 +206,7 @@ body.userrole-authenticated {
 }
 
 #edit-zone nav > ul > li.active {
-	a:after {
+	> a:after {
 		content:"";
 		border-right: 10px solid #2a2a2a;
 		border-bottom: 10px solid transparent;
@@ -221,7 +223,7 @@ body.userrole-authenticated {
 	> a.label-state-pending {background: @plone-toolbar-pending-color;}
 	> a.label-state-private {background: @plone-toolbar-private-color;}
 	> a.label-state-draft {background: @plone-toolbar-draft-color;}
-	ul {display: block; width: 180px}
+	ul {display: block; width: 180px;}
 	/*a:hover { background: none; }*/
 	}
 
@@ -263,9 +265,12 @@ body.userrole-authenticated {
 		left: auto;
 		top:50px;
 		overflow-y: auto;
-		height: auto;
+		height: 0;
 	}
-	li.active:after {
+	nav > ul li.active ul {
+		height: inherit;
+	}
+	li.active > a:after {
 		border-bottom: 10px solid #2a2a2a;
 		border-left: 10px solid transparent;
 		border-right: 10px solid transparent;
@@ -280,7 +285,7 @@ body.userrole-authenticated {
 	nav > ul a > span + span {width: inherit; padding: 0 8px 0 0;}
 	nav > ul a > [class^="icon"] {padding-left: 0;}
 	.plone-toolbar-caret {left:16px;}
-	li.active:after {margin-left: 10px;}
+	li.active > a:after {margin-left: 10px;}
 }
 
 /*container*/
@@ -333,7 +338,7 @@ body.userrole-authenticated {
 		width: 0;
 	}
 	#edit-zone nav ul li.active ul {
-		width: 200px;
+		width: 180px;
 	}
 }
 @media (min-width: @plone-media-mobile-break-width) {
@@ -341,10 +346,19 @@ body.userrole-authenticated {
 }
 
 
-/* transitions for menu opening*/
-#edit-zone, body, #edit-zone nav > ul ul {
-	transition: all .15s;
+/* transitions for menu openings*/
+#edit-zone, body  {
+	transition: all .15s ease-in-out;
 }
+#edit-zone nav > ul ul {
+	transition: all .1s ease-in;
+
+}
+#edit-zone nav > ul li.active ul {
+	transition: all .25s ease-out;
+
+}
+
 
 
 

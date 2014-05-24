@@ -140,8 +140,8 @@ body.userrole-authenticated {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   list-style: none;
+  padding: 0;
   margin: 0;
-  padding: 0 0 5px 0;
   line-height: 30px;
 }
 #edit-zone nav > ul ul a {
@@ -150,6 +150,9 @@ body.userrole-authenticated {
 #edit-zone nav > ul ul a:hover {
   color: #ffffff;
   background: rgba(26, 26, 26, 0.9);
+}
+#edit-zone nav > ul ul li:last-child {
+  margin-bottom: 5px;
 }
 #edit-zone nav > ul ul li > span {
   display: block;
@@ -228,8 +231,6 @@ body.userrole-authenticated {
   background: rgba(20, 20, 20, 0.9);
   top: 0;
   overflow-y: auto;
-  width: 0px;
-  height: 100%;
   /*state marker*/
   /*current*/
 }
@@ -305,6 +306,14 @@ body.userrole-authenticated {
   font-size: 30px;
   right: 13px;
 }
+#edit-zone.plone-toolbar-left nav > ul ul {
+  width: 0;
+  height: 100%;
+}
+#edit-zone.plone-toolbar-top nav > ul ul {
+  height: 0;
+  width: 180px;
+}
 #edit-zone.expanded {
   width: 120px;
   /*states*/
@@ -378,7 +387,7 @@ body.userrole-authenticated {
 #edit-zone nav > ul > li.active {
   /*a:hover { background: none; }*/
 }
-#edit-zone nav > ul > li.active a:after {
+#edit-zone nav > ul > li.active > a:after {
   content: "";
   border-right: 10px solid #2a2a2a;
   border-bottom: 10px solid transparent;
@@ -464,9 +473,12 @@ body.userrole-authenticated {
   left: auto;
   top: 50px;
   overflow-y: auto;
-  height: auto;
+  height: 0;
 }
-#edit-zone.plone-toolbar-top li.active:after {
+#edit-zone.plone-toolbar-top nav > ul li.active ul {
+  height: inherit;
+}
+#edit-zone.plone-toolbar-top li.active > a:after {
   border-bottom: 10px solid #2a2a2a;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
@@ -490,7 +502,7 @@ body.userrole-authenticated {
 #edit-zone.plone-toolbar-top.expanded .plone-toolbar-caret {
   left: 16px;
 }
-#edit-zone.plone-toolbar-top.expanded li.active:after {
+#edit-zone.plone-toolbar-top.expanded li.active > a:after {
   margin-left: 10px;
 }
 /*container*/
@@ -593,12 +605,17 @@ body.userrole-authenticated {
     width: 0;
   }
   #edit-zone nav ul li.active ul {
-    width: 200px;
+    width: 180px;
   }
 }
-/* transitions for menu opening*/
+/* transitions for menu openings*/
 #edit-zone,
-body,
+body {
+  transition: all 0.15s ease-in-out;
+}
 #edit-zone nav > ul ul {
-  transition: all .15s;
+  transition: all 0.1s ease-in;
+}
+#edit-zone nav > ul li.active ul {
+  transition: all 0.25s ease-out;
 }
