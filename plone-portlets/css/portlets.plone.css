@@ -1,0 +1,216 @@
+/****
+PORTLETS
+****/
+/*general, must be on other file*/
+a {
+  color: #0792d9;
+  text-decoration: none;
+}
+a:hover {
+  color: #05608f;
+  text-decoration: underline;
+}
+.hiddenStructure {
+  display: none;
+}
+.portlet {
+  font-family: Roboto, sans-serif;
+  border: 1px solid #eeeeee;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+.portlet > :first-child {
+  border-radius: 4px 4px 0 0;
+}
+.portlet > :last-child {
+  border-radius: 0 0 4px 4px;
+}
+.portlet .portletHeader {
+  background: #f8f8f9;
+  font-weight: 100;
+  font-size: 18px;
+  padding: 13px 15px;
+  color: #626262;
+}
+.portlet.portletCalendar .portletHeader {
+  text-align: center;
+  position: relative;
+}
+.portlet.portletCalendar .portletHeader .calendarPrevious,
+.portlet.portletCalendar .portletHeader .calendarNext {
+  width: 30px;
+  height: 30px;
+  padding: 0 1px 2px;
+  border-radius: 50%;
+  position: absolute;
+  display: inline-block;
+  left: 5px;
+  font-size: 24px;
+  margin-top: -3px;
+  line-height: 28px;
+  font-weight: 100;
+}
+.portlet.portletCalendar .portletHeader .calendarPrevious:hover,
+.portlet.portletCalendar .portletHeader .calendarNext:hover {
+  background: #ffffff;
+  text-decoration: none;
+}
+.portlet.portletCalendar .portletHeader .calendarNext {
+  right: 5px;
+  left: inherit;
+}
+.portlet .portletContent {
+  font-size: 14px;
+  border-top: 1px solid #eeeeee;
+  background: #ffffff;
+  font-weight: 300;
+}
+.portlet .portletContent > * {
+  padding: 10px 15px;
+  margin: 0;
+  font-weight: 300;
+  color: #666;
+}
+.portlet .portletContent ul {
+  padding: 0;
+  list-style: none;
+  position: relative;
+}
+.portlet .portletContent ul li a {
+  display: block;
+  padding: 10px 15px 26px 30px;
+  border-top: 1px solid #eeeeee;
+  position: relative;
+  z-index: 1;
+}
+.portlet .portletContent ul li:first-child a {
+  border-top: 0;
+}
+.portlet .portletContent ul li a:before {
+  content: "•";
+  position: absolute;
+  font-size: 29px;
+  margin-top: -9px;
+  left: 15px;
+  color: #a7daf2;
+}
+.portlet .portletContent ul time {
+  display: block;
+  z-index: 0;
+  padding: 0 15px 10px 30px;
+  font-weight: 100;
+  position: relative;
+  margin-top: -26px;
+  font-size: 12px;
+  color: #767676;
+}
+.portlet .portletContent ul li:hover {
+  background: #fcfcfd;
+}
+.portlet .portletContent ul li:hover a:before {
+  color: #64bee8;
+}
+.portlet .portletContent table {
+  width: 100%;
+  text-align: center;
+  text-align: middle;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.portlet .portletContent table tr {
+  line-height: 30px;
+}
+.portlet .portletContent table thead {
+  background: #fcfcfd;
+  border-bottom: 1px solid #eeeeee;
+}
+.portlet .portletContent table thead th {
+  color: #767676;
+  font-weight: 100;
+  height: 40px;
+}
+.portlet .portletContent table td > * {
+  border-radius: 50%;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+}
+.portlet .portletContent table .cal_has_events {
+  position: relative;
+}
+.portlet .portletContent table .cal_has_events a:hover {
+  background: #dbecfe;
+  text-decoration: none;
+}
+.portlet .portletContent table .cal_has_events a:after {
+  content: "•";
+  position: absolute;
+  margin-left: 50%;
+  left: -3px;
+  font-size: 20px;
+  color: #a7daf2;
+  margin-top: 9px;
+}
+.portlet .portletContent table .cal_has_events a:hover:after {
+  color: #64bee8;
+}
+.portlet .portletContent table .cal_next_month,
+.portlet .portletContent table .cal_prev_month {
+  color: #cccccc;
+}
+.portlet .portletContent table .cal_next_month.cal_has_events > a,
+.portlet .portletContent table .cal_prev_month.cal_has_events > a {
+  color: #a7daf2;
+}
+.portlet .portletContent table .cal_next_month.cal_has_events > a:after,
+.portlet .portletContent table .cal_prev_month.cal_has_events > a:after {
+  color: #d3edf8;
+}
+.portlet .portletContent table .cal_next_month.cal_has_events > a:hover,
+.portlet .portletContent table .cal_prev_month.cal_has_events > a:hover {
+  color: #05608f;
+}
+.portlet .portletContent table .cal_next_month.cal_has_events > a:hover:after,
+.portlet .portletContent table .cal_prev_month.cal_has_events > a:hover:after {
+  color: #64bee8;
+}
+.portlet .portletContent table .today > * {
+  background: #e5e5e5;
+  font-weight: 500;
+}
+.portlet .portletContent table tbody tr:first-child td > * {
+  margin-top: 5px;
+}
+.portlet .portletContent table tbody tr:last-child td > * {
+  margin-bottom: 5px;
+}
+.portlet .portletFooter {
+  border-top: 1px solid #eeeeee;
+  background: #fcfcfd;
+  padding: 10px 15px;
+  font-size: 13px;
+  font-weight: 300;
+  box-shadow: inset 0 10px 10px -10px rgba(0, 0, 0, 0.05);
+}
+.portlet .field {
+  margin: 0 0 15px;
+}
+.portlet input {
+  font-size: 14px;
+  font-weight: 300;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #b2b2b2;
+  padding: 10px;
+  margin: 0;
+  font-family: Roboto, sans-serif;
+}
+.portlet label {
+  display: block;
+  color: #767676;
+}
+.portlet input[type="submit"] {
+  max-width: 100px;
+}

@@ -1,0 +1,169 @@
+<!doctype html>
+<html>
+<head>
+	<title>Plone Portlets</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<!-- Fontello icons for Toolbar -->
+	<link href='fontello/css/fontello.css' rel='stylesheet' type='text/css'>
+	<!-- Roboto Condensed for First level Toolbar -->
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+	<!-- Roboto second level toolbar-->
+	<link href='http://fonts.googleapis.com/css?family=Roboto:100,300,500' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="css/portlets.plone.css" media="all">
+	<style> .example-box {padding: 50px;} html, body {background: #fafafa; margin: 0 auto; max-width: 400px; padding:0;} </style>
+</head>
+<body>
+
+<div class="example-box">
+	<section class="portlet portletNews" role="section">
+		<header class="portletHeader">News</header>
+  		<section class="portletContent">
+			<ul>
+				<li class="portletItem">
+					<a href="#" class="tile"> Notícia</a>
+					<time datetime="11-09-2014" class="portletItemDetails">November 9, 2014</time>
+				</li>
+				<li class="portletItem">
+					<a href="#" class="tile"> New</a>
+            		<time datetime="11-09-2014" class="portletItemDetails">November 9, 2014</time>
+				</li>
+			</ul>
+  		</section>
+		<footer class="portletFooter">
+			<a href="#">More news…</a>
+		</footer>
+	</section>
+	<br><br>
+	<section class="portlet portletNews" role="section">
+		<header class="portletHeader"><a href"#">News</a></header>
+  		<section class="portletContent">
+			<ul>
+				<li class="portletItem">
+					<a href="#" class="tile"> Notícia</a>
+					<time datetime="11-09-2014" class="portletItemDetails">November 9, 2014</time>
+				</li>
+				<li class="portletItem">
+					<a href="#" class="tile"> New</a>
+            		<time datetime="11-09-2014" class="portletItemDetails">November 11, 2014 to November 9, 2014</time>
+				</li>
+			</ul>
+  		</section>
+	</section>
+	<br><br>
+	<p> we need a son on TDs to easily modify its styles</p>
+	<section class="portlet portletCalendar" role="section">
+		<header class="portletHeader">
+			<a href="#" rel="nofollow" class="calendarPrevious" title="Previous month" data-year="2014" data-month="4">«</a>
+			May 2014
+			<a href="#" rel="nofollow" class="calendarNext" title="Next month" data-year="2014" data-month="6">»</a>
+		</header>
+  		<section class="portletContent">
+			<table class="ploneCalendar" summary="Calendari">
+	            <caption class="hiddenStructure">May 2014</caption>
+	            <thead>
+	                <tr class="weekdays">
+	                	<th scope="col"><abbr title="monday">M</abbr></th>
+	                	<th scope="col"><abbr title="tuesday">T</abbr></th>
+	                	<th scope="col"><abbr title="wednesday">W</abbr></th>
+	                	<th scope="col"><abbr title="thursday">T</abbr></th>
+	                	<th scope="col"><abbr title="friday">F</abbr></th>
+	                	<th scope="col"><abbr title="saturnday">S</abbr></th>
+	                	<th scope="col"><abbr title="sunday">S</abbr></th>
+	                </tr>
+	            </thead>
+	            <tbody>
+	                <tr>
+	                	<td class="cal_prev_month"><span>28</span></td>
+	                	<td class="cal_prev_month"><span>29</span></td>
+	                	<td  class="cal_prev_month"><span>30</span></td>
+	                	<td><span>1</span></td>
+	                	<td><span>2</span></td>
+	                	<td><span>3</span></td>
+	                	<td><span>4</span></td>
+	                </tr>
+	                <tr>
+	                	<td><span>5</span></td>
+	                	<td><span>6</span></td>
+	                	<td class="today"><span>7</span></td>
+	                	<td><span>8</span></td>
+	                	<td><span>9</span></td>
+	                	<td><span>10</span></td>
+	                	<td><span>11</span></td>
+	                </tr>
+	                <tr>
+	                	<td><span>12</span></td>
+	                	<td><span>13</span></td>
+	                	<td class="cal_has_events"><a href="#">14</a></td>
+	                	<td><span>15</span></td>
+	                	<td><span>16</span></td>
+	                	<td><span>17</span></td>
+	                	<td><span>18</span></td>
+	                </tr>
+	                <tr>
+	                	<td><span>19</span></td>
+	                	<td><span>20</span></td>
+	                	<td class="cal_has_events"><a href="#">21</a></td>
+	                	<td><span>22</span></td>
+	                	<td><span>23</span></td>
+	                	<td><span>24</span></td>
+	                	<td><span>25</span></td>
+	                </tr>
+	                <tr>
+	                	<td><span>26</span></td>
+	                	<td><span>27</span></td>
+	                	<td><span>28</span></td>
+	                	<td><span>29</span></td>
+	                	<td><span>30</span></td>
+	                	<td class="cal_has_events"><a href="#">31</a></td>
+	                	<td class="cal_next_month cal_has_events"><a href="#">1</a></td>
+	                </tr>
+	            </tbody>
+			</table>
+  		</section>
+	</section>
+	<br><br>
+	<section class="portlet portletStaticText" role="section">
+		<header class="portletHeader">Static</header>
+  		<section class="portletContent">
+			<p>Content tetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+  		</section>
+		<footer class="portletFooter">
+			<a href="#">Footer link</a>
+		</footer>
+	</section>
+	<br><br>
+	<section class="portlet portletLogin" role="section">
+		<header class="portletHeader">Login</header>
+  		<section class="portletContent">
+			<form action="" id="loginform" method="post">
+	            <div class="field">
+             	   <label for="__ac_name">Login Name</label>
+            	    <input type="text" size="10" alt="Login Name" name="__ac_name" id="__ac_name" value=""> 
+            	</div>
+	            <div class="field">
+	                <label for="__ac_password">Password</label>
+	                <input type="password" size="10" alt="Password" name="__ac_password" id="__ac_password">
+	            </div>
+
+            	<div class="cookiesMessage portalMessage info" style="display:none">Cookies are not enabled. You must enable cookies before you can log in.</div>
+
+            	<div class="formControls">
+                	<input class="context" type="submit" name="submit" value="Log in" alt="Log in">
+            	</div>
+        	</form>
+  		</section>
+		<footer class="portletFooter">
+			<a href="#" class="tile">Forgot your password?</a>
+		</footer>
+	</section>
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')</script>
+<script src="js/main.js"></script>
+
+
+</body>
+</html>

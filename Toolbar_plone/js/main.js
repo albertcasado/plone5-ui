@@ -78,7 +78,7 @@ $(document).ready(function(){
 					$( "#edit-zone" ).removeClass("compressed");
 				} else {
 					$( "#edit-zone" ).addClass("compressed");
-					$("body").removeAttr("style");
+					$("body").removeAttr("top", "0");
 				}
 			});
 		}
