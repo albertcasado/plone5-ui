@@ -15,7 +15,7 @@ a:hover {
 }
 .portlet {
   font-family: Roboto, sans-serif;
-  border: 1px solid #eeeeee;
+  border: 1px solid #e5e5e5;
   border-radius: 4px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }
@@ -61,7 +61,7 @@ a:hover {
 }
 .portlet .portletContent {
   font-size: 14px;
-  border-top: 1px solid #eeeeee;
+  border-top: 1px solid #e5e5e5;
   background: #ffffff;
   font-weight: 300;
 }
@@ -79,7 +79,7 @@ a:hover {
 .portlet .portletContent ul li a {
   display: block;
   padding: 10px 15px 26px 30px;
-  border-top: 1px solid #eeeeee;
+  border-top: 1px solid #e5e5e5;
   position: relative;
   z-index: 1;
 }
@@ -122,7 +122,7 @@ a:hover {
 }
 .portlet .portletContent table thead {
   background: #fcfcfd;
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 1px solid #e5e5e5;
 }
 .portlet .portletContent table thead th {
   color: #767676;
@@ -188,7 +188,7 @@ a:hover {
   margin-bottom: 10px;
 }
 .portlet .portletFooter {
-  border-top: 1px solid #eeeeee;
+  border-top: 1px solid #e5e5e5;
   background: #fcfcfd;
   padding: 10px 15px;
   font-size: 13px;
