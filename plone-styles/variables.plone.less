@@ -1,7 +1,7 @@
 /*VARIABLES*/
 
 
-//COLORS
+//*// COLORS
 
 //grays
 @plone-gray-darker:					lighten(#000, 20%);   // #333
@@ -20,9 +20,70 @@
 //@plone-toolbar-internally-published-color:#B40C33; //pink-violet
 
 
-//== Scaffolding
+//*// SCAFFOLDING
 //
-@body-bg:               #fafafa; //almost-white, si fa no fa
-@text-color:            @gray-dark;
+@plone-body-bg:               #fafafa; //almost-white, si fa no fa
+@plone-text-color:            @plone-gray-dark;
 //@link-color:            @brand-primary;
-@link-hover-color:      darken(@link-color, 15%);
+@plone-link-hover-color:      darken(@plone-link-color, 15%);
+
+
+//*// TYPOGRAPHY
+//## Font, line-height, and color for body text, headings, and more.
+
+@plone-font-family-sans-serif:  "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif; // Roboto seems Plone's DIN
+@plone-font-family-serif:       Georgia, "Times New Roman", Times, serif;
+@plone-font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
+@plone-font-family-base:        @plone-font-family-sans-serif;
+
+@plone-font-size-base:          14px;
+@plone-font-size-large:         ceil((@plone-font-size-base * 1.25)); // ~18px
+@plone-font-size-small:         ceil((@plone-font-size-base * 0.85)); // ~12px
+
+@plone-font-size-h1:            floor((@plone-font-size-base * 2.6)); // ~36px
+@plone-font-size-h2:            floor((@plone-font-size-base * 2.15)); // ~30px
+@plone-font-size-h3:            ceil((@plone-font-size-base * 1.7)); // ~24px
+@plone-font-size-h4:            ceil((@plone-font-size-base * 1.25)); // ~18px
+@plone-font-size-h5:            @plone-font-size-base;
+@plone-font-size-h6:            ceil((@plone-font-size-base * 0.85)); // ~12px
+
+//** Unit-less `line-height` for use in components like buttons.
+@plone-line-height-base:        1.428571429; // 20/14
+//** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
+@plone-line-height-computed:    floor((@font-size-base * @line-height-base)); // ~20px
+
+@plone-headings-font-family:    inherit;
+@plone-headings-font-weight:    300;
+@plone-headings-line-height:    1.1;
+@plone-headings-color:          inherit;
+
+@plone-font-weight-light:		100; //default theme uses 100, 300, 500, change it on your site. Standard regular is 400
+@plone-font-weight-light:		300;
+@plone-font-weight-light:		500;
+
+
+
+
+
+
+
+
+//*// ALERTS
+@plone-alert-padding:						15px;
+@plone-alert-border-radius:					4px;
+@plone-alert-link-font-weight:				300; //it depends on your font-family
+
+@plone-alert-info-bg:						#aad6ea;
+@plone-alert-info-text:						rgba(0,0,0,.5);
+@plone-alert-info-border:					1px solid darken(@plone-alert-info-bg,4%);
+@plone-alert-info-bullet:					#3e7b91;
+
+@plone-alert-warning-bg:					#ebd380;
+@plone-alert-warning-text:					rgba(0,0,0,.5);
+@plone-alert-warning-border:				1px solid darken(@plone-alert-warning-bg,6%);
+@plone-alert-warning-bullet:				#bc8d0d;
+
+@plone-alert-error-bg:						#EC9C8D;
+@plone-alert-error-text:					rgba(0,0,0,.5);
+@plone-alert-error-border:					1px solid darken(@plone-alert-error-bg,2%);
+@plone-alert-error-bullet:					#ac493f;
