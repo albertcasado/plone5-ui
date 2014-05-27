@@ -1,168 +1,54 @@
 //*// Typography //*//
 
-
-
 //*// Headings
-h1, h2, h3, h4, h5, h6
-/*,
-.h1, .h2, .h3, .h4, .h5, .h6*/ {
+h1, h2, h3, h4, h5, h6 {
   font-family: @plone-headings-font-family;
   font-weight: @plone-headings-font-weight;
   line-height: @plone-headings-line-height;
   color: @plone-headings-color;
-  /* //--> this combination not on plone
-  small,
-  .small {
-    font-weight: normal;
-    line-height: 1;
-    color: @plone-headings-small-color;
-  }
-  */
 }
 
-h1/*, .h1*/,
-h2/*, .h2*/,
-h3/*, .h3*/ {
+h1, h2, h3 {
   margin-top: @plone-line-height-computed;
   margin-bottom: (@plone-line-height-computed / 2);
-  /*
-  small,
-  .small {
-    font-size: 65%;
-  }
-  */
 }
-h4/*, .h4*/,
-h5/*, .h5*/,
-h6/*, .h6*/ {
+h4, h5, h6 {
   margin-top: (@plone-line-height-computed / 2);
   margin-bottom: (@plone-line-height-computed / 2);
-  /*
-  small,
-  .small {
-    font-size: 75%;
-  }
-  */
 }
 
-h1/*, .h1*/ { font-size: @plone-font-size-h1; }
-h2/*, .h2*/ { font-size: @plone-font-size-h2; }
-h3/*, .h3*/ { font-size: @plone-font-size-h3; }
-h4/*, .h4*/ { font-size: @plone-font-size-h4; }
-h5/*, .h5*/ { font-size: @plone-font-size-h5; }
-h6/*, .h6*/ { font-size: @plone-font-size-h6; }
+h1 { font-size: @plone-font-size-h1; }
+h2 { font-size: @plone-font-size-h2; }
+h3 { font-size: @plone-font-size-h3; }
+h4 { font-size: @plone-font-size-h4; }
+h5 { font-size: @plone-font-size-h5; }
+h6 { font-size: @plone-font-size-h6; }
 
+//*// Body text
+p { margin: 0 0 (@plone-line-height-computed / 2); }
 
-// Body text
-// -------------------------
-
-p {
-  margin: 0 0 (@plone-line-height-computed / 2);
-}
-/*
-.lead {
-  margin-bottom: @plone-line-height-computed;
-  font-size: floor((@plone-font-size-base * 1.15));
-  font-weight: 300;
-  line-height: 1.4;
-
-  @media (min-width: @plone-screen-sm-min) {
-    font-size: (@plone-font-size-base * 1.5);
-  }
-}
-*/
-
-
-// Emphasis & misc
-// -------------------------
-
-// Ex: 14px base font * 85% = about 12px
-small/*,
-.small*/ {
-  font-size: 85%;
-}
-
-// Undo browser default styling
-cite {
-  font-style: normal;
-}
-
-mark/*,
-.mark*/ {
-  background-color: @plone-state-warning-bg;
-  padding: .2em;
-}
-
-// Alignment
-/* //--> not in plone
-.text-left           { text-align: left; }
-.text-right          { text-align: right; }
-.text-center         { text-align: center; }
-.text-justify        { text-align: justify; }
-*/
-
-// Contextual colors
-/*.text-muted*/ .discreet {
+.documentDescription {
+  font-size: @plone-font-size-h4;
+  font-weight: @plone-font-weight-bold;
   color: @plone-text-discreet;
 }
-/*
-.text-primary {
-  .text-emphasis-variant(@brand-primary);
-}
-.text-success {
-  .text-emphasis-variant(@state-success-text);
-}
-.text-info {
-  .text-emphasis-variant(@state-info-text);
-}
-.text-warning {
-  .text-emphasis-variant(@state-warning-text);
-}
-.text-danger {
-  .text-emphasis-variant(@state-danger-text);
-}
-*/
 
-// Contextual backgrounds
-// For now we'll leave these alongside the text classes until v4 when we can
-// safely shift things around (per SemVer rules).
-/*
-.bg-primary {
-  // Given the contrast here, this is the only class to have its color inverted
-  // automatically.
-  color: #fff;
-  .bg-variant(@brand-primary);
-}
-.bg-success {
-  .bg-variant(@state-success-bg);
-}
-.bg-info {
-  .bg-variant(@state-info-bg);
-}
-.bg-warning {
-  .bg-variant(@state-warning-bg);
-}
-.bg-danger {
-  .bg-variant(@state-danger-bg);
-}
-*/
-//--> NEED TO BE ADDED .error as a .field background on FORMS
+//*// Emphasis & misc
+small { font-size: 85%; }
+cite { font-style: normal; }
+mark { background-color: @plone-state-warning-bg; padding: .2em; }
+.discreet { color: @plone-text-discreet;}
 
 
-// Page header
-// -------------------------
-
-/*.page-header*/ .documentFirstHeading {
+//*// Page header
+.documentFirstHeading {
   padding-bottom: ((@plone-line-height-computed / 2) - 1);
   margin: (@plone-line-height-computed * 2) 0 @plone-line-height-computed;
   border-bottom: 1px solid @plone-page-header-border-color;
 }
 
 
-// Lists
-// -------------------------
-
-// Unordered and Ordered lists
+//*// Lists
 ul,
 ol {
   margin-top: 0;
@@ -173,87 +59,22 @@ ol {
   }
 }
 
-// List options
-
-// Unstyled keeps list items block level, just removes default browser padding and list-style
-/*
-.list-unstyled {
-  padding-left: 0;
-  list-style: none;
-}
-
-// Inline turns list items into inline-block
-.list-inline {
-  .list-unstyled();
-  margin-left: -5px;
-
-  > li {
-    display: inline-block;
-    padding-left: 5px;
-    padding-right: 5px;
-  }
-}
-*/
-
-// Description Lists
 dl {
   margin-top: 0; // Remove browser default
   margin-bottom: @plone-line-height-computed;
 }
-dt,
-dd {
-  line-height: @plone-line-height-base;
-}
-dt {
-  font-weight: bold;
-}
-dd {
-  margin-left: 0; // Undo browser default
-}
+  dt, dd { line-height: @plone-line-height-base; }
+  dt { font-weight: bold;}
+  dd { margin-left: 0; }
 
-// Horizontal description lists
-//
-// Defaults to being stacked without any of the below styles applied, until the
-// grid breakpoint is reached (default of ~768px).
-/*
-.dl-horizontal {
-  dd {
-    &:extend(.clearfix all); // Clear the floated `dt` if an empty `dd` is present
-  }
-
-  @media (min-width: @grid-float-breakpoint) {
-    dt {
-      float: left;
-      width: (@component-offset-horizontal - 20);
-      clear: left;
-      text-align: right;
-      .text-overflow();
-    }
-    dd {
-      margin-left: @component-offset-horizontal;
-    }
-  }
-}
-*/
-
-// Misc
-// -------------------------
-
-// Abbreviations and acronyms
-abbr[title],
-// Add data-* attribute to help out our tooltip plugin, per https://github.com/twbs/bootstrap/issues/5257
-abbr[data-original-title] {
+//*// Misc
+abbr[title], abbr[data-original-title] /*tooltip bootstrap plugin, just in case*/ {
   cursor: help;
   border-bottom: 1px dotted @plone-abbr-border-color;
 }
-/*
-.initialism {
-  font-size: 90%;
-  text-transform: uppercase;
-}
-*/
 
-// Blockquotes
+//*// Blockquotes
+/* plone is not using blockquotes
 blockquote {
   padding: (@plone-line-height-computed / 2) @plone-line-height-computed;
   margin: 0 0 @plone-line-height-computed;
@@ -311,8 +132,9 @@ blockquote:before,
 blockquote:after {
   content: "";
 }
+*/
 
-// Addresses
+//*// Addresses
 address {
   margin-bottom: @plone-line-height-computed;
   font-style: normal;
