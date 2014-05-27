@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+	<title>Plone Toolbar</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<!-- Fontello icons for Toolbar -->
+	<link href='fontello/css/fontello.css' rel='stylesheet' type='text/css'>
+	<!-- Roboto Condensed for First level Toolbar -->
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+	<!-- Roboto second level toolbar-->
+	<link href='http://fonts.googleapis.com/css?family=Roboto:100,300,500' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="css/alerts.plone.css" media="all">
+	<style> .example-box {padding: 50px;} html, body {margin: 0; padding:0;} </style>
+</head>
+<body>
+
+<div class="example-box">
+	<form class="rowlike enableUnloadProtection enableFormTabbing pat-autotoc  kssattr-formname-edit autotabs" action="" method="post" enctype="multipart/form-data" id="form">
+		<nav class="autotoc-nav"><a href="#fieldsetlegend-default" class="autotoc-level-1">Default</a><a href="#fieldsetlegend-categorization" class="autotoc-level-1">Categorization</a><a href="#fieldsetlegend-dates" class="autotoc-level-1">Dates</a><a href="#fieldsetlegend-ownership" class="autotoc-level-1">Ownership</a><a href="#fieldsetlegend-settings" class="autotoc-level-1 active">Settings</a></nav>
+
+		<fieldset id="fieldset-default" class="autotoc-section active">
+			<legend id="fieldsetlegend-default">Default</legend>
+			
+			<div class="field error" data-fieldname="form.widgets.IDublinCore.title" id="formfield-form-widgets-IDublinCore-title">
+				<label for="form-widgets-IDublinCore-title" class="horizontal">
+					Title
+					<span class="required horizontal" title="Required">&nbsp;</span>
+				</label>
+
+				<div class="fieldErrorBox">
+					<div class="error">Required input is missing.</div>
+				</div>
+
+				<input id="form-widgets-IDublinCore-title" name="form.widgets.IDublinCore.title" class="text-widget required textline-field" value="Folder" type="text">
+			</div>
+
+			<div class="field" id="formfield-form-widgets-IDublinCore-description">
+				<label for="form-widgets-IDublinCore-description" class="horizontal">
+					Summary
+					<span class="formHelp">Used in item listings and search results.</span>
+				</label>
+				<div class="fieldErrorBox"></div>
+				<textarea id="form-widgets-IDublinCore-description" name="form.widgets.IDublinCore.description" class="textarea-widget text-field"></textarea>
+			</div>
+		</fieldset>
+
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')</script>
+<script src="js/main.js"></script>
+
+
+</body>
+</html>
