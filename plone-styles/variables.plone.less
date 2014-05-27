@@ -7,7 +7,7 @@
 @plone-gray-darker:					lighten(#000, 20%);   // #333
 @plone-gray-dark:					lighten(#000, 30%);   // #4c4c4c
 @plone-gray:						lighten(#000, 41%);   // #696969
-@plone-gray-light:					lighten(#000, 47%);   // #787878 //discreet
+@plone-gray-light:					lighten(#000, 46.5%); // #767676 //discreet
 @plone-gray-lighter:				lighten(#000, 80%);   // #ccc //disableds like
 
 //colors
@@ -21,17 +21,14 @@
 
 
 //*// SCAFFOLDING
-//
-@plone-body-bg:               #fafafa; //almost-white, si fa no fa
+@plone-body-bg:               #fafafa; //almost-white
 @plone-text-color:            @plone-gray-dark;
-//@link-color:            @brand-primary;
 @plone-link-hover-color:      darken(@plone-link-color, 15%);
 
 
 //*// TYPOGRAPHY
-//## Font, line-height, and color for body text, headings, and more.
-
 @plone-font-family-sans-serif:  "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif; // Roboto seems Plone's DIN
+@plone-font-family-condensed:   "Roboto Condensed", "Arial Narrow", sans-serif; //just on toolbar
 @plone-font-family-serif:       Georgia, "Times New Roman", Times, serif;
 @plone-font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
 @plone-font-family-base:        @plone-font-family-sans-serif;
@@ -74,7 +71,7 @@
 @plone-alert-link-font-weight:				300; //it depends on your font-family
 
 @plone-alert-info-bg:						#aad6ea;
-@plone-alert-info-text:						rgba(0,0,0,.5);
+@plone-alert-info-text:						rgba(0,0,0,.5); //the text on alert is black with opacity to use the same color and match the bg.
 @plone-alert-info-border:					1px solid darken(@plone-alert-info-bg,4%);
 @plone-alert-info-bullet:					#3e7b91;
 
@@ -87,3 +84,13 @@
 @plone-alert-error-text:					rgba(0,0,0,.5);
 @plone-alert-error-border:					1px solid darken(@plone-alert-error-bg,2%);
 @plone-alert-error-bullet:					#ac493f;
+
+//*// PORTLETS
+@plone-portlet-header-bg:					#f8f8f9;
+@plone-portlet-header-color:				@plone-gray;
+@plone-portlet-content-bg:					#fff;
+@plone-portlet-footer-bg:					#fcfcfd;
+@plone-portlet-border:						1px solid #e5e5e5;
+@plone-portlet-list-bullet:					#64bee8; 
+@plone-portlet-list-hover-bg:				#fcfcfd;
+@plone-portlet-list-small-text:				@plone-gray-light;
