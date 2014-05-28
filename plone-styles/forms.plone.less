@@ -113,15 +113,15 @@ output {
 .form-control {
   display: block;
   width: 100%;
-  height: @input-height-base; // Make inputs at least the height of their button counterpart (base line-height + padding + border)
-  padding: @padding-base-vertical @padding-base-horizontal;
-  font-size: @font-size-base;
-  line-height: @line-height-base;
-  color: @input-color;
-  background-color: @input-bg;
+  height: @plone-input-height-base; // Make inputs at least the height of their button counterpart (base line-height + padding + border)
+  padding: @plone-padding-base-vertical @plone-padding-base-horizontal;
+  font-size: @plone-font-size-base;
+  line-height: @plone-line-height-base;
+  color: @plone-input-color;
+  background-color: @plone-input-bg;
   background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
-  border: 1px solid @input-border;
-  border-radius: @input-border-radius;
+  border: 1px solid @plone-input-border;
+  border-radius: @plone-input-border-radius;
   .box-shadow(inset 0 1px 1px rgba(0,0,0,.075));
   .transition(~"border-color ease-in-out .15s, box-shadow ease-in-out .15s");
 
@@ -140,7 +140,7 @@ output {
   &[readonly],
   fieldset[disabled] & {
     cursor: not-allowed;
-    background-color: @input-bg-disabled;
+    background-color: @plone-input-bg-disabled;
     opacity: 1; // iOS fix for unreadable disabled content
   }
 
@@ -175,15 +175,15 @@ input[type="date"],
 input[type="time"],
 input[type="datetime-local"],
 input[type="month"] {
-  line-height: @input-height-base;
+  line-height: @plone-input-height-base;
   // IE8+ misaligns the text within date inputs, so we reset
-  line-height: @line-height-base ~"\0";
+  line-height: @plone-line-height-base ~"\0";
 
   &.input-sm {
-    line-height: @input-height-small;
+    line-height: @plone-input-height-small;
   }
   &.input-lg {
-    line-height: @input-height-large;
+    line-height: @plone-input-height-large;
   }
 }
 
@@ -205,7 +205,7 @@ input[type="month"] {
 .radio,
 .checkbox {
   display: block;
-  min-height: @line-height-computed; // clear the floating input if there is no label text
+  min-height: @plone-line-height-computed; // clear the floating input if there is no label text
   margin-top: 10px;
   margin-bottom: 10px;
 
@@ -260,14 +260,14 @@ input[type="checkbox"],
 }
 
 .field.error {
-  .form-control-validation(@state-danger-text; @state-danger-text; @state-danger-bg);
+  .form-control-validation(@plone-state-error-text; @plone-state-error-text; @plone-state-error-bg);
 }
 
 .formHelp {
   display: block; // account for any element using help-block
   margin-top: 5px;
   margin-bottom: 10px;
-  color: lighten(@text-color, 25%); // lighten the text some for contrast
+  color: lighten(@plone-text-color, 25%); // lighten the text some for contrast
   font-weight: @plone-font-weight-light;
   font-style: italic;
 }
