@@ -42,6 +42,15 @@
 		"strictMath": 0,
 		"strictUnits": 0
 		},
+	"\/css\/all.plone.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/css\/all.plone.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/css\/mixin.prefixes.plone.css": {
 		"fileType": 16,
 		"ignore": 1,

@@ -33,6 +33,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/navigation-portlet.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 12022,
+		"inputAbbreviatedPath": "\/navigation-portlet.png",
+		"outputAbbreviatedPath": "\/navigation-portlet.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/news-listLikePortlet.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 25946,
+		"inputAbbreviatedPath": "\/news-listLikePortlet.png",
+		"outputAbbreviatedPath": "\/news-listLikePortlet.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/plone-portlets.html": {
 		"fileType": 8192,
 		"ignore": 0,
