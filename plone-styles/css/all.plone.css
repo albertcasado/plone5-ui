@@ -814,7 +814,8 @@ fieldset[disabled] .checkbox-inline {
 }
 .field.error {
   background: #fbe8e4;
-  outline: 5px solid #fbe8e4;
+  -webkit-box-shadow: 0 0 0 5px #fbe8e4;
+  box-shadow: 0 0 0 5px #fbe8e4;
 }
 .field.error .help-block,
 .field.error .control-label,
@@ -848,6 +849,7 @@ fieldset[disabled] .checkbox-inline {
 }
 .field.error div.error {
   padding-left: 30px;
+  font-weight: 300;
 }
 .field.error div.error:before {
   background-color: #ac493f;
@@ -866,6 +868,17 @@ fieldset[disabled] .checkbox-inline {
   text-shadow: 0 -1px rgba(0, 0, 0, 0.5);
   top: -1px;
   position: relative;
+}
+.field.error input,
+.field.error textarea,
+.field.error select {
+  border-color: #b40c33;
+}
+.field.error input:focus,
+.field.error textarea:focus,
+.field.error select:focus {
+  -webkit-box-shadow: 0 0 8px #f894ab;
+  box-shadow: 0 0 8px #f894ab;
 }
 .formHelp {
   display: block;

@@ -261,12 +261,13 @@ input[type="checkbox"],
 .field.error {
   .form-control-validation(@plone-state-error-text; @plone-state-error-text; @plone-state-error-bg);
   background: lighten(@plone-state-error-bg,20%);
-  outline: 5px solid lighten(@plone-state-error-bg,20%);
+  .box-shadow(0 0 0 5px lighten(@plone-state-error-bg,20%));
   > label, div.error {
     color: @plone-toolbar-private-color;
   }
   div.error {
     padding-left: 30px;
+    font-weight: @plone-font-weight-regular;
     &:before {
       background-color: @plone-alert-error-bullet; content:"×";
       font-size:14px; 
@@ -283,6 +284,12 @@ input[type="checkbox"],
       text-shadow: 0 -1px rgba(0,0,0,.5);
       top: -1px;
       position: relative;
+    }
+  }
+  input,textarea,select {
+    border-color: @plone-toolbar-private-color;
+    &:focus {
+      .box-shadow(0 0 8px lighten(@plone-toolbar-private-color,40%) );
     }
   }
 }
