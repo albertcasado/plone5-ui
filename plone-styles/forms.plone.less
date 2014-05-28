@@ -110,7 +110,7 @@ output {
 // input[type="tel"]
 // input[type="color"]
 
-.form-control {
+.form-control, input[type="text"], textarea {
   display: block;
   width: 100%;
   height: @plone-input-height-base; // Make inputs at least the height of their button counterpart (base line-height + padding + border)
@@ -143,13 +143,12 @@ output {
     background-color: @plone-input-bg-disabled;
     opacity: 1; // iOS fix for unreadable disabled content
   }
-
-  // Reset height for `textarea`s
-  textarea& {
-    height: auto;
-  }
 }
-
+// Reset height for `textarea`s
+textarea {
+  min-height: auto;
+  resize: vertical; //as default, only vertical resize
+}
 
 // Search inputs in iOS
 //
@@ -261,6 +260,31 @@ input[type="checkbox"],
 
 .field.error {
   .form-control-validation(@plone-state-error-text; @plone-state-error-text; @plone-state-error-bg);
+  background: lighten(@plone-state-error-bg,20%);
+  outline: 5px solid lighten(@plone-state-error-bg,20%);
+  > label, div.error {
+    color: @plone-toolbar-private-color;
+  }
+  div.error {
+    padding-left: 30px;
+    &:before {
+      background-color: @plone-alert-error-bullet; content:"×";
+      font-size:14px; 
+      font-weight: 500; 
+      margin-left: -30px;
+      margin-right: 5px;
+      display: inline-block; 
+      border-radius: 20px;
+      text-align:center;
+      color:rgba(255, 255, 255, 0.9); 
+      width:16px; 
+      height:16px;
+      line-height: 16px; //IE fix
+      text-shadow: 0 -1px rgba(0,0,0,.5);
+      top: -1px;
+      position: relative;
+    }
+  }
 }
 
 .formHelp {

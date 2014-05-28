@@ -11,7 +11,7 @@
 	<!-- Roboto second level toolbar-->
 	<link href='http://fonts.googleapis.com/css?family=Roboto:100,300,500' rel='stylesheet' type='text/css'>
 
-	<link rel="stylesheet" href="css/alerts.plone.css" media="all">
+	<link rel="stylesheet" href="../plone-styles/css/all.plone.css" media="all">
 	<style> .example-box {padding: 50px;} html, body {margin: 0; padding:0;} </style>
 </head>
 <body>
@@ -22,7 +22,7 @@
 
 		<fieldset id="fieldset-default" class="autotoc-section active">
 			<legend id="fieldsetlegend-default">Default</legend>
-			
+
 			<div class="field error" data-fieldname="form.widgets.IDublinCore.title" id="formfield-form-widgets-IDublinCore-title">
 				<label for="form-widgets-IDublinCore-title" class="horizontal">
 					Title
@@ -43,6 +43,11 @@
 				</label>
 				<div class="fieldErrorBox"></div>
 				<textarea id="form-widgets-IDublinCore-description" name="form.widgets.IDublinCore.description" class="textarea-widget text-field"></textarea>
+			</div>
+
+			<div class="formControls">
+                <input id="form-buttons-save" name="form.buttons.save" class="submit-widget button-field context" value="Save" type="submit">
+                <input id="form-buttons-cancel" name="form.buttons.cancel" class="submit-widget button-field standalone" value="Cancel" type="submit">
 			</div>
 		</fieldset>
 
