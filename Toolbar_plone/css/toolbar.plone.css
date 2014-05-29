@@ -122,10 +122,10 @@ body.userrole-authenticated {
   background: #0792d9;
 }
 #edit-zone nav > ul a.label-state-internally_published > span:before {
-  color: #883dfa;
+  color: #973dfa;
 }
 #edit-zone nav > ul a.label-state-internally_published > span + span {
-  background: #883dfa;
+  background: #973dfa;
 }
 #edit-zone nav > ul a.label-state-pending > span:before {
   color: #e2e721;
@@ -300,7 +300,7 @@ body.userrole-authenticated {
 #edit-zone nav > ul ul .state-internally_published:after {
   right: 15px;
   content: "•";
-  color: #883dfa;
+  color: #973dfa;
   position: absolute;
   font-size: 20px;
 }
@@ -378,7 +378,7 @@ body.userrole-authenticated {
   color: rgba(255, 255, 255, 0.9);
 }
 #edit-zone.expanded li a.label-state-internally_published:hover > span {
-  background: #883dfa;
+  background: #973dfa;
 }
 #edit-zone.expanded li a.label-state-internally_published:hover > span:first-child:before {
   color: rgba(255, 255, 255, 0.9);
@@ -456,7 +456,7 @@ body.userrole-authenticated {
   background: #0792d9;
 }
 #edit-zone nav > ul > li.active > a.label-state-internally_published {
-  background: #883dfa;
+  background: #973dfa;
 }
 #edit-zone nav > ul > li.active > a.label-state-pending {
   background: #e2e721;
@@ -642,7 +642,7 @@ body.userrole-authenticated {
     color: rgba(255, 255, 255, 0.9);
   }
   #edit-zone li a.label-state-internally_published:hover > span {
-    background: #883dfa;
+    background: #973dfa;
   }
   #edit-zone li a.label-state-internally_published:hover > span:first-child:before {
     color: rgba(255, 255, 255, 0.9);
