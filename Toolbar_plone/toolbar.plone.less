@@ -9,10 +9,12 @@
 @plone-toolbar-submenu-header-color:		#999;
 
 /*states*/
-@plone-toolbar-published-color:				@plone-toolbar-link;
-@plone-toolbar-pending-color:				#E7CE17;
-@plone-toolbar-draft-color:					#D2810F; //old #33A933;
-@plone-toolbar-private-color:				#B40C33;
+@plone-toolbar-published-color:				@plone-toolbar-link; // published & externally visible
+	@plone-toolbar-internally-published:	#883dfa; // published on intranet
+@plone-toolbar-pending-color:				#e2e721; // needs ok
+	@plone-toolbar-internal:				#fd3484; // internal
+@plone-toolbar-draft-color:					#fab82a; // (visible, internal?)
+@plone-toolbar-private-color:				#c4183c; // private
 
 /*mobile*/
 @plone-media-mobile-break-width:			480px;
