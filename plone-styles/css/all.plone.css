@@ -945,6 +945,9 @@ fieldset[disabled] .checkbox-inline {
 .breadcrumb ol > #breadcrumbs-current {
   color: #777777;
 }
+body.section-front-page .breadcrumb {
+  display: none;
+}
 /****
 ALERTS
 ****/
