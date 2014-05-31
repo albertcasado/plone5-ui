@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+	<title>Plone Toolbar</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<!-- Fontello icons for Toolbar -->
+	<link href='fontello/css/fontello.css' rel='stylesheet' type='text/css'>
+	<!-- Roboto Condensed for First level Toolbar -->
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+	<!-- Roboto second level toolbar-->
+	<link href='http://fonts.googleapis.com/css?family=Roboto:100,300,500' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="../plone-styles/css/all.plone.css" media="all">
+	<style> .example-box {padding: 50px;} html, body {margin: 0; padding:0;} </style>
+</head>
+<body>
+
+<div class="example-box">
+	<p> Plone needs to change pagination on crucial parts like search results. Aria-label and sr-only must be translated.</p>
+	<ul role="widget" aria-label="Pagination" class="listingBar">
+		<li class="previous"><a href="#">Previous<span class="sr-only"> page</span></a></li>
+		<li><a href="#"><span class="sr-only">page </span>1</a></li>
+		<li><a href="#" rel="next"><span class="sr-only">page </span>2</a></li>
+		<li class="active"><a aria-disabled="true" href="#"><span class="sr-only">You're currently on page </span>3</a></li>
+		<li><a href="#"><span class="sr-only">page </span>4</a></li>
+		<li><a href="#"><span class="sr-only">page </span>5</a></li>
+		<li class="next disabled"><a href="#">Next <span class="sr-only">page</span></a></li>
+	</ul>
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')</script>
+<script src="js/main.js"></script>
+
+
+</body>
+</html>
