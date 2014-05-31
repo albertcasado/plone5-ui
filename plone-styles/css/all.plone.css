@@ -895,6 +895,252 @@ fieldset[disabled] .checkbox-inline {
   padding: 12px;
   box-shadow: inset 0 10px 10px -10px rgba(0, 0, 0, 0.05);
 }
+.standalone,
+[type="submit"],
+button {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: 500;
+  text-align: center;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.25);
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 2px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.standalone:focus,
+[type="submit"]:focus,
+button:focus,
+.standalone:active:focus,
+[type="submit"]:active:focus,
+button:active:focus,
+.standalone.active:focus,
+[type="submit"].active:focus,
+button.active:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.standalone:hover,
+[type="submit"]:hover,
+button:hover,
+.standalone:focus,
+[type="submit"]:focus,
+button:focus {
+  color: #4d4d4d;
+  text-decoration: none;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+}
+.standalone:active,
+[type="submit"]:active,
+button:active,
+.standalone.active,
+[type="submit"].active,
+button.active {
+  outline: 0;
+  background-image: none;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+.standalone.disabled,
+[type="submit"].disabled,
+button.disabled,
+.standalone[disabled],
+[type="submit"][disabled],
+button[disabled],
+fieldset[disabled] .standalone,
+fieldset[disabled] [type="submit"],
+fieldset[disabled] button {
+  cursor: not-allowed;
+  pointer-events: none;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.standalone,
+[type="submit"],
+button {
+  color: #4d4d4d;
+  background-color: #e5e5e5;
+  border-color: #b2b2b2;
+}
+.standalone:hover,
+[type="submit"]:hover,
+button:hover,
+.standalone:focus,
+[type="submit"]:focus,
+button:focus,
+.standalone:active,
+[type="submit"]:active,
+button:active,
+.standalone.active,
+[type="submit"].active,
+button.active,
+.open > .dropdown-toggle.standalone,
+.open > .dropdown-toggle[type="submit"],
+.open > .dropdown-togglebutton {
+  color: #4d4d4d;
+  background-color: #cccccc;
+  border-color: #939393;
+}
+.standalone:active,
+[type="submit"]:active,
+button:active,
+.standalone.active,
+[type="submit"].active,
+button.active,
+.open > .dropdown-toggle.standalone,
+.open > .dropdown-toggle[type="submit"],
+.open > .dropdown-togglebutton {
+  background-image: none;
+}
+.standalone.disabled,
+[type="submit"].disabled,
+button.disabled,
+.standalone[disabled],
+[type="submit"][disabled],
+button[disabled],
+fieldset[disabled] .standalone,
+fieldset[disabled] [type="submit"],
+fieldset[disabled] button,
+.standalone.disabled:hover,
+[type="submit"].disabled:hover,
+button.disabled:hover,
+.standalone[disabled]:hover,
+[type="submit"][disabled]:hover,
+button[disabled]:hover,
+fieldset[disabled] .standalone:hover,
+fieldset[disabled] [type="submit"]:hover,
+fieldset[disabled] button:hover,
+.standalone.disabled:focus,
+[type="submit"].disabled:focus,
+button.disabled:focus,
+.standalone[disabled]:focus,
+[type="submit"][disabled]:focus,
+button[disabled]:focus,
+fieldset[disabled] .standalone:focus,
+fieldset[disabled] [type="submit"]:focus,
+fieldset[disabled] button:focus,
+.standalone.disabled:active,
+[type="submit"].disabled:active,
+button.disabled:active,
+.standalone[disabled]:active,
+[type="submit"][disabled]:active,
+button[disabled]:active,
+fieldset[disabled] .standalone:active,
+fieldset[disabled] [type="submit"]:active,
+fieldset[disabled] button:active,
+.standalone.disabled.active,
+[type="submit"].disabled.active,
+button.disabled.active,
+.standalone[disabled].active,
+[type="submit"][disabled].active,
+button[disabled].active,
+fieldset[disabled] .standalone.active,
+fieldset[disabled] [type="submit"].active,
+fieldset[disabled] button.active {
+  background-color: #e5e5e5;
+  border-color: #b2b2b2;
+}
+.standalone .badge,
+[type="submit"] .badge,
+button .badge {
+  color: #e5e5e5;
+  background-color: #4d4d4d;
+}
+.context {
+  color: #ffffff;
+  background-color: #2385c4;
+  border-color: #1b6899;
+}
+.context:hover,
+.context:focus,
+.context:active,
+.context.active,
+.open > .dropdown-toggle.context {
+  color: #ffffff;
+  background-color: #1b6899;
+  border-color: #124465;
+}
+.context:active,
+.context.active,
+.open > .dropdown-toggle.context {
+  background-image: none;
+}
+.context.disabled,
+.context[disabled],
+fieldset[disabled] .context,
+.context.disabled:hover,
+.context[disabled]:hover,
+fieldset[disabled] .context:hover,
+.context.disabled:focus,
+.context[disabled]:focus,
+fieldset[disabled] .context:focus,
+.context.disabled:active,
+.context[disabled]:active,
+fieldset[disabled] .context:active,
+.context.disabled.active,
+.context[disabled].active,
+fieldset[disabled] .context.active {
+  background-color: #2385c4;
+  border-color: #1b6899;
+}
+.context .badge {
+  color: #2385c4;
+  background-color: #ffffff;
+}
+.destructive {
+  color: #ffffff;
+  background-color: #bb4f45;
+  border-color: #963f37;
+}
+.destructive:hover,
+.destructive:focus,
+.destructive:active,
+.destructive.active,
+.open > .dropdown-toggle.destructive {
+  color: #ffffff;
+  background-color: #963f37;
+  border-color: #692c26;
+}
+.destructive:active,
+.destructive.active,
+.open > .dropdown-toggle.destructive {
+  background-image: none;
+}
+.destructive.disabled,
+.destructive[disabled],
+fieldset[disabled] .destructive,
+.destructive.disabled:hover,
+.destructive[disabled]:hover,
+fieldset[disabled] .destructive:hover,
+.destructive.disabled:focus,
+.destructive[disabled]:focus,
+fieldset[disabled] .destructive:focus,
+.destructive.disabled:active,
+.destructive[disabled]:active,
+fieldset[disabled] .destructive:active,
+.destructive.disabled.active,
+.destructive[disabled].active,
+fieldset[disabled] .destructive.active {
+  background-color: #bb4f45;
+  border-color: #963f37;
+}
+.destructive .badge {
+  color: #bb4f45;
+  background-color: #ffffff;
+}
 .breadcrumb {
   border-radius: 4px;
   background-color: #eaeaed;

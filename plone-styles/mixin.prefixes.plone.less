@@ -9,7 +9,12 @@
           box-sizing: @boxmodel;
 }
 
-
+.opacity(@opacity) {
+  opacity: @opacity;
+  // IE8 filter
+  @opacity-ie: (@opacity * 100);
+  filter: ~"alpha(opacity=@{opacity-ie})";
+}
 .transition(@transition) {
   -webkit-transition: @transition;
        -o-transition: @transition;
@@ -36,4 +41,10 @@
      -moz-transition: -moz-transform @transition;
        -o-transition: -o-transform @transition;
           transition: transform @transition;
+}
+.user-select(@select) {
+  -webkit-user-select: @select;
+     -moz-user-select: @select;
+      -ms-user-select: @select; // IE10+
+          user-select: @select;
 }
