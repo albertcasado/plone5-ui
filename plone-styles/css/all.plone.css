@@ -629,6 +629,7 @@ legend {
   color: #4d4d4d;
   border: 0;
   border-bottom: 1px solid #e5e5e5;
+  font-weight: 100;
 }
 label {
   display: inline-block;
@@ -1007,6 +1008,41 @@ body.section-front-page .breadcrumb {
   background-color: #fcfcfd;
   border-color: 1px solid #e5e5e5;
   cursor: not-allowed;
+}
+.autotabs {
+  background: #fff;
+  padding: 6px 12px;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+}
+.autotabs .autotoc-nav {
+  background: #f2f1f1;
+  border-bottom: 1px solid #e5e5e5;
+  margin: -6px -12px 6px;
+}
+.autotabs .autotoc-nav a {
+  display: inline-block;
+  padding: 12px;
+  margin: 6px 0 0 6px;
+  border: 1px solid #e5e5e5;
+  margin-bottom: -1px;
+  border-radius: 4px 4px 0 0;
+  background: #fcfcfd;
+  font-weight: 300;
+}
+.autotabs .autotoc-nav a:hover {
+  text-decoration: none;
+  background: #fff;
+}
+.autotabs .autotoc-nav a.active {
+  color: #696969;
+  cursor: default;
+  background: #fff;
+  border-bottom-color: #fff;
+}
+.autotabs .formControls {
+  margin: 0 -12px -6px;
+  border-radius: 0 0 4px 4px;
 }
 /****
 ALERTS
