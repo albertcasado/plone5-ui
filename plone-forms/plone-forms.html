@@ -17,8 +17,9 @@
 <body>
 
 <div class="example-box">
+	<p> Current autotoc tabindex="-1", do not focus there.</p>
 	<form class="rowlike enableUnloadProtection enableFormTabbing pat-autotoc  kssattr-formname-edit autotabs" action="" method="post" enctype="multipart/form-data" id="form">
-		<nav class="autotoc-nav"><a href="#fieldsetlegend-default" class="autotoc-level-1 active">Default</a><a href="#fieldsetlegend-categorization" class="autotoc-level-1">Categorization</a><a href="#fieldsetlegend-dates" class="autotoc-level-1">Dates</a><a href="#fieldsetlegend-ownership" class="autotoc-level-1">Ownership</a><a href="#fieldsetlegend-settings" class="autotoc-level-1">Settings</a></nav>
+		<nav class="autotoc-nav"><a href="#fieldsetlegend-default" class="autotoc-level-1 active" tabindex="-1">Default</a><a href="#fieldsetlegend-categorization" class="autotoc-level-1">Categorization</a><a href="#fieldsetlegend-dates" class="autotoc-level-1">Dates</a><a href="#fieldsetlegend-ownership" class="autotoc-level-1">Ownership</a><a href="#fieldsetlegend-settings" class="autotoc-level-1">Settings</a></nav>
 
 		<fieldset id="fieldset-default" class="autotoc-section active">
 			<legend id="fieldsetlegend-default">Default</legend>
@@ -56,6 +57,93 @@
 
 			</div>
 		</fieldset>
+	</form>
+	<br><br><br>
+	<div class="field">
+		<label for="form-widgets-IAllowDiscussion-allow_discussion" class="horizontal">
+        Allow discussion
+
+        
+
+        <span class="formHelp">Allow discussion for this content object.</span>
+    </label>
+	<select id="form-widgets-IDublinCore-language" name="form.widgets.IDublinCore.language:list" class="select-widget choice-field" size="1">
+		<option id="form-widgets-IDublinCore-language-novalue" value="--NOVALUE--">No value</option>
+		<option id="form-widgets-IDublinCore-language-0" value="af">Afrikaans</option>
+		<option id="form-widgets-IDublinCore-language-1" value="ak">Akan</option>
+		<option id="form-widgets-IDublinCore-language-2" value="ig">Asụsụ Igbo</option>
+		<option id="form-widgets-IDublinCore-language-3" value="ay">Aymara</option>
+	</select>
+	</div>
+	<div class="field z3cformInlineValidation kssattr-fieldname-form.widgets.IExcludeFromNavigation.exclude_from_nav" data-fieldname="form.widgets.IExcludeFromNavigation.exclude_from_nav" id="formfield-form-widgets-IExcludeFromNavigation-exclude_from_nav">
+		<span class="option" id="form-widgets-IExcludeFromNavigation-exclude_from_nav">
+		<input id="form-widgets-IExcludeFromNavigation-exclude_from_nav-0" name="form.widgets.IExcludeFromNavigation.exclude_from_nav:list" class="single-checkbox-widget required bool-field" value="selected" type="checkbox">
+		  <label for="form-widgets-IExcludeFromNavigation-exclude_from_nav-0">
+		    <span class="label">Exclude from navigation</span>
+		  </label>
+ 		</span>
+
+		<input name="form.widgets.IExcludeFromNavigation.exclude_from_nav-empty-marker" type="hidden" value="1">
+			<div class="formHelp">If selected, this item will not appear in the navigation tree</div>
+			<div class="fieldErrorBox"></div>
+	</div>
+	<div class="field z3cformInlineValidation kssattr-fieldname-form.widgets.IExcludeFromNavigation.exclude_from_nav" data-fieldname="form.widgets.IExcludeFromNavigation.exclude_from_nav" id="formfield-form-widgets-IExcludeFromNavigation-exclude_from_nav">
+		<span class="option" id="form-widgets-IExcludeFromNavigation-exclude_from_nav">
+		<input id="form-widgets-IExcludeFromNavigation-exclude_from_nav-0" name="form.widgets.IExcludeFromNavigation.exclude_from_nav:list" class="single-checkbox-widget required bool-field" value="selected" type="radio">
+		  <label for="form-widgets-IExcludeFromNavigation-exclude_from_nav-0">
+		    <span class="label">Exclude from navigation</span>
+		  </label>
+ 		</span>
+
+		<input name="form.widgets.IExcludeFromNavigation.exclude_from_nav-empty-marker" type="hidden" value="1">
+			<div class="formHelp">If selected, this item will not appear in the navigation tree</div>
+			<div class="fieldErrorBox"></div>
+	</div>
+
+
+
+
+<div class="field z3cformInlineValidation kssattr-fieldname-form.widgets.portrait" data-fieldname="form.widgets.portrait" id="formfield-form-widgets-portrait">
+    <label for="form-widgets-portrait" class="horizontal">
+        Portrait
+
+        
+
+        <span class="formHelp">To add or change the portrait: click the "Browse" button; select a picture of yourself.  Recommended image size is 75 pixels wide by 100 pixels tall.</span>
+    </label>
+
+    <div class="fieldErrorBox"></div>
+
+    <span id="form-widgets-portrait" class="named-image-widget namedblobimage-field">
+    <span>
+        <img src="http://plone.iskra.cat:8080/Plone/@@personal-information/++widget++form.widgets.portrait/@@download?userid=admin" width="75"><br>
+        <img src="http://plone.iskra.cat:8080/Plone/png.png" alt="PNG image">
+        <a href="http://plone.iskra.cat:8080/Plone/@@personal-information/++widget++form.widgets.portrait/@@download?userid=admin"></a>
+        <span class="discreet"> —
+            PNG image,
+            14 KB
+        </span>
+    </span>
+    <div style="padding-top: 1em;">
+        <input type="radio" value="nochange" class="noborder" name="form.widgets.portrait.action" id="form-widgets-portrait-nochange" onclick="document.getElementById('form-widgets-portrait-input').disabled=true" checked="checked">
+        <label for="form-widgets-portrait-nochange">Keep existing image</label>
+        
+            <br>
+            <input type="radio" value="remove" class="noborder" name="form.widgets.portrait.action" id="form-widgets-portrait-remove" onclick="document.getElementById('form-widgets-portrait-input').disabled=true">
+            <label for="form-widgets-portrait-remove">Remove existing image</label>
+        
+        <br>
+        <input type="radio" value="replace" class="noborder" name="form.widgets.portrait.action" id="form-widgets-portrait-replace" onclick="document.getElementById('form-widgets-portrait-input').disabled=false">
+        <label for="form-widgets-portrait-replace">Replace with new image</label>
+    </div>
+    <div style="padding-left: 1.5em; padding-top: 0.5em;">
+        <input type="file" id="form-widgets-portrait-input" name="form.widgets.portrait" disabled="">
+        <script type="text/javascript">document.getElementById('form-widgets-portrait-input').disabled=true;</script>
+    </div>
+	</span>
+
+	</div>
+
 
 </div>
 

@@ -25,8 +25,9 @@
 		<li class="active"><a aria-disabled="true" href="#"><span class="sr-only">You're currently on page </span>3</a></li>
 		<li><a href="#"><span class="sr-only">page </span>4</a></li>
 		<li><a href="#"><span class="sr-only">page </span>5</a></li>
-		<li class="next disabled"><a href="#">Next <span class="sr-only">page</span></a></li>
+		<li class="next disabled"><a href="#" tabindex="-1">Next <span class="sr-only">page</span></a></li>
 	</ul>
+	<p> Disabled with no tabindex "a", tabindex="-1", we don't want to :focus there</p>
 </div>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>

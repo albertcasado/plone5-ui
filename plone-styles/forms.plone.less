@@ -71,6 +71,9 @@ select[multiple],
 select[size] {
   height: auto;
 }
+select[size="1"] {
+  height: @plone-input-height-base;
+}
 
 // Focus for file, radio, and checkbox
 input[type="file"]:focus,
@@ -111,7 +114,7 @@ output {
 // input[type="tel"]
 // input[type="color"]
 
-.form-control, input[type="text"], textarea {
+.form-control, input[type="text"], textarea, select {
   display: block;
   width: 100%;
   height: @plone-input-height-base; // Make inputs at least the height of their button counterpart (base line-height + padding + border)
@@ -296,9 +299,9 @@ input[type="checkbox"],
 }
 
 .formHelp {
-  display: block; // account for any element using help-block
-  margin-top: 5px;
-  margin-bottom: 10px;
+  //display: block; if want all helps to be block. As default span.formHelp inline and div.formHelp block
+  margin-top: 0;
+  margin-bottom: 0;
   color: lighten(@plone-text-color, 25%); // lighten the text some for contrast
   font-weight: @plone-font-weight-light;
   font-style: italic;
@@ -309,4 +312,29 @@ input[type="checkbox"],
   background: @plone-portlet-footer-bg;
   padding: @plone-padding-base-horizontal;
   box-shadow: inset 0 10px 10px -10px rgba(0,0,0,.05);
+}
+
+label .required {
+  &:after{
+    color: @plone-toolbar-private-color;
+    content:"⋆";
+    font-size: 250%;
+    line-height: 0;
+    position: absolute;
+    margin-top: 8px;
+    margin-left: -8px;
+  }
+}
+[type="checkbox"].required, 
+[type="radio"].required {
+  margin-right: 12px;
+  &:after {
+    color: @plone-toolbar-private-color;
+    content:"⋆";
+    font-size: 250%;
+    line-height: 0;
+    position: absolute;
+    margin-top: 4px;
+    margin-left: 12px;
+  }
 }
