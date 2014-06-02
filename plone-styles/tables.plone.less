@@ -60,7 +60,38 @@ th { text-align: left; color: @plone-gray-dark;}
   }
 }
 
+//we need to add a class on div parent element of the table to ensure all possible options for responsive tables.
+//as default has-table uses it to scroll horizontally table
+.plone-has-table {
+  @media screen and (max-width: @plone-screen-xs-max) {
+    width: 100%;
+    margin-bottom: (@plone-line-height-computed * 0.75);
+    overflow-y: hidden;
+    overflow-x: scroll;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    border: 1px solid @plone-table-border-color;
+    border-radius: @plone-border-radius-base;
+    -webkit-overflow-scrolling: touch;
+    position: relative;
+    // scroll marker, it appears when we have active the mobile class
+    &:after {content:"⟷"; position:fixed; color:@plone-gray-lighter; margin-top:-3px}
+    // Tighten up spacing
+    > .listing {
+      margin-bottom: 0;
 
-
+      // Ensure the content doesn't wrap
+      > thead,
+      > tbody,
+      > tfoot {
+        > tr {
+          > th,
+          > td {
+            white-space: nowrap;
+          }
+        }
+      }
+    }
+  }
+}
 
 
