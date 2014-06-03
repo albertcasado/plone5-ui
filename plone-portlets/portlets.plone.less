@@ -71,9 +71,6 @@ a:hover {color: darken(@plone-link-color,15%); text-decoration: underline;}
 				}
 			}
 			ul {padding-left:15px; list-style: none;
-				a {font-size: 85%;
-					&:before {font-size:17px; margin-top:-3px}
-				}
 			}
 			time {display: block; z-index: 0; padding: 0 15px 10px 30px; font-weight:100; position: relative; margin-top:-26px; font-size: 12px; color: @plone-portlet-list-small-text;}
 			li:hover {background: @plone-portlet-list-hover-bg;
@@ -136,5 +133,21 @@ a:hover {color: darken(@plone-link-color,15%); text-decoration: underline;}
 
 
 /*navigation*/
-.portletNavigationTree nav.portletContent > ul > li a { padding: 10px 15px 10px 30px;}
+.portletNavigationTree nav.portletContent > ul > li a { padding: 10px 15px 10px 15px; border-top: 1px solid #e5e5e5;}
+.portletNavigationTree {
+	.portletContent {
+		border-top: 0;
+		> ul > li > a {display: block; background: #f2f1f1;
+			&:before {content: ""; }
+			&:hover {background: #fcfcfd;}
+			&:hover:after {content:"⟩"; position: absolute; right: 10px; font-size: 18px; margin-top:-3px; color: @plone-gray-light;}
+		}
+		> ul > li > ul a {padding-left:40px;}
+		> ul ul {padding-left: 0;}
+		.navTreeCurrentNode > a {background: #fcfcfd; color: @plone-gray;
+			&:after {content:"⟩"; position: absolute; right: 10px; font-size: 18px; margin-top:-3px; color: @plone-gray-light;}
+		}
+	}
+	
 
+}

@@ -100,13 +100,6 @@ a:hover {
   padding-left: 15px;
   list-style: none;
 }
-.portlet .portletContent > ul ul a {
-  font-size: 85%;
-}
-.portlet .portletContent > ul ul a:before {
-  font-size: 17px;
-  margin-top: -3px;
-}
 .portlet .portletContent > ul time {
   display: block;
   z-index: 0;
@@ -232,5 +225,27 @@ a:hover {
 }
 /*navigation*/
 .portletNavigationTree nav.portletContent > ul > li a {
-  padding: 10px 15px 10px 30px;
+  padding: 10px 15px 10px 15px;
+}
+.portletNavigationTree .portletContent {
+  border-top: 0;
+}
+.portletNavigationTree .portletContent > ul > li > a {
+  display: block;
+  background: #f2f1f1;
+}
+.portletNavigationTree .portletContent > ul > li > a:before {
+  content: "";
+}
+.portletNavigationTree .portletContent > ul > li > a:hover {
+  background: #fcfcfd;
+}
+.portletNavigationTree .portletContent > ul > li > ul a {
+  padding-left: 20px;
+}
+.portletNavigationTree .portletContent > ul > li > ul a:before {
+  left: 0;
+}
+.portletNavigationTree .portletContent .navTreeCurrentNode a {
+  background: #fcfcfd;
 }

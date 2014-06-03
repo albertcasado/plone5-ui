@@ -17,24 +17,29 @@
 <body>
 
 <div class="example-box">
-	<p> YEP!: Links can not be at the same time on portlet Header and on portlet Footer. It is not a good accessibility practice. Choose one, maybe on portlet creation we can add a check [√] link on portlet footer, and if not on header.</p>
+	<p> Nav example without extra classes</p>
 	<section class="portlet portletNavigationTree" role="navigation">
 		<header class="portletHeader hiddenStructure">Navigation</header>
   		<nav class="portletContent">
 			<ul>
 				<li>
 					<a href="#">First section</a>
-					<ul>
-						<li><a href="#">First sub</a></li>
-						<li><a href="#">Sub second</a></li>
-					</ul>
 				</li>
 				<li>
-					<a href="#">Second current</a>
+					<a href="#" class="state-draft">Second section</a>
+				</li>
+				<li class="navTreeCurrentNode">
+					<a href="#">3 and current</a>
 					<ul>
 						<li><a href="#">First sub</a></li>
 						<li><a href="#">Last sub</a></li>
 					</ul>
+				</li>
+				<li>
+					<a href="#" class="state-private">Four and counting</a>
+				</li>
+				<li>
+					<a href="#" class="state-pending">Last section</a>
 				</li>
 			</ul>
   		</nav>
