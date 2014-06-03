@@ -51,22 +51,28 @@ a:hover {color: darken(@plone-link-color,15%); text-decoration: underline;}
 			font-weight: 300;
 			color: #666;
 		}
-		ul {
+		
+		> ul {
 			padding: 0;
 			list-style: none;
 			position: relative;		
-			li {
+			> li {
 				a {
 				display: block;
 				padding: 10px 15px 26px 30px;
-				border-top: @plone-portlet-border;
 				position: relative;
 				z-index: 1;
-				}
+				}	
+				> a {border-top: @plone-portlet-border;}
 				&:first-child a {border-top: 0;}
 				& a:before {
 					content:"•"; position: absolute; font-size: 29px; margin-top: -9px; left: 15px;
 					color: lighten(@plone-portlet-list-bullet, 15%);
+				}
+			}
+			ul {padding-left:15px; list-style: none;
+				a {font-size: 85%;
+					&:before {font-size:17px; margin-top:-3px}
 				}
 			}
 			time {display: block; z-index: 0; padding: 0 15px 10px 30px; font-weight:100; position: relative; margin-top:-26px; font-size: 12px; color: @plone-portlet-list-small-text;}
@@ -129,5 +135,6 @@ a:hover {color: darken(@plone-link-color,15%); text-decoration: underline;}
 }
 
 
-
+/*navigation*/
+.portletNavigationTree nav.portletContent > ul > li a { padding: 10px 15px 10px 30px;}
 

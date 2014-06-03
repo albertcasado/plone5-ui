@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+	<title>Plone Portlets</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<!-- Fontello icons for Toolbar -->
+	<link href='fontello/css/fontello.css' rel='stylesheet' type='text/css'>
+	<!-- Roboto Condensed for First level Toolbar -->
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+	<!-- Roboto second level toolbar-->
+	<link href='http://fonts.googleapis.com/css?family=Roboto:100,300,500' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="../plone-styles/css/all.plone.css" media="all">
+	<style> .example-box {padding: 50px;} html, body {background: #fafafa; margin: 0 auto; max-width: 400px; padding:0;} </style>
+</head>
+<body>
+
+<div class="example-box">
+	<p> YEP!: Links can not be at the same time on portlet Header and on portlet Footer. It is not a good accessibility practice. Choose one, maybe on portlet creation we can add a check [√] link on portlet footer, and if not on header.</p>
+	<section class="portlet portletNavigationTree" role="navigation">
+		<header class="portletHeader hiddenStructure">Navigation</header>
+  		<nav class="portletContent">
+			<ul>
+				<li>
+					<a href="#">First section</a>
+					<ul>
+						<li><a href="#">First sub</a></li>
+						<li><a href="#">Sub second</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">Second current</a>
+					<ul>
+						<li><a href="#">First sub</a></li>
+						<li><a href="#">Last sub</a></li>
+					</ul>
+				</li>
+			</ul>
+  		</nav>
+	</section>
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')</script>
+<script src="js/main.js"></script>
+
+
+</body>
+</html>
