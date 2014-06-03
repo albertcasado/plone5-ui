@@ -878,7 +878,7 @@ fieldset[disabled] .checkbox-inline {
 }
 .field.error > label,
 .field.error div.error {
-  color: #b40c33;
+  color: #c4183c;
 }
 .field.error div.error {
   padding-left: 30px;
@@ -905,13 +905,13 @@ fieldset[disabled] .checkbox-inline {
 .field.error input,
 .field.error textarea,
 .field.error select {
-  border-color: #b40c33;
+  border-color: #c4183c;
 }
 .field.error input:focus,
 .field.error textarea:focus,
 .field.error select:focus {
-  -webkit-box-shadow: 0 0 8px #f894ab;
-  box-shadow: 0 0 8px #f894ab;
+  -webkit-box-shadow: 0 0 8px #f6b2c0;
+  box-shadow: 0 0 8px #f6b2c0;
 }
 .formHelp {
   margin-top: 0;
@@ -927,7 +927,7 @@ fieldset[disabled] .checkbox-inline {
   box-shadow: inset 0 10px 10px -10px rgba(0, 0, 0, 0.05);
 }
 label .required:after {
-  color: #b40c33;
+  color: #c4183c;
   content: "⋆";
   font-size: 250%;
   line-height: 0;
@@ -941,7 +941,7 @@ label .required:after {
 }
 [type="checkbox"].required:after,
 [type="radio"].required:after {
-  color: #b40c33;
+  color: #c4183c;
   content: "⋆";
   font-size: 250%;
   line-height: 0;
@@ -1194,6 +1194,21 @@ fieldset[disabled] .destructive.active {
 .destructive .badge {
   color: #bb4f45;
   background-color: #ffffff;
+}
+.state-draft {
+  color: #d39105;
+}
+.state-pending {
+  color: #a5a912;
+}
+.state-private {
+  color: #c4183c;
+}
+.state-internal {
+  color: #d39105;
+}
+.state-internally_published {
+  color: #7924f9;
 }
 .breadcrumb {
   border-radius: 4px;
