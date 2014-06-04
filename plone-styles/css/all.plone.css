@@ -699,6 +699,7 @@ output {
 }
 .form-control,
 input[type="text"],
+input[type="password"],
 textarea,
 select {
   display: block;
@@ -720,6 +721,7 @@ select {
 }
 .form-control:focus,
 input[type="text"]:focus,
+input[type="password"]:focus,
 textarea:focus,
 select:focus {
   border-color: #64bee8;
@@ -729,6 +731,7 @@ select:focus {
 }
 .form-control::-moz-placeholder,
 input[type="text"]::-moz-placeholder,
+input[type="password"]::-moz-placeholder,
 textarea::-moz-placeholder,
 select::-moz-placeholder {
   color: #777777;
@@ -736,26 +739,31 @@ select::-moz-placeholder {
 }
 .form-control:-ms-input-placeholder,
 input[type="text"]:-ms-input-placeholder,
+input[type="password"]:-ms-input-placeholder,
 textarea:-ms-input-placeholder,
 select:-ms-input-placeholder {
   color: #777777;
 }
 .form-control::-webkit-input-placeholder,
 input[type="text"]::-webkit-input-placeholder,
+input[type="password"]::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder,
 select::-webkit-input-placeholder {
   color: #777777;
 }
 .form-control[disabled],
 input[type="text"][disabled],
+input[type="password"][disabled],
 textarea[disabled],
 select[disabled],
 .form-control[readonly],
 input[type="text"][readonly],
+input[type="password"][readonly],
 textarea[readonly],
 select[readonly],
 fieldset[disabled] .form-control,
 fieldset[disabled] input[type="text"],
+fieldset[disabled] input[type="password"],
 fieldset[disabled] textarea,
 fieldset[disabled] select {
   cursor: not-allowed;
@@ -1602,6 +1610,7 @@ a:hover {
   color: #767676;
   font-weight: 100;
   height: 40px;
+  text-align: center;
 }
 .portlet .portletContent table td > * {
   border-radius: 50%;
@@ -1660,6 +1669,12 @@ a:hover {
 }
 .portlet .portletContent table tbody tr:last-child td > * {
   margin-bottom: 10px;
+}
+.portlet .formControls {
+  border: 0;
+  background: none;
+  padding: 0;
+  box-shadow: none;
 }
 .portlet .portletFooter {
   border-top: 1px solid #e5e5e5;
