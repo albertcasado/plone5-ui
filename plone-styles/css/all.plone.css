@@ -1,4 +1,3 @@
-/* PLONE 5 BARCELONETA LESS */
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
@@ -1365,6 +1364,12 @@ body.section-front-page .breadcrumb {
 .autotabs .formControls {
   margin: 0 -12px -6px;
   border-radius: 0 0 4px 4px;
+}
+.folder-listing {
+  font-weight: 500;
+}
+.documentByLine {
+  font-weight: 300;
 }
 .photoAlbumEntry {
   display: inline-block;
