@@ -1203,17 +1203,42 @@ fieldset[disabled] .destructive.active {
 .state-draft {
   color: #d39105;
 }
+.state-draft:hover,
+.state-draft:active,
+.state-draft:focus {
+  color: #885e03;
+}
 .state-pending {
   color: #a5a912;
+}
+.state-pending:hover,
+.state-pending:active,
+.state-pending:focus {
+  color: #62640b;
 }
 .state-private {
   color: #c4183c;
 }
+.state-private:hover,
+.state-private:active,
+.state-private:focus {
+  color: #801027;
+}
 .state-internal {
   color: #d39105;
 }
+.state-internal:hover,
+.state-internal:active,
+.state-internal:focus {
+  color: #885e03;
+}
 .state-internally_published {
   color: #7924f9;
+}
+.state-internally_published:hover,
+.state-internally_published:active,
+.state-internally_published:focus {
+  color: #5405cc;
 }
 .breadcrumb {
   border-radius: 4px;
