@@ -1392,9 +1392,24 @@ body.section-front-page .breadcrumb {
 }
 .folder-listing {
   font-weight: 500;
+  list-style: none;
+  position: relative;
+  padding-left: 20px;
 }
-.documentByLine {
+.folder-listing li {
+  margin: 10px 0;
+}
+.folder-listing > li:before {
+  content: "•";
+  position: absolute;
+  font-size: 29px;
+  margin-top: -9px;
+  left: 0;
+  color: #a7daf2;
+}
+.folder-listing .documentByLine {
   font-weight: 300;
+  color: #777777;
 }
 .photoAlbumEntry {
   display: inline-block;
@@ -1798,4 +1813,68 @@ a:hover {
   font-size: 18px;
   margin-top: -3px;
   color: #777777;
+}
+#portal-footer-wrapper {
+  padding: 30px 0;
+  background-color: #2e3133;
+  color: #929ba1;
+  text-align: center;
+}
+#portal-footer-wrapper p {
+  border-bottom: 1px solid #929ba1;
+  padding-bottom: 28px;
+}
+#portal-footer-wrapper a {
+  color: #16a1e3;
+}
+#portal-footer-wrapper .portletWrapper {
+  display: inline-block;
+}
+#portal-footer-wrapper .portletWrapper:first-child {
+  display: block;
+  border-bottom: 1px solid #454545;
+  padding-bottom: 1em;
+  margin-bottom: .5em;
+}
+#portal-footer-wrapper .portlet {
+  background: transparent;
+  border: 0;
+  font-weight: 200;
+}
+#portal-footer-wrapper .portlet .portletContent {
+  background: transparent;
+  border: 0;
+}
+#portal-footer-wrapper .portlet .portletContent > * {
+  padding: inherit;
+}
+#portal-footer-wrapper .portlet .portletContent li {
+  background: transparent;
+  display: inline-block;
+  border: 0;
+  white-space: nowrap;
+  padding: 10px 30px;
+}
+#portal-footer-wrapper .portlet .portletItem:before {
+  content: "";
+}
+#portal-footer-wrapper .portlet .portletActions {
+  text-transform: uppercase;
+  font-size: 85%;
+  font-weight: 600;
+  margin-right: 15px;
+}
+#portal-siteactions,
+#portal-colophon {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 85%;
+}
+#portal-siteactions li {
+  font-weight: bold;
+  display: inline-block;
+  margin-left: 30px;
+}
+#portal-siteactions li:first-child {
+  margin-left: 0;
 }
