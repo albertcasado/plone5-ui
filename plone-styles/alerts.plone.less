@@ -1,31 +1,4 @@
-/****
-ALERTS
-****/
-
-// REMOVE ALL DL, DT and DD when the Plone old alert clean up be done
-
-@plone-link-color:							#0792d9; //plone-toolbar-link
-@plone-alert-padding:						15px;
-@plone-alert-border-radius:					4px;
-@plone-alert-link-font-weight:				300; //it depends on your font-family
-@plone-line-height-computed:				20px;
-
-@plone-alert-info-bg:						#aad6ea;
-@plone-alert-info-text:						rgba(0,0,0,.5);
-@plone-alert-info-border:					1px solid darken(@plone-alert-info-bg,4%);
-@plone-alert-info-bullet:					#3e7b91;
-
-@plone-alert-warning-bg:					#ebd380;
-@plone-alert-warning-text:					rgba(0,0,0,.5);
-@plone-alert-warning-border:				1px solid darken(@plone-alert-warning-bg,6%);
-@plone-alert-warning-bullet:				#bc8d0d;
-
-@plone-alert-error-bg:						#EC9C8D;
-@plone-alert-error-text:					rgba(0,0,0,.5);
-@plone-alert-error-border:					1px solid darken(@plone-alert-error-bg,2%);
-@plone-alert-error-bullet:					#ac493f;
-
-
+//*// ALERTS //*//
 .portalMessage-variant(@background; @border; @text-color) {
 	background-color: @background;
 	border: @border;
@@ -89,7 +62,7 @@ ALERTS
 	& > strong:before, & > dt:before {background-color: @plone-alert-error-bullet; content:"×";}
 }
 
-/* special shape for error ? 
+/* special octogonal shape for error
 .portalMessage.error {
 	& > strong:before, & > dt:before {
 		border-radius: 8px; //soften border
