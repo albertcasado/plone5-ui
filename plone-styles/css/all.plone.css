@@ -329,7 +329,8 @@ hr {
   border: 0;
   border-top: 1px solid #cccccc;
 }
-.sr-only {
+.sr-only,
+.hiddenStructure {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -1475,31 +1476,7 @@ body.section-front-page .breadcrumb {
 	}
 }
 */
-/*
-						@plone-portlet-header-bg:				#f8f8f9;
-						@plone-portlet-header-color:			#626262;
-						@plone-portlet-content-bg:				#fff;
-						@plone-portlet-footer-bg:				#fcfcfd;
-						@plone-portlet-border:					1px solid #e5e5e5;
-						@plone-portlet-list-bullet:				#64bee8; 
-						@plone-portlet-list-hover-bg:			#fcfcfd;
-						@plone-link-color:						#0792d9;
-						@plone-portlet-list-small-text:			#767676;
-						*/
-/*general, must be on other file*/
-a {
-  color: #0792d9;
-  text-decoration: none;
-}
-a:hover {
-  color: #05608f;
-  text-decoration: underline;
-}
-.hiddenStructure {
-  display: none;
-}
 .portlet {
-  font-family: Roboto, sans-serif;
   border: 1px solid #e5e5e5;
   border-radius: 4px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
@@ -1554,7 +1531,7 @@ a:hover {
   padding: 10px 15px;
   margin: 0;
   font-weight: 300;
-  color: #666;
+  color: #696969;
 }
 .portlet .portletContent > ul {
   padding: 0;
@@ -1616,7 +1593,7 @@ a:hover {
   border-bottom: 1px solid #e5e5e5;
 }
 .portlet .portletContent table thead th {
-  color: #767676;
+  color: #777777;
   font-weight: 100;
   height: 40px;
   text-align: center;
@@ -1693,29 +1670,6 @@ a:hover {
   font-weight: 300;
   box-shadow: inset 0 10px 10px -10px rgba(0, 0, 0, 0.05);
 }
-/*provisional, needs to be fixed on form elements*/
-.portlet .field {
-  margin: 0 0 15px;
-}
-.portlet input {
-  font-size: 14px;
-  font-weight: 300;
-  box-sizing: border-box;
-  width: 100%;
-  border-radius: 4px;
-  border: 1px solid #b2b2b2;
-  padding: 10px;
-  margin: 0;
-  font-family: Roboto, sans-serif;
-}
-.portlet label {
-  display: block;
-  color: #767676;
-}
-.portlet input[type="submit"] {
-  max-width: 100px;
-}
-/*navigation*/
 .portletNavigationTree nav.portletContent > ul > li a {
   padding: 10px 15px 10px 15px;
   border-top: 1px solid #e5e5e5;
@@ -1725,7 +1679,7 @@ a:hover {
 }
 .portletNavigationTree .portletContent > ul > li > a {
   display: block;
-  background: #f2f1f1;
+  background: #f3f3f4;
 }
 .portletNavigationTree .portletContent > ul > li > a:before {
   content: "";
@@ -1762,11 +1716,11 @@ a:hover {
 #portal-footer-wrapper {
   padding: 30px 0;
   background-color: #2e3133;
-  color: #929ba1;
+  color: #cccccc;
   text-align: center;
 }
 #portal-footer-wrapper p {
-  border-bottom: 1px solid #929ba1;
+  border-bottom: 1px solid #cccccc;
   padding-bottom: 28px;
 }
 #portal-footer-wrapper a {
@@ -1777,7 +1731,7 @@ a:hover {
 }
 #portal-footer-wrapper .portletWrapper:first-child {
   display: block;
-  border-bottom: 1px solid #454545;
+  border-bottom: 1px solid #4d4d4d;
   padding-bottom: 1em;
   margin-bottom: .5em;
 }
@@ -1798,6 +1752,9 @@ a:hover {
   display: inline-block;
   border: 0;
   white-space: nowrap;
+  padding: 10px 30px;
+}
+#portal-footer-wrapper .portlet#portal-colophon .portletContent a {
   padding: 10px 30px;
 }
 #portal-footer-wrapper .portlet .portletItem:before {

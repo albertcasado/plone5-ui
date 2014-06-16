@@ -15,6 +15,7 @@
   @opacity-ie: (@opacity * 100);
   filter: ~"alpha(opacity=@{opacity-ie})";
 }
+
 .transition(@transition) {
   -webkit-transition: @transition;
        -o-transition: @transition;
@@ -42,6 +43,7 @@
        -o-transition: -o-transform @transition;
           transition: transform @transition;
 }
+
 .user-select(@select) {
   -webkit-user-select: @select;
      -moz-user-select: @select;
