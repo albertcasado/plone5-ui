@@ -1538,9 +1538,17 @@ ALERTS
 	}
 }
 */
-/****
-PORTLETS
-****/
+/*
+						@plone-portlet-header-bg:				#f8f8f9;
+						@plone-portlet-header-color:			#626262;
+						@plone-portlet-content-bg:				#fff;
+						@plone-portlet-footer-bg:				#fcfcfd;
+						@plone-portlet-border:					1px solid #e5e5e5;
+						@plone-portlet-list-bullet:				#64bee8; 
+						@plone-portlet-list-hover-bg:			#fcfcfd;
+						@plone-link-color:						#0792d9;
+						@plone-portlet-list-small-text:			#767676;
+						*/
 /*general, must be on other file*/
 a {
   color: #0792d9;
@@ -1570,7 +1578,7 @@ a:hover {
   font-weight: 100;
   font-size: 18px;
   padding: 13px 15px;
-  color: #626262;
+  color: #696969;
 }
 .portlet.portletCalendar .portletHeader {
   text-align: center;
@@ -1648,7 +1656,7 @@ a:hover {
   position: relative;
   margin-top: -26px;
   font-size: 12px;
-  color: #767676;
+  color: #777777;
 }
 .portlet .portletContent > ul li:hover {
   background: #fcfcfd;

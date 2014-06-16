@@ -1,17 +1,15 @@
-/****
-PORTLETS
-****/
-
-@plone-portlet-header-bg:				#f8f8f9;
-@plone-portlet-header-color:			#626262;
-@plone-portlet-content-bg:				#fff;
-@plone-portlet-footer-bg:				#fcfcfd;
-@plone-portlet-border:					1px solid #e5e5e5;
-@plone-portlet-list-bullet:				#64bee8; 
-@plone-portlet-list-hover-bg:			#fcfcfd;
-@plone-link-color:						#0792d9;
-@plone-portlet-list-small-text:			#767676;
-
+//*// PORTLETS //*//
+						/*
+						@plone-portlet-header-bg:				#f8f8f9;
+						@plone-portlet-header-color:			#626262;
+						@plone-portlet-content-bg:				#fff;
+						@plone-portlet-footer-bg:				#fcfcfd;
+						@plone-portlet-border:					1px solid #e5e5e5;
+						@plone-portlet-list-bullet:				#64bee8; 
+						@plone-portlet-list-hover-bg:			#fcfcfd;
+						@plone-link-color:						#0792d9;
+						@plone-portlet-list-small-text:			#767676;
+						*/
 /*general, must be on other file*/
 a {color: @plone-link-color; text-decoration: none;}
 a:hover {color: darken(@plone-link-color,15%); text-decoration: underline;}
@@ -109,8 +107,7 @@ a:hover {color: darken(@plone-link-color,15%); text-decoration: underline;}
 			.today > * {background: #e5e5e5; font-weight: 500; box-shadow: 0 0 0 5px #e5e5e5;} //using shadow to expand background is because then table is only 20px per cell and not 30px
 			tbody tr:first-child td > * {margin-top: 10px;}
 			tbody tr:last-child td > * {margin-bottom: 10px;}
-		}
-		
+		}	
 	}
 	.formControls {border:0; background: none; padding: 0; box-shadow: none;}
 	.portletFooter {
@@ -149,6 +146,4 @@ a:hover {color: darken(@plone-link-color,15%); text-decoration: underline;}
 			&:after {content:"⟩"; position: absolute; right: 10px; font-size: 18px; margin-top:-3px; color: @plone-gray-light;}
 		}
 	}
-	
-
 }
