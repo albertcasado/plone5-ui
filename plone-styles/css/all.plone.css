@@ -1419,6 +1419,7 @@ body.section-front-page .breadcrumb {
 */
 .portlet {
   border: 1px solid #e5e5e5;
+  margin-bottom: 20px;
   border-radius: 4px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }
