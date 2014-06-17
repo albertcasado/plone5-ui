@@ -1683,7 +1683,7 @@ body.section-front-page .breadcrumb {
   color: #777777;
 }
 #portal-footer-wrapper {
-  padding: 30px 0;
+  padding: 30px 15px;
   background-color: #2e3133;
   color: #cccccc;
   text-align: center;
@@ -1708,8 +1708,10 @@ body.section-front-page .breadcrumb {
   background: transparent;
   border: 0;
   font-weight: 200;
+  box-shadow: none;
 }
 #portal-footer-wrapper .portlet .portletContent {
+  padding: 0;
   background: transparent;
   border: 0;
 }
@@ -1761,4 +1763,15 @@ body {
 html {
   position: relative;
   min-height: 100%;
+}
+@media (max-width: 767px) {
+  #portal-footer-wrapper .portlet .portletContent li {
+    padding: 10px;
+  }
+  #portal-footer-wrapper {
+    height: 250px;
+  }
+  body {
+    margin-bottom: 250px;
+  }
 }
