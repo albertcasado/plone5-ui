@@ -1268,6 +1268,9 @@ body.section-front-page .breadcrumb {
   background: #fcfcfd;
   font-weight: 300;
 }
+.autotabs .autotoc-nav a:last-child {
+  margin-right: 6px;
+}
 .autotabs .autotoc-nav a:hover {
   text-decoration: none;
   background: #fff;
@@ -1281,6 +1284,20 @@ body.section-front-page .breadcrumb {
 .autotabs .formControls {
   margin: 0 -12px -6px;
   border-radius: 0 0 4px 4px;
+}
+@media (max-width: 767px) {
+  .autotabs .autotoc-nav {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    max-height: 52px;
+    width: auto;
+    white-space: nowrap;
+    border-bottom: 0;
+    box-shadow: inset 0 -1px #e5e5e5;
+  }
+  .autotabs .autotoc-nav a:not(.active) {
+    box-shadow: inset 0 -1px #e5e5e5;
+  }
 }
 .folder-listing {
   font-weight: 500;

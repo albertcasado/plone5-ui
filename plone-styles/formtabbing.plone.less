@@ -20,6 +20,7 @@
 			border-radius: @plone-border-radius-base @plone-border-radius-base 0 0;
 			background: #fcfcfd;
 			font-weight: @plone-font-weight-regular;
+			&:last-child{margin-right: @plone-padding-base-vertical;}
 			&:hover {
 				text-decoration: none;
 				background: #fff;
@@ -36,4 +37,18 @@
 		margin: 0 -@plone-padding-base-horizontal -@plone-padding-base-vertical ;
 		border-radius: 0 0 @plone-border-radius-base @plone-border-radius-base;
 	}
+}
+
+//hide tabs with horizontal scrolling for small devices to avoid line break (remove media if you want to apply everywhere)
+@media (max-width: @plone-screen-xs-max) {
+  .autotabs .autotoc-nav {
+    overflow-x: scroll;
+	overflow-y: hidden;
+	max-height: 52px;
+	width: auto;
+	white-space: nowrap;
+	border-bottom: 0;
+	box-shadow: inset 0 -1px @plone-portlet-contrast-bg;
+	a:not(.active) {box-shadow: inset 0 -1px @plone-portlet-contrast-bg;}
+  }
 }
