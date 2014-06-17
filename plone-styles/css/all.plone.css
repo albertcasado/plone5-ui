@@ -1236,10 +1236,20 @@ body.section-front-page .breadcrumb {
   border-color: 1px solid #e5e5e5;
   cursor: default;
 }
+@media (max-width: 480px) {
+  .listingBar li {
+    display: none;
+  }
+  .listingBar li.previous,
+  .listingBar li.next {
+    display: inline;
+  }
+}
 .autotabs {
   background: #fff;
   padding: 6px 12px;
   border: 1px solid #e5e5e5;
+  margin-bottom: 20px;
   border-radius: 4px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }

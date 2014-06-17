@@ -69,6 +69,14 @@
   // .previous & .next classes on the markup, not used as a base css
 }
 
+// mobile pagination only shows next and previous as default behaviour
+@media (max-width: @plone-screen-xs-min) {
+  .listingBar {
+    li {display: none;}
+    li.previous, li.next {display: inline;}
+  }
+}
+
 
 
 
