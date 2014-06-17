@@ -15,9 +15,74 @@
   <style>main {padding: 0 15px;}</style>
 </head>
 <body>
-<header>
-    Plone
+<header id="portal-top">
+  <div id="portal-header">
+    <p class="hiddenStructure">
+      <a accesskey="2" href="#">Skip to content</a> |
+      <a accesskey="6" href="#">Skip to navigation</a>
+    </p>
+    <a id="portal-logo" title="Lloc web" accesskey="1" href="#">
+      <img src="logo.png" alt="Plone site" title="Plone site" height="56" width="215"></a>
+    <div id="portal-searchbox">
+      <form id="searchGadget_form" action="#" role="search">
+        <div class="LSBox">
+        <label class="hiddenStructure" for="searchGadget">Search Site</label>
+
+        <input name="SearchableText" type="text" size="18" title="Search Site" placeholder="Search Site" accesskey="4" class="searchField" id="searchGadget">
+
+        <input class="searchButton" type="submit" value="Search">
+
+        <div class="searchSection">
+            <input id="searchbox_currentfolder_only" class="noborder" type="checkbox" name="path" value="/Plone">
+            <label for="searchbox_currentfolder_only" style="cursor: pointer">only in current section</label>
+        </div>
+        <div class="LSResult" id="LSResult"><div class="LSShadow" id="LSShadow"></div></div>
+        </div>
+      </form>
+      <div id="portal-advanced-search" class="hiddenStructure">
+          <a href="#" accesskey="5">Advanced Search…</a>
+      </div>
+    </div>
+  </div>
 </header>
+<div id="portal-mainnavigation">
+  <p class="hiddenStructure">Navigation</p>
+  <nav class="navbar" id="portal-globalnav-wrapper" role="navigation">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#portal-globalnav-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="portal-globalnav-collapse">
+      <ul class="nav navbar-nav" id="portal-globalnav">      
+        <li id="portaltab-index_html" class="selected">
+          <a href="#" title="">Home</a>
+        </li>              
+        <li id="portaltab-events" class="plain">
+          <a href="#" title="Site Events">Events</a>
+        </li>    
+        <li id="portaltab-Members" class="plain">
+          <a href="h#" title="Site Users">Users</a>
+        </li>       
+        <li id="portaltab-news" class="plain">
+          <a href="#" title="Site News">News</a>
+        </li>    
+        <li id="portaltab-scania.xlsx" class="plain">
+          <a href="#" title="">SCANIA.xlsx</a>
+        </li>
+        <li id="portaltab-folder" class="plain">
+          <a href="#" title="">Folder</a>
+        </li>     
+        <li id="portaltab-pagina-prova" class="plain">
+          <a href="h#" title="summary">pàgina prova</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
 
 <main>
   <nav id="portal-breadcrumbs" class="breadcrumb" role="navigation">
@@ -292,17 +357,17 @@
             <section class="portlet portletActions">
               <ul class="portletContent">  
                   <li class="portletItem odd first ">
-                    <a href="http://plone.iskra.cat:8080/Plone/sitemap">
+                    <a href="#">
                       <span>Site Map</span>
                     </a>
                   </li>
                   <li class="portletItem even  ">
-                    <a href="http://plone.iskra.cat:8080/Plone/accessibility-info">
+                    <a href="#">
                       <span>Accessibility</span>
                     </a>
                   </li> 
                   <li class="portletItem odd  last">
-                    <a href="http://plone.iskra.cat:8080/Plone/contact-info" class="pat-modal" data-pat-modal="{}">
+                    <a href="#" class="pat-modal" data-pat-modal="{}">
                       <span>Contact</span>
                     </a>
                   </li>   

@@ -138,6 +138,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/css\/sitenav.plone.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/css\/sitenav.plone.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/css\/views.plones.css": {
 		"fileType": 16,
 		"ignore": 1,
@@ -197,6 +206,26 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/formtabbing.plone.less",
 		"outputAbbreviatedPath": "\/css\/formtabbing.plone.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"relativeURLS": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"strictImports": 0,
+		"strictMath": 0,
+		"strictUnits": 0
+		},
+	"\/header.plone.less": {
+		"allowInsecureImports": 0,
+		"createSourceMap": 0,
+		"disableJavascript": 0,
+		"fileType": 1,
+		"ieCompatibility": 1,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/header.plone.less",
+		"outputAbbreviatedPath": "\/css\/header.plone.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -427,16 +456,16 @@
 		"strictMath": 0,
 		"strictUnits": 0
 		},
-	"\/scaffoling.plone.less": {
+	"\/sitenav.plone.less": {
 		"allowInsecureImports": 0,
 		"createSourceMap": 0,
 		"disableJavascript": 0,
 		"fileType": 1,
 		"ieCompatibility": 1,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/scaffoling.plone.less",
-		"outputAbbreviatedPath": "\/css\/scaffoling.plone.css",
+		"inputAbbreviatedPath": "\/sitenav.plone.less",
+		"outputAbbreviatedPath": "\/css\/sitenav.plone.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
