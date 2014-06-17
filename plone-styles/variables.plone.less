@@ -25,6 +25,8 @@
 	@plone-default-internal-color:				darken(@plone-toolbar-internal-color,15%); // is draft
 	@plone-default-internally-published-color:	darken(@plone-toolbar-internally-published-color,5%); // is intranet
 
+
+
 //*// SCAFFOLDING
 @plone-body-bg:            				     #fafafa; //almost-white
 @plone-footer-bg:            				 #2e3133; //blued-darkgray
@@ -57,13 +59,13 @@
 @plone-line-height-computed:    floor((@plone-font-size-base * @plone-line-height-base)); // ~20px
 
 @plone-headings-font-family:    inherit;
-@plone-headings-font-weight:    300;
-@plone-headings-line-height:    1.1;
-@plone-headings-color:          inherit;
+	@plone-headings-font-weight:    300;
+	@plone-headings-line-height:    1.1;
+	@plone-headings-color:          inherit;
 
 @plone-font-weight-light:		100; //default theme uses 100, 300, 500, change it on your site. Standard regular is 400
-@plone-font-weight-regular:		300;
-@plone-font-weight-bold:		500;
+	@plone-font-weight-regular:		300;
+	@plone-font-weight-bold:		500;
 
 
 
@@ -129,7 +131,10 @@
 @plone-screen-sm-max:              (@plone-screen-md-min - 1);
 @plone-screen-md-max:              (@plone-screen-lg-min - 1);
 
-
+@plone-grid-gutter-width:         30px;
+@plone-grid-float-breakpoint:     @plone-screen-sm-min;
+//** Point at which the navbar begins collapsing.
+@plone-grid-float-breakpoint-max: (@plone-grid-float-breakpoint - 1);
 
 //*// Buttons
 @plone-btn-standalone-color:          		@plone-gray-dark;
@@ -232,7 +237,15 @@
 //** Text color of current page in the breadcrumb
 @plone-breadcrumb-active-color:       @plone-gray-light;
 
-
+//*// SITE NAV
+@plone-sitenav-height:                        50px;
+	@plone-sitenav-margin-bottom:             @plone-line-height-computed;
+	@plone-sitenav-border-radius:             @plone-border-radius-base;
+	@plone-sitenav-padding-horizontal:        floor((@plone-grid-gutter-width / 2));
+	@plone-sitenav-padding-vertical:          ((@plone-sitenav-height - @plone-line-height-computed) / 2);
+	@plone-sitenav-collapse-max-height:       340px;
+	@plone-sitenav-link-padding:              10px 15px;
+	@plone-sitenav-link-hover-bg:             @plone-gray-lighter;
 
 //*// PAGINATION
 @plone-pagination-color:                     @plone-link-color;

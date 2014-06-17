@@ -1682,6 +1682,121 @@ body.section-front-page .breadcrumb {
   margin-top: -3px;
   color: #777777;
 }
+body {
+  margin-top: 15px;
+}
+#portal-header #portal-logo {
+  float: left;
+}
+#portal-header #portal-searchbox {
+  float: right;
+  max-width: 50%;
+  width: 250px;
+  white-space: nowrap;
+}
+#portal-header #portal-searchbox [type="text"] {
+  width: calc(180px);
+  display: inline-block;
+}
+#portal-header #portal-searchbox [type="submit"] {
+  width: 70px;
+  display: inline-block;
+  margin-left: -1px;
+  margin-top: -4px;
+}
+#portal-header #portal-searchbox label {
+  font-size: 86.667%;
+}
+#portal-header #portal-searchbox form > div {
+  font-size: 0;
+}
+#portal-header #portal-searchbox form > div > * {
+  font-size: 14px;
+}
+#portal-header:before,
+#portal-header:after {
+  content: " ";
+  display: table;
+}
+#portal-header:after {
+  clear: both;
+}
+.nav {
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+.nav > li {
+  position: relative;
+  display: block;
+}
+.nav > li > a {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+}
+.nav > li > a:hover,
+.nav > li > a:focus {
+  text-decoration: none;
+  background-color: #cccccc;
+}
+.navbar {
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+}
+@media (min-width: 768px) {
+  .navbar {
+    border-radius: 4px;
+  }
+}
+.navbar-nav {
+  margin: 7.5px -15px;
+}
+.navbar-nav > li > a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 20px;
+}
+@media (max-width: 767px) {
+  .navbar-nav .open .dropdown-menu {
+    position: static;
+    float: none;
+    width: auto;
+    margin-top: 0;
+    background-color: transparent;
+    border: 0;
+    box-shadow: none;
+  }
+  .navbar-nav .open .dropdown-menu > li > a,
+  .navbar-nav .open .dropdown-menu .dropdown-header {
+    padding: 5px 15px 5px 25px;
+  }
+  .navbar-nav .open .dropdown-menu > li > a {
+    line-height: 20px;
+  }
+  .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-nav .open .dropdown-menu > li > a:focus {
+    background-image: none;
+  }
+}
+@media (min-width: 768px) {
+  .navbar-nav {
+    float: left;
+    margin: 0;
+  }
+  .navbar-nav > li {
+    float: left;
+  }
+  .navbar-nav > li > a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .navbar-nav.navbar-right:last-child {
+    margin-right: -15px;
+  }
+}
 #portal-footer-wrapper {
   padding: 30px 15px;
   background-color: #2e3133;

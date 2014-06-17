@@ -1,1 +1,30 @@
 //*// HEADER //*//
+body {margin-top: 15px}
+
+#portal-header {
+	#portal-logo {
+		float: left;
+	}
+	#portal-searchbox {
+		float:right;
+		max-width: 50%;
+		width: 250px;	
+		white-space: nowrap;
+		[type="text"] {
+			width: calc(250px - 70px); //searchboxwidth - submit
+			display: inline-block;}
+		[type="submit"] {
+			width: 70px; 
+			display: inline-block;
+			margin-left: -1px;
+			margin-top: -4px;
+		}
+		label {font-size: 86.667%}
+
+		//white space between elements inline-block
+		form > div {font-size: 0;
+			> * {font-size: @plone-font-size-base;}
+		}
+	}
+	.clearfix(); //clear floats
+}
