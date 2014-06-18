@@ -1812,15 +1812,22 @@ body {
   border: 1px solid white;
   border-radius: 4px;
   /*
-  // Menu (That option with a word, witch is language-dependant, is to ensure a higher tap ratio on the menu)
-  .icon-bar:after {
-  	content:"Menu";
-  	position: relative;
-  	color: white;
+  .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+    background: white;
+    margin-top: 2px;
   }
-  .icon-bar + .icon-bar:after {content: "";}
-  //end menu icon-bar
-*/
+  .icon-bar + .icon-bar {
+    margin-top: 5px;
+  }
+  .icon-bar + .icon-bar + .icon-bar {
+    margin-bottom: 3px;
+  }
+  //end burgerbar icon-bar
+  */
 }
 .navbar-toggle:focus {
   outline: 0;
@@ -1829,19 +1836,13 @@ body {
   background-color: #6499c0;
   border-color: #4581ab;
 }
-.navbar-toggle .icon-bar {
-  display: block;
-  width: 22px;
-  height: 2px;
-  border-radius: 1px;
-  background: white;
-  margin-top: 2px;
+.navbar-toggle .icon-bar:after {
+  content: "Menu";
+  position: relative;
+  color: white;
 }
-.navbar-toggle .icon-bar + .icon-bar {
-  margin-top: 5px;
-}
-.navbar-toggle .icon-bar + .icon-bar + .icon-bar {
-  margin-bottom: 3px;
+.navbar-toggle .icon-bar + .icon-bar:after {
+  content: "";
 }
 @media (min-width: 768px) {
   .navbar-toggle {
