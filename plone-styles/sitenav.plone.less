@@ -1,4 +1,5 @@
 //*// SITE NAV //*//
+
 .nav {
   margin-bottom: 0;
   padding-left: 0; // Override default ul/ol
@@ -13,6 +14,8 @@
       position: relative;
       display: block;
       padding: @plone-sitenav-link-padding;
+      color: white;
+      font-size: ceil((@plone-font-size-base * 1.15));;
       &:hover,
       &:focus {
         text-decoration: none;
@@ -23,23 +26,63 @@
 }
 
 .navbar {
+  background-color: @plone-sitenav-bg;
   position: relative;
   min-height: @plone-sitenav-height; // Ensure a navbar always shows (e.g., without a .navbar-brand in collapsed mode)
   margin-bottom: @plone-sitenav-margin-bottom;
   border: 1px solid transparent;
+  box-shadow: 0 1px 3px rgba(0,0,0,.17);
 
   // Prevent floats from breaking the navbar
   &:extend(.clearfix all);
 
+
+}
+
+.navbar-header {
+  &:extend(.clearfix all);
+
   @media (min-width: @plone-grid-float-breakpoint) {
-    border-radius: @plone-sitenav-border-radius;
+    float: left;
   }
 }
 
+.navbar-toggle {
+  position: relative;
+  float: right;
+  margin-right: @plone-sitenav-padding-horizontal;
+  padding: 9px 10px;
+  margin-top: ((@plone-sitenav-height - 34px) / 2);
+  margin-bottom: ((@plone-sitenav-height - 34px) / 2);
+  background-color: transparent;
+  background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+  border: 1px solid transparent;
+  border-radius: @plone-border-radius-base;
 
+  // We remove the `outline` here, but later compensate by attaching `:hover`
+  // styles to `:focus`.
+  &:focus {
+    outline: 0;
+  }
+
+  // Bars
+  .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+  }
+  .icon-bar + .icon-bar {
+    margin-top: 4px;
+  }
+
+  @media (min-width: @plone-grid-float-breakpoint) {
+    display: none;
+  }
+}
 
 .navbar-nav {
-  margin: (@plone-sitenav-padding-vertical / 2) -@plone-sitenav-padding-horizontal;
+  margin: -1px -@plone-sitenav-padding-horizontal (@plone-sitenav-padding-vertical / 2);
 
   > li > a {
     padding-top:    10px;
@@ -74,7 +117,7 @@
   // Uncollapse the nav
   @media (min-width: @plone-grid-float-breakpoint) {
     float: left;
-    margin: 0;
+    margin: -1px 0 0 0;
 
     > li {
       float: left;
