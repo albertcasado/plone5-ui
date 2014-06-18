@@ -1692,20 +1692,20 @@ body {
   float: left;
 }
 #portal-header #portal-searchbox {
-  float: right;
-  max-width: 50%;
-  width: 250px;
+  padding-top: 20px;
+  clear: left;
+  width: 100%;
   white-space: nowrap;
 }
+#portal-header #portal-searchbox .searchSection {
+  display: none;
+}
 #portal-header #portal-searchbox [type="text"] {
-  width: calc(180px);
+  width: 100%;
   display: inline-block;
 }
 #portal-header #portal-searchbox [type="submit"] {
-  width: 70px;
-  display: inline-block;
-  margin-left: -1px;
-  margin-top: -4px;
+  display: none;
 }
 #portal-header #portal-searchbox label {
   font-size: 86.667%;
@@ -1715,6 +1715,41 @@ body {
 }
 #portal-header #portal-searchbox form > div > * {
   font-size: 14px;
+}
+@media (min-width: 768px) {
+  #portal-header #portal-searchbox {
+    margin-top: 5px;
+    margin-bottom: -5px;
+    padding-top: 0;
+    clear: none;
+    float: right;
+    max-width: 50%;
+    width: 250px;
+    white-space: nowrap;
+  }
+  #portal-header #portal-searchbox .searchSection {
+    display: inherit;
+  }
+  #portal-header #portal-searchbox [type="text"] {
+    width: calc(180px);
+    display: inline-block;
+  }
+  #portal-header #portal-searchbox [type="submit"] {
+    display: none;
+    width: 70px;
+    display: inline-block;
+    margin-left: -1px;
+    margin-top: -4px;
+  }
+  #portal-header #portal-searchbox label {
+    font-size: 86.667%;
+  }
+  #portal-header #portal-searchbox form > div {
+    font-size: 0;
+  }
+  #portal-header #portal-searchbox form > div > * {
+    font-size: 14px;
+  }
 }
 #portal-header:before,
 #portal-header:after {
