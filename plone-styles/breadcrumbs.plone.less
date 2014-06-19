@@ -9,6 +9,9 @@
     color: @plone-gray-light;
     padding: @plone-breadcrumb-padding-vertical 0 @plone-breadcrumb-padding-vertical @plone-breadcrumb-padding-horizontal;
     font-weight: @plone-font-weight-light;
+    @media (max-width: @plone-screen-sm-min) {
+      display: none;
+    }
   }
   ol {
     display: inline-block;

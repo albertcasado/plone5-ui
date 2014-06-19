@@ -1133,6 +1133,11 @@ fieldset[disabled] .destructive.active {
   padding: 8px 0 8px 15px;
   font-weight: 100;
 }
+@media (max-width: 768px) {
+  .breadcrumb > * > span {
+    display: none;
+  }
+}
 .breadcrumb ol {
   display: inline-block;
   padding: 8px 15px;
