@@ -1699,7 +1699,11 @@ body {
 #portal-header #portal-searchbox {
   padding-top: 20px;
   clear: left;
-  width: 100%;
+  width: 67%;
+  position: absolute;
+  z-index: 1;
+  margin-left: 3px;
+  margin-top: 60px;
   white-space: nowrap;
 }
 #portal-header #portal-searchbox .searchSection {
