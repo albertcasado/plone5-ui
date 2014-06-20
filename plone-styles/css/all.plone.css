@@ -1727,6 +1727,7 @@ body {
 }
 @media (min-width: 768px) {
   #portal-header #portal-searchbox {
+    position: relative;
     margin-top: 5px;
     margin-bottom: -5px;
     padding-top: 0;
