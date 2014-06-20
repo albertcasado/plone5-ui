@@ -499,7 +499,7 @@ body > main {
   margin: 0 auto;
 }
 body #portal-globalnav-wrapper .navbar-collapse {
-  width: 960px;
+  max-width: 960px;
   margin: 0 auto;
 }
 body #portal-globalnav-wrapper .navbar-nav {
@@ -507,7 +507,7 @@ body #portal-globalnav-wrapper .navbar-nav {
   margin-right: -15px;
 }
 body #portal-header {
-  width: 960px;
+  max-width: 960px;
   margin: 15px auto;
 }
 #portal-breadcrumbs {
@@ -519,7 +519,7 @@ body #portal-header {
 }
 #portal-breadcrumbs .container-fluid {
   margin: 0 auto;
-  width: 960px;
+  max-width: 960px;
 }
 #portal-mainnavigation {
   z-index: 1;
