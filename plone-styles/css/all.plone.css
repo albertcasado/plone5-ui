@@ -1787,9 +1787,9 @@ body.section-front-page .breadcrumb {
   clear: left;
   width: 67%;
   position: absolute;
-  z-index: 1;
+  z-index: 2;
   margin-left: 3px;
-  margin-top: 60px;
+  margin-top: 55px;
   white-space: nowrap;
 }
 #portal-header #portal-searchbox .searchSection {
