@@ -494,9 +494,37 @@ pre code {
   background-color: transparent;
   border-radius: 0;
 }
-body {
+body > main {
   max-width: 960px;
   margin: 0 auto;
+}
+body #portal-globalnav-wrapper .navbar-collapse {
+  width: 960px;
+  margin: 0 auto;
+}
+body #portal-globalnav-wrapper .navbar-nav {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+body #portal-header {
+  width: 960px;
+  margin: 15px auto;
+}
+#portal-breadcrumbs {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  margin-top: -50px;
+  z-index: 0;
+}
+#portal-breadcrumbs .container-fluid {
+  margin: 0 auto;
+  width: 960px;
+}
+#portal-mainnavigation {
+  -index: 1;
+  position: relative;
+  margin-bottom: 50px;
 }
 div.row {
   float: left;
@@ -1814,9 +1842,6 @@ body.section-front-page .breadcrumb {
   margin-top: -3px;
   color: #777777;
 }
-body {
-  margin-top: 15px;
-}
 #portal-header {
   margin-bottom: 20px;
 }
@@ -2122,6 +2147,7 @@ body {
 }
 #portal-footer-wrapper {
   position: absolute;
+  left: 0;
   bottom: 0;
   width: 100%;
   height: 150px;
