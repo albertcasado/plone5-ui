@@ -109,234 +109,236 @@
           <strong id="alert-title">Error</strong>
           <span id="alert-description">Changes not saved</span>
   </div>
-  <div style="float:left; width:25%;">
-    <section class="portlet portletNavigationTree" role="navigation">
-    <header class="portletHeader hiddenStructure">Navigation</header>
-      <nav class="portletContent">
-      <ul>
-        <li>
-          <a href="#">First section</a>
-        </li>
-        <li>
-          <a href="#" class="state-draft">Second section</a>
-        </li>
-        <li class="navTreeCurrentNode">
-          <a href="#">3 and current</a>
+  <div class="row">
+    <div class="cell position-0 width-1:4">
+      <section class="portlet portletNavigationTree" role="navigation">
+        <header class="portletHeader hiddenStructure">Navigation</header>
+          <nav class="portletContent">
           <ul>
-            <li><a href="#">First sub</a></li>
-            <li><a href="#">Last sub</a></li>
+            <li>
+              <a href="#">First section</a>
+            </li>
+            <li>
+              <a href="#" class="state-draft">Second section</a>
+            </li>
+            <li class="navTreeCurrentNode">
+              <a href="#">3 and current</a>
+              <ul>
+                <li><a href="#">First sub</a></li>
+                <li><a href="#">Last sub</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="state-private">Four and counting</a>
+            </li>
+            <li>
+              <a href="#" class="state-pending">Last section</a>
+            </li>
           </ul>
-        </li>
-        <li>
-          <a href="#" class="state-private">Four and counting</a>
-        </li>
-        <li>
-          <a href="#" class="state-pending">Last section</a>
-        </li>
-      </ul>
-      </nav>
-  </section>
-  </div>
-    <div style="float:left; width:50%; padding:0 15px;">
-    <form class="rowlike enableUnloadProtection enableFormTabbing pat-autotoc  kssattr-formname-edit autotabs" action="" method="post" enctype="multipart/form-data" id="form">
-    <nav class="autotoc-nav"><a href="#fieldsetlegend-default" class="autotoc-level-1 active" tabindex="-1">Default</a><a href="#fieldsetlegend-categorization" class="autotoc-level-1">Categorization</a><a href="#fieldsetlegend-dates" class="autotoc-level-1">Dates</a><a href="#fieldsetlegend-ownership" class="autotoc-level-1">Ownership</a><a href="#fieldsetlegend-settings" class="autotoc-level-1">Settings</a></nav>
-
-    <fieldset id="fieldset-default" class="autotoc-section active">
-      <legend id="fieldsetlegend-default">Default</legend>
-
-      <div class="field error" data-fieldname="form.widgets.IDublinCore.title" id="formfield-form-widgets-IDublinCore-title">
-        <label for="form-widgets-IDublinCore-title" class="horizontal">
-          Title
-          <span class="required horizontal" title="Required">&nbsp;</span>
-        </label>
-
-        <div class="fieldErrorBox">
-          <div class="error">Required input is missing.</div>
-        </div>
-
-        <input id="form-widgets-IDublinCore-title" name="form.widgets.IDublinCore.title" class="text-widget required textline-field" value="Folder" type="text">
-      </div>
-
-      <div class="field" id="formfield-form-widgets-IDublinCore-description">
-        <label for="form-widgets-IDublinCore-description" class="horizontal">
-          Summary
-          <span class="formHelp">Used in item listings and search results.</span>
-        </label>
-        <div class="fieldErrorBox"></div>
-        <textarea id="form-widgets-IDublinCore-description" name="form.widgets.IDublinCore.description" class="textarea-widget text-field"></textarea>
-      </div>
-
-      <div class="formControls">
-                <input class="submit-widget button-field context" value="Save" type="submit">
-                <input class="submit-widget button-field standalone" value="Cancel" type="submit">
-                
-
-      </div>
-    </fieldset>
-  </form>
-  <div class="plone-has-table">
-    <table class="listing" summary="Content listing">
-          <caption>Content listing</caption>
-                  <thead>
-                      <tr>
-                          <th class="nosort">Title</th>
-                          <th class="nosort">Author</th>
-                          <th class="nosort">Type</th>
-                          <th class="nosort">Modified</th>
-                      </tr>
-                  </thead>
-
-                  <tbody>
-                      <tr class="odd">
-              <td><a href="#" class="state-pending contenttype-collection" title="Site News">News</a></td>
-              <td><a href="#">Name Surname</a></td>
-              <td>Collection</td>
-              <td>Apr 30, 2014 04:57 AM</td>
-            </tr>
-            <tr class="even">
-              <td><a href="#" class="state-published contenttype-news-item" title="Summary">New</a></td>
-              <td><a href="#">Name Surname</a></td>
-              <td>News Item</td>
-              <td>May 01, 2014 04:10 AM</td>
-            </tr>
-            <tr class="odd">
-              <td><a href="#" class="state-published contenttype-news-item" title="sumari">Notícia</a></td>
-              <td><a href="#">Name Surname</a></td>
-              <td>News Item</td>
-              <td>May 01, 2014 04:14 AM</td>
-            </tr>
-            <tr class="even">
-              <td><a href="#" class="state-pending contenttype-news-item" title="Prova de sumary">Títol</a></td>
-              <td><a href="#">Name Surname</a></td>
-              <td>News Item</td><td>Apr 29, 2014 10:46 AM</td>
-            </tr>
-          </tbody>
-      </table>
-
-  </div>
-  <ul role="widget" aria-label="Pagination" class="listingBar">
-    <li class="previous"><a href="#">Previous<span class="sr-only"> page</span></a></li>
-    <li><a href="#"><span class="sr-only">page </span>1</a></li>
-    <li><a href="#" rel="next"><span class="sr-only">page </span>2</a></li>
-    <li class="active"><a aria-disabled="true" href="#"><span class="sr-only">You're currently on page </span>3</a></li>
-    <li><a href="#"><span class="sr-only">page </span>4</a></li>
-    <li><a href="#"><span class="sr-only">page </span>5</a></li>
-    <li class="next disabled"><a href="#" tabindex="-1">Next <span class="sr-only">page</span></a></li>
-  </ul>
-  </div>
-  <div style="float:left; width:25%;">
-    <section class="portlet portletNews" role="section">
-    <header class="portletHeader"><a href"#"="">News</a></header>
-      <section class="portletContent">
-      <ul>
-        <li class="portletItem">
-          <a href="#" class="tile"> Notícia</a>
-          <time datetime="11-09-2014" class="portletItemDetails">November 9, 2014</time>
-        </li>
-        <li class="portletItem">
-          <a href="#" class="tile"> New</a>
-                <time datetime="11-09-2014" class="portletItemDetails">November 11, 2014 to November 9, 2014</time>
-        </li>
-      </ul>
+          </nav>
       </section>
-      </section>
-      <section class="portlet portletCalendar" role="section">
-    <header class="portletHeader">
-      <a href="#" rel="nofollow" class="calendarPrevious" title="Previous month" data-year="2014" data-month="4">«</a>
-      May 2014
-      <a href="#" rel="nofollow" class="calendarNext" title="Next month" data-year="2014" data-month="6">»</a>
-    </header>
-      <section class="portletContent">
-      <table class="ploneCalendar" summary="Calendari">
-              <caption class="hiddenStructure">May 2014</caption>
-              <thead>
-                  <tr class="weekdays">
-                    <th scope="col"><abbr title="monday">M</abbr></th>
-                    <th scope="col"><abbr title="tuesday">T</abbr></th>
-                    <th scope="col"><abbr title="wednesday">W</abbr></th>
-                    <th scope="col"><abbr title="thursday">T</abbr></th>
-                    <th scope="col"><abbr title="friday">F</abbr></th>
-                    <th scope="col"><abbr title="saturnday">S</abbr></th>
-                    <th scope="col"><abbr title="sunday">S</abbr></th>
-                  </tr>
-              </thead>
-              <tbody>
-                  <tr>
-                    <td class="cal_prev_month"><span>28</span></td>
-                    <td class="cal_prev_month"><span>29</span></td>
-                    <td class="cal_prev_month"><span>30</span></td>
-                    <td><span>1</span></td>
-                    <td><span>2</span></td>
-                    <td><span>3</span></td>
-                    <td><span>4</span></td>
-                  </tr>
-                  <tr>
-                    <td><span>5</span></td>
-                    <td><span>6</span></td>
-                    <td class="today"><span>7</span></td>
-                    <td class="cal_has_events"><a href="#">8</a></td>
-                    <td><span>9</span></td>
-                    <td><span>10</span></td>
-                    <td><span>11</span></td>
-                  </tr>
-                  <tr>
-                    <td><span>12</span></td>
-                    <td><span>13</span></td>
-                    <td class="cal_has_events"><a href="#">14</a></td>
-                    <td><span>15</span></td>
-                    <td><span>16</span></td>
-                    <td><span>17</span></td>
-                    <td><span>18</span></td>
-                  </tr>
-                  <tr>
-                    <td><span>19</span></td>
-                    <td><span>20</span></td>
-                    <td class="cal_has_events"><a href="#">21</a></td>
-                    <td><span>22</span></td>
-                    <td><span>23</span></td>
-                    <td><span>24</span></td>
-                    <td><span>25</span></td>
-                  </tr>
-                  <tr>
-                    <td><span>26</span></td>
-                    <td><span>27</span></td>
-                    <td><span>28</span></td>
-                    <td><span>29</span></td>
-                    <td><span>30</span></td>
-                    <td class="cal_has_events"><a href="#">31</a></td>
-                    <td class="cal_next_month cal_has_events"><a href="#">1</a></td>
-                  </tr>
+    </div>
+    <div class="cell position-3 width-1:2">
+      <form class="rowlike enableUnloadProtection enableFormTabbing pat-autotoc  kssattr-formname-edit autotabs" action="" method="post" enctype="multipart/form-data" id="form">
+        <nav class="autotoc-nav"><a href="#fieldsetlegend-default" class="autotoc-level-1 active" tabindex="-1">Default</a><a href="#fieldsetlegend-categorization" class="autotoc-level-1">Categorization</a><a href="#fieldsetlegend-dates" class="autotoc-level-1">Dates</a><a href="#fieldsetlegend-ownership" class="autotoc-level-1">Ownership</a><a href="#fieldsetlegend-settings" class="autotoc-level-1">Settings</a></nav>
+
+        <fieldset id="fieldset-default" class="autotoc-section active">
+          <legend id="fieldsetlegend-default">Default</legend>
+
+          <div class="field error" data-fieldname="form.widgets.IDublinCore.title" id="formfield-form-widgets-IDublinCore-title">
+            <label for="form-widgets-IDublinCore-title" class="horizontal">
+              Title
+              <span class="required horizontal" title="Required">&nbsp;</span>
+            </label>
+
+            <div class="fieldErrorBox">
+              <div class="error">Required input is missing.</div>
+            </div>
+
+            <input id="form-widgets-IDublinCore-title" name="form.widgets.IDublinCore.title" class="text-widget required textline-field" value="Folder" type="text">
+          </div>
+
+          <div class="field" id="formfield-form-widgets-IDublinCore-description">
+            <label for="form-widgets-IDublinCore-description" class="horizontal">
+              Summary
+              <span class="formHelp">Used in item listings and search results.</span>
+            </label>
+            <div class="fieldErrorBox"></div>
+            <textarea id="form-widgets-IDublinCore-description" name="form.widgets.IDublinCore.description" class="textarea-widget text-field"></textarea>
+          </div>
+
+          <div class="formControls">
+                    <input class="submit-widget button-field context" value="Save" type="submit">
+                    <input class="submit-widget button-field standalone" value="Cancel" type="submit">
+                    
+
+          </div>
+        </fieldset>
+      </form>
+      <div class="plone-has-table">
+        <table class="listing" summary="Content listing">
+              <caption>Content listing</caption>
+                      <thead>
+                          <tr>
+                              <th class="nosort">Title</th>
+                              <th class="nosort">Author</th>
+                              <th class="nosort">Type</th>
+                              <th class="nosort">Modified</th>
+                          </tr>
+                      </thead>
+
+                      <tbody>
+                          <tr class="odd">
+                  <td><a href="#" class="state-pending contenttype-collection" title="Site News">News</a></td>
+                  <td><a href="#">Name Surname</a></td>
+                  <td>Collection</td>
+                  <td>Apr 30, 2014 04:57 AM</td>
+                </tr>
+                <tr class="even">
+                  <td><a href="#" class="state-published contenttype-news-item" title="Summary">New</a></td>
+                  <td><a href="#">Name Surname</a></td>
+                  <td>News Item</td>
+                  <td>May 01, 2014 04:10 AM</td>
+                </tr>
+                <tr class="odd">
+                  <td><a href="#" class="state-published contenttype-news-item" title="sumari">Notícia</a></td>
+                  <td><a href="#">Name Surname</a></td>
+                  <td>News Item</td>
+                  <td>May 01, 2014 04:14 AM</td>
+                </tr>
+                <tr class="even">
+                  <td><a href="#" class="state-pending contenttype-news-item" title="Prova de sumary">Títol</a></td>
+                  <td><a href="#">Name Surname</a></td>
+                  <td>News Item</td><td>Apr 29, 2014 10:46 AM</td>
+                </tr>
               </tbody>
-      </table>
-      </section>
-  </section>
-  <section class="portlet portletLogin" role="section">
-    <header class="portletHeader">Login</header>
+          </table>
+
+      </div>
+      <ul role="widget" aria-label="Pagination" class="listingBar">
+        <li class="previous"><a href="#">Previous<span class="sr-only"> page</span></a></li>
+        <li><a href="#"><span class="sr-only">page </span>1</a></li>
+        <li><a href="#" rel="next"><span class="sr-only">page </span>2</a></li>
+        <li class="active"><a aria-disabled="true" href="#"><span class="sr-only">You're currently on page </span>3</a></li>
+        <li><a href="#"><span class="sr-only">page </span>4</a></li>
+        <li><a href="#"><span class="sr-only">page </span>5</a></li>
+        <li class="next disabled"><a href="#" tabindex="-1">Next <span class="sr-only">page</span></a></li>
+      </ul>
+    </div>
+    <div class="cell position-9 width-1:4">
+      <section class="portlet portletNews" role="section">
+        <header class="portletHeader"><a href"#"="">News</a></header>
+          <section class="portletContent">
+          <ul>
+            <li class="portletItem">
+              <a href="#" class="tile"> Notícia</a>
+              <time datetime="11-09-2014" class="portletItemDetails">November 9, 2014</time>
+            </li>
+            <li class="portletItem">
+              <a href="#" class="tile"> New</a>
+                    <time datetime="11-09-2014" class="portletItemDetails">November 11, 2014 to November 9, 2014</time>
+            </li>
+          </ul>
+          </section>
+          </section>
+          <section class="portlet portletCalendar" role="section">
+        <header class="portletHeader">
+          <a href="#" rel="nofollow" class="calendarPrevious" title="Previous month" data-year="2014" data-month="4">«</a>
+          May 2014
+          <a href="#" rel="nofollow" class="calendarNext" title="Next month" data-year="2014" data-month="6">»</a>
+        </header>
       <section class="portletContent">
-      <form action="" id="loginform" method="post">
-              <div class="field">
-                 <label for="__ac_name">Login Name</label>
-                  <input type="text" size="10" alt="Login Name" name="__ac_name" id="__ac_name" value=""> 
-              </div>
-              <div class="field">
-                  <label for="__ac_password">Password</label>
-                  <input type="password" size="10" alt="Password" name="__ac_password" id="__ac_password">
-              </div>
-
-              <div class="cookiesMessage portalMessage info" style="display:none">Cookies are not enabled. You must enable cookies before you can log in.</div>
-
-              <div class="formControls">
-                  <input class="context" type="submit" name="submit" value="Log in" alt="Log in">
-              </div>
-          </form>
+        <table class="ploneCalendar" summary="Calendari">
+                <caption class="hiddenStructure">May 2014</caption>
+                <thead>
+                    <tr class="weekdays">
+                      <th scope="col"><abbr title="monday">M</abbr></th>
+                      <th scope="col"><abbr title="tuesday">T</abbr></th>
+                      <th scope="col"><abbr title="wednesday">W</abbr></th>
+                      <th scope="col"><abbr title="thursday">T</abbr></th>
+                      <th scope="col"><abbr title="friday">F</abbr></th>
+                      <th scope="col"><abbr title="saturnday">S</abbr></th>
+                      <th scope="col"><abbr title="sunday">S</abbr></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                      <td class="cal_prev_month"><span>28</span></td>
+                      <td class="cal_prev_month"><span>29</span></td>
+                      <td class="cal_prev_month"><span>30</span></td>
+                      <td><span>1</span></td>
+                      <td><span>2</span></td>
+                      <td><span>3</span></td>
+                      <td><span>4</span></td>
+                    </tr>
+                    <tr>
+                      <td><span>5</span></td>
+                      <td><span>6</span></td>
+                      <td class="today"><span>7</span></td>
+                      <td class="cal_has_events"><a href="#">8</a></td>
+                      <td><span>9</span></td>
+                      <td><span>10</span></td>
+                      <td><span>11</span></td>
+                    </tr>
+                    <tr>
+                      <td><span>12</span></td>
+                      <td><span>13</span></td>
+                      <td class="cal_has_events"><a href="#">14</a></td>
+                      <td><span>15</span></td>
+                      <td><span>16</span></td>
+                      <td><span>17</span></td>
+                      <td><span>18</span></td>
+                    </tr>
+                    <tr>
+                      <td><span>19</span></td>
+                      <td><span>20</span></td>
+                      <td class="cal_has_events"><a href="#">21</a></td>
+                      <td><span>22</span></td>
+                      <td><span>23</span></td>
+                      <td><span>24</span></td>
+                      <td><span>25</span></td>
+                    </tr>
+                    <tr>
+                      <td><span>26</span></td>
+                      <td><span>27</span></td>
+                      <td><span>28</span></td>
+                      <td><span>29</span></td>
+                      <td><span>30</span></td>
+                      <td class="cal_has_events"><a href="#">31</a></td>
+                      <td class="cal_next_month cal_has_events"><a href="#">1</a></td>
+                    </tr>
+                </tbody>
+        </table>
+        </section>
       </section>
-    <footer class="portletFooter">
-      <a href="#" class="tile">Forgot your password?</a>
-    </footer>
-  </section>
-  </div>
-  <div style="clear:both" />
+      <section class="portlet portletLogin" role="section">
+        <header class="portletHeader">Login</header>
+          <section class="portletContent">
+          <form action="" id="loginform" method="post">
+                  <div class="field">
+                     <label for="__ac_name">Login Name</label>
+                      <input type="text" size="10" alt="Login Name" name="__ac_name" id="__ac_name" value=""> 
+                  </div>
+                  <div class="field">
+                      <label for="__ac_password">Password</label>
+                      <input type="password" size="10" alt="Password" name="__ac_password" id="__ac_password">
+                  </div>
 
+                  <div class="cookiesMessage portalMessage info" style="display:none">Cookies are not enabled. You must enable cookies before you can log in.</div>
+
+                  <div class="formControls">
+                      <input class="context" type="submit" name="submit" value="Log in" alt="Log in">
+                  </div>
+              </form>
+          </section>
+        <footer class="portletFooter">
+          <a href="#" class="tile">Forgot your password?</a>
+        </footer>
+      </section>
+    </div>
+
+    <div style="clear:both" />
+  </div>
 </main>
 
 <footer id="portal-footer-wrapper">
