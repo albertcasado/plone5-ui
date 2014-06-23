@@ -10,7 +10,8 @@
     padding-bottom: 28px;
   }
   a {
-    color: #16a1e3;
+    color: @plone-link-color-on-dark;
+    &:hover {color: lighten(@plone-link-color-on-dark,15%);}
   }
   .portletWrapper {
     display: inline-block;
@@ -24,7 +25,7 @@
   .portlet {
     background: transparent;
     border: 0;
-    font-weight: 200;
+    font-weight: @plone-font-weight-light;
     box-shadow: none;
     .portletContent {
       padding: 0;
@@ -47,8 +48,8 @@
     }
     .portletActions {
       text-transform: uppercase;
-      font-size: 85%;
-      font-weight: 600;
+      font-size: @plone-font-size-small;
+      font-weight: @plone-font-weight-bold;
       margin-right: 15px;
     }
   }
@@ -57,7 +58,7 @@
 #portal-siteactions, #portal-colophon {
   display: inline-block;
   text-transform: uppercase;
-  font-size: 85%;
+  font-size: @plone-font-size-small;
 }
 #portal-siteactions li {
   font-weight: bold;

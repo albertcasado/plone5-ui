@@ -7,18 +7,17 @@
 }
 
 .portalMessage {
-	font-family: Roboto, sans-serif;
 	padding: @plone-alert-padding;
 	padding-left: @plone-alert-padding*3;
 	margin-bottom: @plone-line-height-computed;
-	border: 0px solid transparent;
+	border: 0;
 	border-radius: @plone-alert-border-radius;
 	box-shadow: 0 1px 2px rgba(0,0,0,.17);
 	font-size: @plone-font-size-base;
 	font-weight: @plone-font-weight-regular;
 	text-shadow: 0 1px rgba(255,255,255,.1);
 	> strong, > dt {
-		font-weight: 900;
+		font-weight: @plone-font-weight-bold;
 		padding-right: @plone-alert-padding/3;
 		color: darken(@plone-alert-info-text, 10%)
 	}
@@ -27,17 +26,17 @@
 		color: darken(@plone-link-color, 12%);
 	}
 	> strong:before, > dt:before { 
-		font-size:14px; 
-		font-weight: 500; 
+		font-size:@plone-font-size-base; 
+		font-weight: @plone-font-weight-regular; 
 		margin-left: -30px;
 		margin-right: 10px;
 		display: inline-block; 
-		border-radius: 20px;
+		border-radius: @plone-alert-icon-size;
 		text-align:center;
 		color:rgba(255, 255, 255, 0.9); 
-		width:20px; 
-		height:20px;
-		line-height: 20px; //IE fix
+		width:@plone-alert-icon-size; 
+		height:@plone-alert-icon-size;
+		line-height: @plone-alert-icon-size; //IE fix
 		text-shadow: 0 -1px rgba(0,0,0,.5);
 		top: -1px;
 		position: relative;

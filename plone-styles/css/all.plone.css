@@ -583,12 +583,12 @@ th {
   padding: 8px;
   line-height: 1.42857143;
   vertical-align: top;
-  border-top: 0 solid #dddddd;
+  border-top: 0 solid #e5e5e5;
   border-collapse: collapse;
 }
 .listing > thead > tr > th {
   vertical-align: bottom;
-  border-bottom: 1px solid #dddddd;
+  border-bottom: 1px solid #e5e5e5;
 }
 .listing > caption + thead > tr:first-child > th,
 .listing > colgroup + thead > tr:first-child > th,
@@ -599,7 +599,7 @@ th {
   border-top: 0;
 }
 .listing > tbody + tbody {
-  border-top: 2px solid #dddddd;
+  border-top: 2px solid #e5e5e5;
 }
 .listing .listing {
   background-color: #fafafa;
@@ -615,7 +615,7 @@ th {
     overflow-y: hidden;
     overflow-x: scroll;
     -ms-overflow-style: -ms-autohiding-scrollbar;
-    border: 1px solid #dddddd;
+    border: 1px solid #e5e5e5;
     border-radius: 4px;
     -webkit-overflow-scrolling: touch;
     position: relative;
@@ -1405,11 +1405,10 @@ body.section-front-page .breadcrumb {
   max-height: 200px;
 }
 .portalMessage {
-  font-family: Roboto, sans-serif;
   padding: 15px;
   padding-left: 45px;
   margin-bottom: 20px;
-  border: 0px solid transparent;
+  border: 0;
   border-radius: 4px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.17);
   font-size: 14px;
@@ -1418,7 +1417,7 @@ body.section-front-page .breadcrumb {
 }
 .portalMessage > strong,
 .portalMessage > dt {
-  font-weight: 900;
+  font-weight: 500;
   padding-right: 5px;
   color: rgba(0, 0, 0, 0.5);
 }
@@ -1429,7 +1428,7 @@ body.section-front-page .breadcrumb {
 .portalMessage > strong:before,
 .portalMessage > dt:before {
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 300;
   margin-left: -30px;
   margin-right: 10px;
   display: inline-block;
@@ -1994,6 +1993,9 @@ body.section-front-page .breadcrumb {
 #portal-footer-wrapper a {
   color: #16a1e3;
 }
+#portal-footer-wrapper a:hover {
+  color: #57beef;
+}
 #portal-footer-wrapper .portletWrapper {
   display: inline-block;
 }
@@ -2006,7 +2008,7 @@ body.section-front-page .breadcrumb {
 #portal-footer-wrapper .portlet {
   background: transparent;
   border: 0;
-  font-weight: 200;
+  font-weight: 100;
   box-shadow: none;
 }
 #portal-footer-wrapper .portlet .portletContent {
@@ -2032,15 +2034,15 @@ body.section-front-page .breadcrumb {
 }
 #portal-footer-wrapper .portlet .portletActions {
   text-transform: uppercase;
-  font-size: 85%;
-  font-weight: 600;
+  font-size: 12px;
+  font-weight: 500;
   margin-right: 15px;
 }
 #portal-siteactions,
 #portal-colophon {
   display: inline-block;
   text-transform: uppercase;
-  font-size: 85%;
+  font-size: 12px;
 }
 #portal-siteactions li {
   font-weight: bold;
