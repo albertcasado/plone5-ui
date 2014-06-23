@@ -28,7 +28,7 @@ legend {
 label {
   display: inline-block;
   max-width: 100%; // Force IE8 to wrap long content (see https://github.com/twbs/bootstrap/issues/13141)
-  margin-bottom: 5px;
+  margin-bottom: @plone-padding-base-vertical;
   font-weight: bold;
 }
 
@@ -182,8 +182,8 @@ input[type="checkbox"] {
     font-weight: @plone-font-weight-regular;
     &:before {
       background-color: @plone-alert-error-bullet; content:"×";
-      font-size:14px; 
-      font-weight: 500; 
+      font-size:@plone-font-size-base; 
+      font-weight: @plone-font-weight-regular; 
       margin-left: -30px;
       margin-right: 5px;
       display: inline-block; 

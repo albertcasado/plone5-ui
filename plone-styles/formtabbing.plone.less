@@ -1,14 +1,14 @@
 //*// FORM TABBING //*//
 
 .autotabs {
-	background: #fff;
+	background: @plone-portlet-content-bg;
 	padding: @plone-padding-base-vertical @plone-padding-base-horizontal;
 	border: @plone-portlet-border;
 	margin-bottom: 20px;
 	border-radius: @plone-border-radius-base;
 	box-shadow:  0 1px 3px rgba(0,0,0,.05);
 	.autotoc-nav {
-		background: #f2f1f1;
+		background: @plone-portlet-header-bg;
 		border-bottom: @plone-portlet-border;
 		margin: -@plone-padding-base-vertical -@plone-padding-base-horizontal @plone-padding-base-vertical;
 		a {
@@ -18,18 +18,18 @@
 			border: @plone-portlet-border;
 			margin-bottom:-1px;
 			border-radius: @plone-border-radius-base @plone-border-radius-base 0 0;
-			background: #fcfcfd;
+			background: @plone-portlet-footer-bg;
 			font-weight: @plone-font-weight-regular;
 			&:last-child{margin-right: @plone-padding-base-vertical;}
 			&:hover {
 				text-decoration: none;
-				background: #fff;
+				background: @plone-portlet-content-bg;
 			}
 			&.active {
 				color: @plone-gray;
 				cursor: default;
-				background: #fff;
-				border-bottom-color: #fff;
+				background: @plone-portlet-content-bg;
+				border-bottom-color: @plone-portlet-content-bg;
 			}
 		}
 	}
