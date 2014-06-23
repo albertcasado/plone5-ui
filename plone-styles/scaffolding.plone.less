@@ -65,36 +65,6 @@ img {
   vertical-align: middle;
 }
 
-//*// Responsive images (ensure images don't scale beyond their parents)
-.img-responsive {
-  .img-responsive(); //--> NOT DONE
-}
-
-//*// Rounded corners
-.img-rounded {
-  border-radius: @plone-border-radius-large;
-}
-
-// Image thumbnails
-//
-// Heads up! This is mixin-ed into thumbnails.less for `.thumbnail`.
-.img-thumbnail {
-  padding: @plone-thumbnail-padding;
-  line-height: @plone-line-height-base;
-  background-color: @plone-thumbnail-bg;
-  border: 1px solid @plone-thumbnail-border;
-  border-radius: @plone-thumbnail-border-radius;
-  .transition(all .2s ease-in-out);
-
-  // Keep them at most 100% wide
-  .img-responsive(inline-block);
-}
-
-// Perfect circle
-.img-circle {
-  border-radius: 50%; // set radius in percents
-}
-
 
 // Horizontal rules
 
