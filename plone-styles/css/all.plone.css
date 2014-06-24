@@ -1180,9 +1180,6 @@ fieldset[disabled] .destructive.active {
 .state-internally_published:focus {
   color: #5405cc;
 }
-body {
-  position: relative;
-}
 #edit-zone {
   position: fixed;
   height: 100%;
@@ -2417,6 +2414,37 @@ body.section-front-page .breadcrumb {
   margin-top: -3px;
   color: #777777;
 }
+#portal-sitemap {
+  list-style: none;
+  padding-left: 0;
+}
+#portal-sitemap > li {
+  font-size: 18px;
+  border-top: 1px solid #e5e5e5;
+  padding: 6px 0;
+}
+#portal-sitemap ul {
+  position: relative;
+  font-size: 14px;
+  padding-left: 20px;
+  -moz-column-count: 3;
+  -moz-column-gap: 20px;
+  -webkit-column-count: 3;
+  -webkit-column-gap: 20px;
+  column-count: 3;
+  column-gap: 20px;
+}
+#portal-sitemap ul li {
+  position: relative;
+}
+#portal-sitemap ul li:before {
+  content: "•";
+  display: inline;
+  font-size: 25px;
+  color: #a7daf2;
+  top: 5px;
+  position: relative;
+}
 #portal-header {
   margin-bottom: 20px;
 }
@@ -2733,7 +2761,7 @@ body.section-front-page .breadcrumb {
   height: 150px;
 }
 body {
-  margin-bottom: 150px;
+  padding-bottom: 150px;
 }
 html {
   position: relative;
