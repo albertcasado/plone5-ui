@@ -12,6 +12,10 @@ $(document).ready(function(){
 	$( "body" ).has(".plone-toolbar-top").css({'margin-left':'0','margin-top':'60px'});
 	$( "body" ).has(".plone-toolbar-left.expanded").css({'margin-left':'120px','margin-top':'0'});
 	if ($(window).width() < "768"){//mobile
+		$( "body" ).has(".plone-toolbar-left").css({'margin-left':'0','margin-top':'0'});
+		$( "body" ).has(".plone-toolbar-top").css({'margin-left':'0','margin-top':'0'});
+		$( "body" ).has(".plone-toolbar-left.expanded").css({'margin-left':'0','margin-top':'0'});
+		$( "#edit-zone" ).css("right", "-120px");
 		$( "#edit-zone .plone-toolbar-logo" ).click(function() {
 			if ($(this).hasClass("open")){
 				$( "#edit-zone" ).css("right", "-120px");
