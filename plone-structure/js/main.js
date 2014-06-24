@@ -8,9 +8,9 @@ $(document).ready(function() {
 */
 
 $(document).ready(function(){
-	$( "body" ).has(".plone-toolbar-left").css({'padding-left':'60px','padding-top':'0'});
-	$( "body" ).has(".plone-toolbar-top").css({'padding-left':'0','padding-top':'60px'});
-	$( "body" ).has(".plone-toolbar-left.expanded").css({'padding-left':'120px','padding-top':'0'});
+	$( "body" ).has(".plone-toolbar-left").css({'margin-left':'60px','margin-top':'0'});
+	$( "body" ).has(".plone-toolbar-top").css({'margin-left':'0','margin-top':'60px'});
+	$( "body" ).has(".plone-toolbar-left.expanded").css({'margin-left':'120px','margin-top':'0'});
 	if ($(window).width() < "768"){//mobile
 		$( "#edit-zone .plone-toolbar-logo" ).click(function() {
 			if ($(this).hasClass("open")){
@@ -32,7 +32,7 @@ $(document).ready(function(){
 			} else {
 				$( "#edit-zone nav li" ).removeClass("active");
 				$(this).addClass("active");
-				$( "#edit-zone" ).css("right", "200px");
+				$( "#edit-zone" ).css("right", "180px");
 				$( "body" ).css("right", "320px");
 			}
 		});
@@ -44,15 +44,15 @@ $(document).ready(function(){
 				if ($("#edit-zone").hasClass("expanded")){
 					$( "#edit-zone" ).removeClass("expanded");
 					$( "#edit-zone nav li" ).removeClass("active");
-					$("body").css("padding-left", "120px");
+					$("body").css("margin-left", "120px");
 				} else {
 					$( "#edit-zone" ).addClass("expanded");
 					$( "#edit-zone nav li" ).removeClass("active");
-					$("body").css("padding-left", "60px");
+					$("body").css("margin-left", "60px");
 				}
-				$( "body" ).has(".plone-toolbar-left").css({'padding-left':'60px','padding-top':'0'});
-				$( "body" ).has(".plone-toolbar-top").css({'padding-left':'0','padding-top':'60px'});
-				$( "body" ).has(".plone-toolbar-left.expanded").css({'padding-left':'120px','padding-top':'0'});
+				$( "body" ).has(".plone-toolbar-left").css({'margin-left':'60px','margin-top':'0'});
+				$( "body" ).has(".plone-toolbar-top").css({'margin-left':'0','margin-top':'60px'});
+				$( "body" ).has(".plone-toolbar-left.expanded").css({'margin-left':'120px','margin-top':'0'});
 			});
 			$( "#edit-zone .plone-toolbar-logo" ).dblclick(function() {
 				$("body").removeAttr("style");
@@ -60,27 +60,27 @@ $(document).ready(function(){
 					$( "#edit-zone" ).removeClass("compressed");
 				} else {
 					$( "#edit-zone" ).addClass("compressed");
-					$("body").css("padding-left", "0");
+					$("body").css("margin-left", "0");
 				}
-				$( "body" ).has(".plone-toolbar-left").css({'padding-left':'60px','padding-top':'0'});
-				$( "body" ).has(".plone-toolbar-top").css({'padding-left':'0','padding-top':'60px'});
-				$( "body" ).has(".plone-toolbar-left.expanded").css({'padding-left':'120px','padding-top':'0'});
+				$( "body" ).has(".plone-toolbar-left").css({'margin-left':'60px','margin-top':'0'});
+				$( "body" ).has(".plone-toolbar-top").css({'margin-left':'0','margin-top':'60px'});
+				$( "body" ).has(".plone-toolbar-left.expanded").css({'margin-left':'120px','margin-top':'0'});
 			});
 		} else { //top
 			$( "#edit-zone .plone-toolbar-logo" ).click(function() {			
 				if ($("#edit-zone").hasClass("expanded")){
 					$( "#edit-zone" ).removeClass("expanded");
 					$( "#edit-zone nav li" ).removeClass("active");
-					$("body").css("padding-top", "60px");
+					$("body").css("margin-top", "60px");
 				} else {
 					$( "#edit-zone" ).addClass("expanded");
 					$( "#edit-zone nav li" ).removeClass("active");
 					$("body").removeAttr("style");
-					$("body").css("padding-top", "60px");
+					$("body").css("margin-top", "60px");
 				}
-				$( "body" ).has(".plone-toolbar-left").css({'padding-left':'60px','padding-top':'0'});
-				$( "body" ).has(".plone-toolbar-top").css({'padding-left':'0','padding-top':'60px'});
-				$( "body" ).has(".plone-toolbar-left.expanded").css({'padding-left':'120px','padding-top':'0'});
+				$( "body" ).has(".plone-toolbar-left").css({'margin-left':'60px','margin-top':'0'});
+				$( "body" ).has(".plone-toolbar-top").css({'margin-left':'0','margin-top':'60px'});
+				$( "body" ).has(".plone-toolbar-left.expanded").css({'margin-left':'120px','margin-top':'0'});
 			});
 			$( "#edit-zone .plone-toolbar-logo" ).dblclick(function() {
 				$("body").removeAttr("style");
@@ -90,9 +90,9 @@ $(document).ready(function(){
 					$( "#edit-zone" ).addClass("compressed");
 					$("body").removeAttr("padding-top", "0");
 				}
-				$( "body" ).has(".plone-toolbar-left").css({'padding-left':'60px','padding-top':'0'});
-				$( "body" ).has(".plone-toolbar-top").css({'padding-left':'0','padding-top':'60px'});
-				$( "body" ).has(".plone-toolbar-left.expanded").css({'padding-left':'120px','padding-top':'0'});
+				$( "body" ).has(".plone-toolbar-left").css({'margin-left':'60px','margin-top':'0'});
+				$( "body" ).has(".plone-toolbar-top").css({'margin-left':'0','margin-top':'60px'});
+				$( "body" ).has(".plone-toolbar-left.expanded").css({'margin-left':'120px','margin-top':'0'});
 			});
 		}
 		
@@ -115,9 +115,9 @@ $(document).ready(function(){
 				$( "#edit-zone" ).addClass("plone-toolbar-top");
 				$( "#edit-zone" ).removeClass("plone-toolbar-left");
 			}
-			$( "body" ).has(".plone-toolbar-left").css({'padding-left':'60px','padding-top':'0'});
-			$( "body" ).has(".plone-toolbar-top").css({'padding-left':'0','padding-top':'60px'});
-			$( "body" ).has(".plone-toolbar-left.expanded").css({'padding-left':'120px','padding-top':'0'});
+			$( "body" ).has(".plone-toolbar-left").css({'margin-left':'60px','margin-top':'0'});
+			$( "body" ).has(".plone-toolbar-top").css({'margin-left':'0','margin-top':'60px'});
+			$( "body" ).has(".plone-toolbar-left.expanded").css({'margin-left':'120px','margin-top':'0'});
 		});
 	}
 });

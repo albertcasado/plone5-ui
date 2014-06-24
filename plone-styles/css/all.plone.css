@@ -1180,6 +1180,9 @@ fieldset[disabled] .destructive.active {
 .state-internally_published:focus {
   color: #5405cc;
 }
+body {
+  position: relative;
+}
 #edit-zone {
   position: fixed;
   height: 100%;
@@ -1744,7 +1747,7 @@ fieldset[disabled] .destructive.active {
   #edit-zone .plone-toolbar-logo,
   #edit-zone.expanded .plone-toolbar-logo {
     position: absolute;
-    width: 42px;
+    width: 60px;
     left: -60px;
   }
   #edit-zone .plone-toolbar-logo:after,
