@@ -1180,6 +1180,677 @@ fieldset[disabled] .destructive.active {
 .state-internally_published:focus {
   color: #5405cc;
 }
+#edit-zone {
+  position: fixed;
+  height: 100%;
+  width: 60px;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  font-weight: 300;
+  font-family: 'Roboto', sans-serif;
+  color: rgba(255, 255, 255, 0.9);
+  background: rgba(0, 0, 0, 0.9);
+  /*logo*/
+  /*first-level*/
+  /*second-level*/
+}
+#edit-zone a {
+  color: #007bb3;
+  text-decoration: none;
+  display: block;
+}
+#edit-zone .plone-toolbar-logo {
+  background: #005880;
+  height: 50px;
+  padding-left: 18px;
+  padding-right: 18px;
+  cursor: pointer;
+  display: table-cell;
+  vertical-align: middle;
+  width: 60px;
+}
+#edit-zone .plone-toolbar-logo:after {
+  content: "";
+  border-top: 4px solid #005880;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  position: absolute;
+  left: 25px;
+  top: 50px;
+}
+#edit-zone .plone-toolbar-logo:hover {
+  background: #007bb3;
+  transition: background .35s;
+  -webkit-transition: background .25s;
+}
+#edit-zone .plone-toolbar-logo:hover:after {
+  border-top: 4px solid #007bb3;
+  transition: border-top 0.35s;
+  -webkit-transition: border-top 0.25s;
+}
+#edit-zone.expanded .plone-toolbar-logo {
+  width: 120px;
+}
+#edit-zone.expanded .plone-toolbar-logo span {
+  display: inline;
+}
+#edit-zone nav > ul {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 12px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  /*states on first level*/
+}
+#edit-zone nav > ul [class^="icon"] {
+  font-size: 20px;
+}
+#edit-zone nav > ul a {
+  position: relative;
+  color: rgba(255, 255, 255, 0.9);
+  overflow-y: hidden;
+  height: 50px;
+}
+#edit-zone nav > ul a:hover > span {
+  margin-top: -50px;
+  transition: margin-top 0.35s;
+  -webkit-transition: margin-top 0.35s;
+}
+#edit-zone nav > ul a:hover > span.plone-toolbar-caret {
+  opacity: 1;
+}
+#edit-zone nav > ul a > span {
+  display: block;
+  text-align: center;
+  height: 50px;
+  width: 60px;
+}
+#edit-zone nav > ul a > span:before {
+  line-height: 50px;
+}
+#edit-zone nav > ul a > span + span {
+  padding: 0 2px;
+  display: table-cell;
+  text-align: center;
+  padding: 0 8px;
+  height: 50px;
+  width: 60px;
+  vertical-align: middle;
+  background: #007bb3;
+}
+#edit-zone nav > ul a.label-state-published > span:before,
+#edit-zone nav > ul a.label-state-external > span:before {
+  color: #007bb3;
+}
+#edit-zone nav > ul a.label-state-published > span + span,
+#edit-zone nav > ul a.label-state-external > span:before {
+  background: #007bb3;
+}
+#edit-zone nav > ul a.label-state-internally_published > span:before {
+  color: #883dfa;
+}
+#edit-zone nav > ul a.label-state-internally_published > span + span {
+  background: #883dfa;
+}
+#edit-zone nav > ul a.label-state-pending > span:before {
+  color: #e2e721;
+}
+#edit-zone nav > ul a.label-state-pending > span + span {
+  background: #e2e721;
+}
+#edit-zone nav > ul a.label-state-draft > span:before,
+#edit-zone nav > ul a.label-state-internal > span:before {
+  color: #fab82a;
+}
+#edit-zone nav > ul a.label-state-draft > span + span,
+#edit-zone nav > ul a.label-state-internal > span + span {
+  background: #fab82a;
+}
+#edit-zone nav > ul a.label-state-private > span:before {
+  color: #c4183c;
+}
+#edit-zone nav > ul a.label-state-private > span + span {
+  background: #c4183c;
+}
+#edit-zone nav > ul ul {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  line-height: 30px;
+}
+#edit-zone nav > ul ul a {
+  color: #cccccc;
+}
+#edit-zone nav > ul ul a:hover {
+  color: #ffffff;
+  background: rgba(26, 26, 26, 0.9);
+}
+#edit-zone nav > ul ul li:last-child {
+  margin-bottom: 5px;
+}
+#edit-zone nav > ul ul li > span {
+  display: block;
+}
+#edit-zone nav > ul ul .plone-toolbar-submenu-header > a {
+  color: #007bb3;
+  font-weight: 500;
+}
+#edit-zone nav > ul ul .plone-toolbar-submenu-header > a:hover {
+  color: #00afff;
+}
+#edit-zone nav > ul ul .plone-toolbar-submenu-header > span {
+  font-weight: 500;
+  color: #777777;
+}
+#edit-zone nav > ul ul li:not(.plone-toolbar-submenu-header) > a:before {
+  content: "•";
+  left: 15px;
+  color: #007bb3;
+  position: absolute;
+}
+#edit-zone nav > ul ul li:not(.plone-toolbar-submenu-header) > span:before {
+  content: "•";
+  left: 15px;
+  color: rgba(77, 77, 77, 0.9);
+  position: absolute;
+}
+#edit-zone nav > ul ul li:not(.plone-toolbar-submenu-header) > a:hover:before {
+  color: #33bfff;
+}
+#edit-zone nav > ul ul .actionMenuSelected {
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
+}
+#edit-zone nav > ul ul .actionMenuSelected:hover {
+  color: rgba(255, 255, 255, 0.9);
+  background: none;
+  cursor: default;
+}
+#edit-zone nav > ul ul .actionMenuSelected:before {
+  content: "✓" !important;
+  margin-left: -3px;
+}
+#edit-zone nav > ul ul .actionMenuSelected:hover {
+  color: rgba(255, 255, 255, 0.9);
+  background: none;
+  cursor: default;
+}
+#edit-zone nav > ul ul li:not(.plone-toolbar-submenu-header) > a.actionMenuSelected:before {
+  color: rgba(255, 255, 255, 0.9);
+}
+#edit-zone .plone-toolbar-separator {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.17);
+}
+#edit-zone .plone-toolbar-caret {
+  border-left: 4px solid;
+  border-bottom: 4px solid transparent;
+  border-top: 4px solid transparent;
+  position: absolute;
+  right: 0;
+  background: transparent !important;
+  margin-top: 0 !important;
+  top: 21px;
+  opacity: .67;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  right: 2px;
+  padding: 0;
+  vertical-align: middle;
+}
+/*de moment per borrar coses*/
+#edit-zone nav > ul ul {
+  position: absolute;
+  left: 60px;
+  background: rgba(20, 20, 20, 0.9);
+  top: 0;
+  overflow-y: auto;
+  /*state marker*/
+  /*current*/
+}
+#edit-zone nav > ul ul li {
+  width: 180px;
+}
+#edit-zone nav > ul ul li > a,
+#edit-zone nav > ul ul li > span {
+  padding: 5px 15px;
+  height: auto;
+  line-height: 20px;
+}
+#edit-zone nav > ul ul li:not(.plone-toolbar-submenu-header) > a,
+#edit-zone nav > ul ul li:not(.plone-toolbar-submenu-header) > span {
+  padding: 5px 15px 5px 30px;
+  height: auto;
+}
+#edit-zone nav > ul ul li:not(.plone-toolbar-submenu-header) > span {
+  color: rgba(166, 166, 166, 0.9);
+  font-weight: 100;
+}
+#edit-zone nav > ul ul .plone-toolbar-submenu-header {
+  border-top: 1px solid rgba(255, 255, 255, 0.17);
+  padding: 5px 0 0;
+  margin: 5px 0 0;
+}
+#edit-zone nav > ul ul .plone-toolbar-submenu-header:first-child {
+  border-top: 0;
+  margin: 0;
+}
+#edit-zone nav > ul ul [class^="icon"] {
+  display: inline !important;
+  line-height: 0;
+}
+#edit-zone nav > ul ul [class^="icon"]:before {
+  font-size: 10px;
+  line-height: 18px;
+  position: absolute;
+  right: 10px;
+  color: #c4183c;
+  margin-top: 7px;
+  top: 0;
+}
+#edit-zone nav > ul ul .state-published:after,
+#edit-zone nav > ul ul .state-external:after {
+  right: 15px;
+  content: "•";
+  color: #007bb3;
+  position: absolute;
+  font-size: 20px;
+}
+#edit-zone nav > ul ul .state-internally_published:after {
+  right: 15px;
+  content: "•";
+  color: #883dfa;
+  position: absolute;
+  font-size: 20px;
+}
+#edit-zone nav > ul ul .state-pending:after {
+  right: 15px;
+  content: "•";
+  color: #e2e721;
+  position: absolute;
+  font-size: 20px;
+}
+#edit-zone nav > ul ul .state-draft:after,
+#edit-zone nav > ul ul .state-internal:after {
+  right: 15px;
+  content: "•";
+  color: #fab82a;
+  position: absolute;
+  font-size: 20px;
+}
+#edit-zone nav > ul ul .state-private:after {
+  right: 15px;
+  content: "•";
+  color: #c4183c;
+  position: absolute;
+  font-size: 20px;
+}
+#edit-zone nav > ul ul .plone-toolbar-submenu-header :after {
+  font-size: 30px;
+  right: 13px;
+}
+#edit-zone.plone-toolbar-left nav > ul ul {
+  width: 0;
+  height: 100%;
+}
+#edit-zone.plone-toolbar-top nav > ul ul {
+  height: 0;
+  max-height: 0;
+  width: 180px;
+}
+#edit-zone.expanded {
+  width: 120px;
+  /*states*/
+}
+#edit-zone.expanded nav > ul ul {
+  left: 120px;
+}
+#edit-zone.expanded nav > ul a > [class^="icon"] {
+  display: table-cell;
+  width: 40px;
+  padding-left: 10px;
+}
+#edit-zone.expanded nav > ul a > span + span {
+  background: none;
+  width: 80px;
+  text-align: left;
+}
+#edit-zone.expanded .plone-toolbar-caret {
+  width: 0;
+}
+#edit-zone.expanded li:not(.active) a:hover > span {
+  background: #007bb3;
+  transition: background .35s;
+}
+#edit-zone.expanded li a.label-state-published:hover > span,
+#edit-zone.expanded li a.label-state-external:hover > span {
+  background: #007bb3;
+}
+#edit-zone.expanded li a.label-state-published:hover > span:first-child:before,
+#edit-zone.expanded li a.label-state-external:hover > span:first-child:before {
+  color: rgba(255, 255, 255, 0.9);
+}
+#edit-zone.expanded li a.label-state-internally_published:hover > span {
+  background: #883dfa;
+}
+#edit-zone.expanded li a.label-state-internally_published:hover > span:first-child:before {
+  color: rgba(255, 255, 255, 0.9);
+}
+#edit-zone.expanded li a.label-state-pending:hover > span {
+  background: #e2e721;
+}
+#edit-zone.expanded li a.label-state-pending:hover > span:first-child:before {
+  color: rgba(255, 255, 255, 0.9);
+}
+#edit-zone.expanded li a.label-state-draft:hover > span,
+#edit-zone.expanded li a.label-state-internal:hover > span {
+  background: #fab82a;
+}
+#edit-zone.expanded li a.label-state-draft:hover > span:first-child:before,
+#edit-zone.expanded li a.label-state-internal:hover > span:first-child:before {
+  color: rgba(255, 255, 255, 0.9);
+}
+#edit-zone.expanded li a.label-state-private:hover > span {
+  background: #c4183c;
+}
+#edit-zone.expanded li a.label-state-private:hover > span:first-child:before {
+  color: rgba(255, 255, 255, 0.9);
+}
+#edit-zone.plone-toolbar-left.compressed,
+#edit-zone.plone-toolbar-top.compressed {
+  height: 50px;
+  width: 60px;
+  background: none;
+}
+#edit-zone.plone-toolbar-left.compressed .plone-toolbar-logo,
+#edit-zone.plone-toolbar-top.compressed .plone-toolbar-logo {
+  opacity: .5;
+}
+#edit-zone.plone-toolbar-left.compressed .plone-toolbar-logo:hover,
+#edit-zone.plone-toolbar-top.compressed .plone-toolbar-logo:hover,
+#edit-zone.plone-toolbar-left.compressed .plone-toolbar-logo:active,
+#edit-zone.plone-toolbar-top.compressed .plone-toolbar-logo:active,
+#edit-zone.plone-toolbar-left.compressed .plone-toolbar-logo:focus,
+#edit-zone.plone-toolbar-top.compressed .plone-toolbar-logo:focus {
+  opacity: 1;
+}
+#edit-zone.plone-toolbar-left.compressed nav,
+#edit-zone.plone-toolbar-top.compressed nav {
+  display: none;
+}
+#edit-zone nav > ul > li.active {
+  /*a:hover { background: none; }*/
+}
+#edit-zone nav > ul > li.active > a:after {
+  content: "";
+  border-right: 10px solid #2a2a2a;
+  border-bottom: 10px solid transparent;
+  border-top: 10px solid transparent;
+  position: absolute;
+  right: 0;
+  margin-top: -35px;
+}
+#edit-zone nav > ul > li.active a > span {
+  margin-top: -50px;
+}
+#edit-zone nav > ul > li.active > a {
+  background: #007bb3;
+  /*state icon on white*/
+}
+#edit-zone nav > ul > li.active > a span:before {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+#edit-zone nav > ul > li.active > a.label-state-published,
+#edit-zone nav > ul > li.active > a.label-state-external {
+  background: #007bb3;
+}
+#edit-zone nav > ul > li.active > a.label-state-internally_published {
+  background: #883dfa;
+}
+#edit-zone nav > ul > li.active > a.label-state-pending {
+  background: #e2e721;
+}
+#edit-zone nav > ul > li.active > a.label-state-draft,
+#edit-zone nav > ul > li.active > a.label-state-internal {
+  background: #fab82a;
+}
+#edit-zone nav > ul > li.active > a.label-state-private {
+  background: #c4183c;
+}
+#edit-zone nav > ul > li.active ul {
+  display: block;
+  width: 180px;
+}
+/*plone-toolbar-top*/
+#edit-zone.plone-toolbar-top {
+  position: fixed;
+  height: 50px;
+  width: 100%;
+}
+#edit-zone.plone-toolbar-top .plone-toolbar-logo:after {
+  border-left: 4px solid #005880;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  left: 60px;
+  top: 20px;
+}
+#edit-zone.plone-toolbar-top .plone-toolbar-logo:hover:after {
+  border-left: 4px solid #007bb3;
+  transition: border-top 0.35s;
+  -webkit-transition: border-top 0.25s;
+}
+#edit-zone.plone-toolbar-top .plone-toolbar-logo,
+#edit-zone.plone-toolbar-top nav,
+#edit-zone.plone-toolbar-top nav > ul {
+  display: inline-block;
+}
+#edit-zone.plone-toolbar-top nav > ul > li {
+  display: inline-block;
+  width: 60px;
+  float: left;
+}
+#edit-zone.plone-toolbar-top .plone-toolbar-logo {
+  position: absolute;
+  top: 0;
+}
+#edit-zone.plone-toolbar-top .plone-toolbar-logo img {
+  margin-top: 13px;
+}
+#edit-zone.plone-toolbar-top nav {
+  margin-left: 60px;
+}
+#edit-zone.plone-toolbar-top .plone-toolbar-caret {
+  border-top: 4px solid;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  left: 26px;
+  top: 43px;
+  right: inherit;
+  padding: 0 !important;
+}
+#edit-zone.plone-toolbar-top nav > ul ul {
+  left: auto;
+  top: 50px;
+  overflow-y: auto;
+  height: 0;
+}
+#edit-zone.plone-toolbar-top nav > ul li.active ul {
+  height: inherit;
+  max-height: 1000px;
+}
+#edit-zone.plone-toolbar-top li.active > a:after {
+  border-bottom: 10px solid #2a2a2a;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  right: inherit;
+  margin-top: -20px;
+  margin-left: 20px;
+}
+#edit-zone.plone-toolbar-top.expanded .plone-toolbar-logo {
+  width: 60px;
+}
+#edit-zone.plone-toolbar-top.expanded nav > ul > li {
+  width: inherit;
+}
+#edit-zone.plone-toolbar-top.expanded nav > ul a > span + span {
+  width: inherit;
+  padding: 0 8px 0 0;
+}
+#edit-zone.plone-toolbar-top.expanded nav > ul a > [class^="icon"] {
+  padding-left: 0;
+}
+#edit-zone.plone-toolbar-top.expanded .plone-toolbar-caret {
+  left: 16px;
+}
+#edit-zone.plone-toolbar-top.expanded li.active > a:after {
+  margin-left: 10px;
+}
+/*container*/
+#edit-zone.plone-toolbar-top .plone-toolbar-container {
+  margin: 0 auto;
+  width: 960px;
+  height: 50px;
+}
+#edit-zone.plone-toolbar-top.compressed .plone-toolbar-container {
+  width: auto;
+}
+/*switcher*/
+#edit-zone .plone-toolbar-switcher {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 100% 0;
+  top: 0;
+  cursor: pointer;
+}
+#edit-zone .plone-toolbar-switcher span {
+  font-size: 0;
+}
+/*mobile*/
+@media (max-width: 767px) {
+  #edit-zone.plone-toolbar-left.compressed,
+  #edit-zone.plone-toolbar-top.compressed {
+    height: 100%;
+    width: 120px;
+  }
+  #edit-zone.plone-toolbar-left.compressed nav,
+  #edit-zone.plone-toolbar-top.compressed nav {
+    display: block;
+  }
+  #edit-zone .plone-toolbar-logo,
+  #edit-zone.expanded .plone-toolbar-logo {
+    position: absolute;
+    width: 42px;
+    left: -60px;
+  }
+  #edit-zone .plone-toolbar-logo:after,
+  #edit-zone.expanded .plone-toolbar-logo:after {
+    content: none;
+  }
+  #edit-zone .plone-toolbar-logo img,
+  #edit-zone.expanded .plone-toolbar-logo img {
+    margin-top: 12px;
+  }
+  #edit-zone {
+    width: 120px;
+    /*states*/
+    /*default view users left-expanded as a reference*/
+    width: 100%;
+    right: 0;
+    left: inherit;
+  }
+  #edit-zone nav > ul ul {
+    left: 120px;
+  }
+  #edit-zone nav > ul a > [class^="icon"] {
+    display: table-cell;
+    width: 40px;
+    padding-left: 10px;
+  }
+  #edit-zone nav > ul a > span + span {
+    background: none;
+    width: 80px;
+    text-align: left;
+  }
+  #edit-zone .plone-toolbar-caret {
+    width: 0;
+  }
+  #edit-zone li:not(.active) a:hover > span {
+    background: #007bb3;
+    transition: background .35s;
+  }
+  #edit-zone li a.label-state-published:hover > span,
+  #edit-zone li a.label-state-external:hover > span {
+    background: #007bb3;
+  }
+  #edit-zone li a.label-state-published:hover > span:first-child:before,
+  #edit-zone li a.label-state-external:hover > span:first-child:before {
+    color: rgba(255, 255, 255, 0.9);
+  }
+  #edit-zone li a.label-state-internally_published:hover > span {
+    background: #883dfa;
+  }
+  #edit-zone li a.label-state-internally_published:hover > span:first-child:before {
+    color: rgba(255, 255, 255, 0.9);
+  }
+  #edit-zone li a.label-state-pending:hover > span {
+    background: #e2e721;
+  }
+  #edit-zone li a.label-state-pending:hover > span:first-child:before {
+    color: rgba(255, 255, 255, 0.9);
+  }
+  #edit-zone li a.label-state-draft:hover > span,
+  #edit-zone li a.label-state-internal:hover > span {
+    background: #fab82a;
+  }
+  #edit-zone li a.label-state-draft:hover > span:first-child:before,
+  #edit-zone li a.label-state-internal:hover > span:first-child:before {
+    color: rgba(255, 255, 255, 0.9);
+  }
+  #edit-zone li a.label-state-private:hover > span {
+    background: #c4183c;
+  }
+  #edit-zone li a.label-state-private:hover > span:first-child:before {
+    color: rgba(255, 255, 255, 0.9);
+  }
+  #edit-zone nav ul ul {
+    width: 200px;
+  }
+  #edit-zone nav {
+    overflow-y: scroll;
+  }
+  body.userrole-authenticated {
+    right: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: inherit;
+  }
+  #edit-zone nav ul li ul {
+    width: 0;
+  }
+  #edit-zone nav ul li.active ul {
+    width: 180px;
+  }
+}
+/* transitions for menu openings*/
+#edit-zone,
+body {
+  transition: all 0.15s ease-in-out;
+}
+#edit-zone nav > ul ul {
+  transition: all 0.1s ease-in;
+}
+#edit-zone nav > ul li.active ul {
+  transition: all 0.25s ease-out;
+}
+#edit-zone.plone-toolbar-top nav > ul li.active ul {
+  transition: all 0.25s ease-in-out;
+}
 .breadcrumb {
   border-radius: 4px;
   background-color: #e6e4e4;
