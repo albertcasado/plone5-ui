@@ -1180,6 +1180,12 @@ fieldset[disabled] .destructive.active {
 .state-internally_published:focus {
   color: #5405cc;
 }
+html,
+#edit-zone {
+  transition-property: margin, right;
+  transition-duration: .2s, .2s;
+  transition-timing-function: ease-in-out;
+}
 #edit-zone {
   position: fixed;
   height: 100%;
