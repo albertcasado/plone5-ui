@@ -19,25 +19,25 @@ $(document).ready(function(){
 		$( "#edit-zone .plone-toolbar-logo" ).click(function() {
 			if ($(this).hasClass("open")){
 				$( "#edit-zone" ).css("right", "-120px");
-				$( "body" ).css("right", "0");
+				$( "body" ).css("margin-left", "0");
 				$(this).removeClass("open");
 				$( "#edit-zone nav li" ).removeClass("active");
 			} else {
 				$( "#edit-zone" ).css("right", "0");
 				$(this).addClass("open");
-				$( "body" ).css("right", "120px");
+				$( "body" ).css("margin-left", "-120px");
 			}
 		});
 		$( "#edit-zone nav li" ).has( "a .plone-toolbar-caret" ).click(function() {
 			if ($(this).hasClass("active")) {
-				$( "#edit-zone" ).css("right", "0px");
-				$( "body" ).css("right", "120px");
+				$( "#edit-zone" ).css("right", "0");
+				$( "body" ).css("margin-left", "-120px");
 				$( "#edit-zone nav li" ).removeClass("active");
 			} else {
 				$( "#edit-zone nav li" ).removeClass("active");
 				$(this).addClass("active");
 				$( "#edit-zone" ).css("right", "180px");
-				$( "body" ).css("right", "320px");
+				$( "body" ).css("margin-left", "-300px");
 			}
 		});
 	}
