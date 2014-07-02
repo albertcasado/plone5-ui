@@ -2451,6 +2451,61 @@ body.section-front-page .breadcrumb {
   top: 5px;
   position: relative;
 }
+#textAdjust .decrease-text {
+  font-size: 12px;
+}
+#textAdjust .normal-text {
+  font-size: 14px;
+}
+#textAdjust .increase-text {
+  font-size: 18px;
+}
+.autotoc-nav {
+  float: right;
+  min-width: 150px;
+  background-color: #f2f1f1;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.17);
+  padding: 6px 12px;
+  margin: 0 0 12px 12px;
+}
+.autotoc-nav a {
+  display: block;
+}
+.autotoc-nav .active,
+.autotoc-nav .active:hover {
+  color: #696969;
+  cursor: default;
+  text-decoration: none;
+}
+.autotoc-nav .autotoc-level-1 {
+  margin-left: 0;
+  font-size: 18px;
+}
+.autotoc-nav .autotoc-level-2 {
+  margin-left: 12px;
+  font-size: 14px;
+}
+.autotoc-nav .autotoc-level-3 {
+  margin-left: 24px;
+  font-size: 12px;
+}
+@media (max-width: 767px) {
+  .autotoc-nav {
+    float: none;
+    margin: 0 0 20px 0;
+  }
+}
+.pat-dropzone .dz-notice {
+  margin-bottom: 6px;
+}
+.pat-dropzone .dz-default {
+  border-radius: 6px;
+  background-color: #f2f1f1;
+  border: 3px dotted #cccccc;
+  margin-bottom: 20px;
+  padding: 12px;
+  color: #696969;
+}
 #portal-header {
   margin-bottom: 20px;
 }

@@ -1,0 +1,440 @@
+<!doctype html>
+<html>
+<head>
+	<title>Plone Toolbar</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<!-- Fontello icons for Toolbar -->
+  <link href='fontello/css/fontello.css' rel='stylesheet' type='text/css'>
+	<link href='fontello/css/fontello.css' rel='stylesheet' type='text/css'>
+	<!-- Roboto Condensed for First level Toolbar -->
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+	<!-- Roboto second level toolbar-->
+	<link href='http://fonts.googleapis.com/css?family=Roboto:100,300,500' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet"  href="../plone-styles/css/all.plone.css" media="all">
+</head>
+<body class="userrole-authenticated">
+<div id="edit-zone" role="toolbar" class="plone-toolbar-left expanded">
+  <div class="plone-toolbar-container">
+    <a class="plone-toolbar-logo">
+      <img alt="Plone Toolbar" src="plone-toolbarlogo.svg" />
+    </a>
+    <a class="plone-toolbar-switcher"><span>Left-Top switcher</span></a>
+    <nav role="navigation">
+      <ul>
+        <li class="plone-toolbar-separator">
+          <a href="#">
+            <span class="icon-user" aria-hidden="true"></span>
+            <span>User</span>
+            <span class="plone-toolbar-caret"></span>
+          </a>
+          <ul>
+            <li class="plone-toolbar-submenu-header">
+              <span>Username</span>
+            </li>
+            <li>
+              <a href="#">Preferences</a>
+            </li>
+            <li>
+              <a href="#">Site Setup</a>
+            </li>
+            <li>
+              <a href="#">Log out <span class="icon-logout"></span></a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <span class="icon-folderContents" aria-hidden="true"></span>
+            <span>Folder contents</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="icon-view" aria-hidden="true"></span>
+            <span>View</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="icon-edit" aria-hidden="true"></span>
+            <span>Edit</span>
+          </a>
+        </li>
+        <li class="plone-toolbar-separator">
+          <a href="#">
+            <span class="icon-grantAccess" aria-hidden="true"></span>
+            <span>Grant access</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="icon-addNew" aria-hidden="true"></span>
+            <span>Add new…</span>
+            <span class="plone-toolbar-caret"></span>
+          </a>
+          <ul>
+            <li class="plone-toolbar-submenu-header">
+              <span>Add new…</span>
+            </li>
+            <li>
+              <a href="#">Collection</a>
+            </li>
+            <li>
+              <a href="#">Event</a>
+            </li>
+            <li>
+              <a href="#">File</a>
+            </li>
+            <li>
+              <a href="#">Folder</a>
+            </li>
+            <li>
+              <a href="#">Image</a>
+            </li>
+            <li>
+              <a href="#">Link</a>
+            </li>
+            <li>
+              <a href="#">News Item</a>
+            </li>
+          </ul>
+        </li>
+        <li class="plone-toolbar-separator">
+          <a href="#">
+            <span class="icon-moreOptions" aria-hidden="true"></span>
+            <span>More options</span>
+            <span class="plone-toolbar-caret"></span>
+          </a>
+          <ul>
+            <li class="plone-toolbar-submenu-header">
+              <a href="#">Manage portlets</a>
+            </li>
+            <li>
+              <a href="#">Footer portlets</a>
+            </li>
+            <li>
+              <a href="#">Left portlets</a>
+            </li>
+            <li>
+              <a href="#">Right portlets</a>
+            </li>
+            <li class="plone-toolbar-submenu-header">
+              <a href="#">Display</a>
+            </li>
+            <li>
+              <a href="#">Album</a>
+            </li>
+            <li>
+              <a href="#">All content</a>
+            </li>
+            <li>
+              <a href="#">Summary</a>
+            </li>
+            <li>
+              <a href="#">Standard</a>
+            </li>
+            <li>
+              <a href="#">Tabular</a>
+            </li>
+            <li>
+              <a href="#">Thumbnail</a>
+            </li>
+            <li>
+              <a href="#" class="actionMenuSelected">Item:news</a>
+            </li>
+            <li>
+              <a href="#">Change content item as default view</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="label-state-published">
+            <span class="icon-workflow" aria-hidden="true"></span>
+            <span>
+              <span>State:</span>
+              <span class="state-published">Public</span>
+            </span>
+            <span class="plone-toolbar-caret"></span>
+          </a>
+          <ul>
+            <li class="plone-toolbar-submenu-header">
+              <span>
+                <span>State:</span>
+                <span class="state-published">Public</span>
+              </span>
+            </li>
+            <li>
+              <a href="#" class="state-internally_published">Intranet</a>
+            </li>
+            <li>
+              <a href="#" class="state-internal">Internal</a>
+            </li>
+            <li>
+              <a href="#" class="state-pending">Pending</a>
+            </li>
+            <li>
+              <a href="#" class="state-draft">Draft</a>
+            </li>
+            <li>
+              <a href="#" class="state-private">Private</a>
+            </li>
+            <li>
+              <a href="#">Send back</a>
+            </li>
+            <li>
+              <a href="#">Advanced…</a>
+            </li>
+          </ul>
+        </li>
+        <li class="plone-toolbar-separator">
+          <a href="#">
+            <span class="icon-contentInfo" aria-hidden="true"></span>
+            <span>Content Info</span>
+            <span class="plone-toolbar-caret"></span>
+          </a>
+          <ul>
+            <li class="plone-toolbar-submenu-header">
+              <span>Content Info</span>
+            </li>
+            <li>
+              <a href="#">by Admin</a>
+            </li>
+            <li>
+              <span>Last modified 04/29/2014 05:15 AM</span>
+            </li>
+            <li>
+              <a href="#">History</a>
+            </li>
+            <li class="plone-toolbar-submenu-header">
+              <span>File Info</span>
+            </li>
+            <li>
+              <span>Content: Title of content</span>
+            </li>
+            <li>
+              <span>Short name: /content-id</span>
+            </li>
+            <li class="plone-toolbar-submenu-header">
+              <span>Linked translations</span>
+            </li>
+            <li>
+              <a href="#">Catalan</a>
+            </li>
+            <li>
+              <a href="#">Italian</a>
+            </li>
+            <li>
+              <a href="#">Portuguese</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+<header id="portal-top">
+  <div id="portal-header">
+    <p class="hiddenStructure">
+      <a accesskey="2" href="#">Skip to content</a> |
+      <a accesskey="6" href="#">Skip to navigation</a>
+    </p>
+    <a id="portal-logo" title="Lloc web" accesskey="1" href="#">
+      <img src="logo.png" alt="Plone site"></a>
+    <div id="portal-searchbox">
+      <form id="searchGadget_form" action="#" role="search">
+        <div class="LSBox">
+        <label class="hiddenStructure" for="searchGadget">Search Site</label>
+
+        <input name="SearchableText" type="text" size="18" title="Search Site" placeholder="Search Site" accesskey="4" class="searchField" id="searchGadget">
+
+        <input class="searchButton" type="submit" value="Search">
+
+        <div class="searchSection">
+            <input id="searchbox_currentfolder_only" class="noborder" type="checkbox" name="path" value="/Plone">
+            <label for="searchbox_currentfolder_only" style="cursor: pointer">only in current section</label>
+        </div>
+        <div class="LSResult" id="LSResult"><div class="LSShadow" id="LSShadow"></div></div>
+        </div>
+      </form>
+      <div id="portal-advanced-search" class="hiddenStructure">
+          <a href="#" accesskey="5">Advanced Search…</a>
+      </div>
+    </div>
+  </div>
+</header>
+<div id="portal-mainnavigation">
+  <p class="hiddenStructure">Navigation</p>
+  <nav class="navbar" id="portal-globalnav-wrapper" role="navigation">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#portal-globalnav-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="portal-globalnav-collapse">
+      <ul class="nav navbar-nav" id="portal-globalnav">      
+        <li id="portaltab-index_html" class="selected">
+          <a href="#" title="">Home</a>
+        </li>              
+        <li id="portaltab-events" class="plain">
+          <a href="#" title="Site Events">Events</a>
+        </li>    
+        <li id="portaltab-Members" class="plain">
+          <a href="h#" title="Site Users">Users</a>
+        </li>       
+        <li id="portaltab-news" class="plain">
+          <a href="#" title="Site News">News</a>
+        </li>    
+        <li id="portaltab-scania.xlsx" class="plain">
+          <a href="#" title="">SCANIA.xlsx</a>
+        </li>
+        <li id="portaltab-folder" class="plain">
+          <a href="#" title="">Folder</a>
+        </li>     
+        <li id="portaltab-pagina-prova" class="plain">
+          <a href="h#" title="summary">pàgina prova</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+
+<main>
+  <nav id="portal-breadcrumbs" class="breadcrumb" role="navigation">
+    <div class="container-fluid">
+    <span id="breadcrumbs-you-are-here">You are here:</span>
+    <ol aria-labelledby="breadcrumbs-you-are-here">
+      <li id="breadcrumbs-home">
+        <a href="#">Home</a>
+      </li>
+      <li id="breadcrumbs-home">
+        <a href="#">Folder</a>
+      </li>
+      <li id="breadcrumbs-1">
+        <span id="breadcrumbs-current">Page</span>
+      </li>
+    </ol>
+    </div>
+  </nav>
+  <div class="portalMessage warning" role="alert">
+          <strong>Warning</strong>
+          <span>Just patterns look</span>
+  </div>
+  </div>
+  <div class="row">
+    <div class="cell position-0 width-12">
+      <h2>Accessibility</h2>
+      <ul id="textAdjust" class="pat-accessibility"
+       data-pat-accessibility="smallbtn:.decrease-text;
+                               normalbtn:.normal-text;
+                               largebtn:.increase-text;">
+        <li>
+         <a href="." class="decrease-text">
+           <i class="icon-minus-sign"></i>
+           Decrease Text Size
+         </a>
+        </li>
+        <li>
+         <a href="." class="normal-text">
+           <i class="icon-circle"></i>
+           Normal Text Size
+         </a>
+        </li>
+        <li>
+         <a href="." class="increase-text">
+           <i class="icon-plus-sign"></i>
+           Increase Text Size
+         </a>
+        </li>
+      </ul>
+
+      <h2>TOC</h2>
+      <div class="pat-autotoc"
+         data-pat-autotoc="scrollDuration:slow;levels:h4,h5,h6;">
+         <nav class="autotoc-nav"><a href="autotoc-item-autotoc-0" class="autotoc-level-1 active">Title 1</a><a href="autotoc-item-autotoc-1" class="autotoc-level-2">Title 1.1</a><a href="autotoc-item-autotoc-2" class="autotoc-level-3">Title 1.1.1</a><a href="autotoc-item-autotoc-3" class="autotoc-level-1">Title 2</a></nav>
+        <h4>Title 1</h4>
+        <p>Mr. Zuckerkorn, you've been warned about touching. You said
+          spanking. It walked on my pillow! How about a turtle? I've always
+          loved those leathery little snappy faces.</p>
+        <h5>Title 1.1</h5>
+        <p>Ah coodle doodle do Caw ca caw, caw ca caw. Butterscotch!</p>
+        <h6>Title 1.1.1</h6>
+        <p>Want a lick? Okay, Lindsay, are you forgetting that I was
+          a professional twice over - an analyst and a therapist.</p>
+        <h4>Title 2</h4>
+        <p>You boys know how to shovel coal? Don't worry, these young
+        beauties have been nowhere near the bananas. I thought the two of
+        us could talk man-on-man.</p>
+      </div>
+
+      <h2>Tabs</h2>
+      <p>see plone-structure</p>
+
+      <h2>Backdrop</h2>
+      <p>still not on Plone 5</p>
+
+      <h2>Dropzone</h2>
+      <form method="post" action="/upload" enctype="multipart/form-data" class="pat-dropzone dropzone dz-clickable" data-pat-dropzone="clickable:true">
+        <div class="dz-notice"><p>Drop files</p></div><div class="dropzone-previews"></div><div class="dz-default dz-message"><span>Drop files here to upload</span></div>
+      </form>
+
+    </div>
+
+    <div style="clear:both" />
+  </div>
+</main>
+
+<footer id="portal-footer-wrapper">
+        <div class="portletWrapper" id="portletwrapper-706c6f6e652e666f6f746572706f72746c6574730a636f6e746578740a2f506c6f6e650a666f6f746572" data-portlethash="706c6f6e652e666f6f746572706f72746c6574730a636f6e746578740a2f506c6f6e650a666f6f746572">
+          <section class="portlet portletClassic" id="portal-footer-signature">
+            <div class="portletContent">
+              The 
+                   <a href="http://plone.org">Plone<sup>®</sup> Open Source CMS/WCM</a>
+               is <abbr title="Copyright">©</abbr> 2000-2014 by the 
+                   <a href="http://plone.org/foundation">Plone Foundation</a> and friends.
+              Distributed under the 
+                        <a href="http://creativecommons.org/licenses/GPL/2.0/">GNU GPL license</a>.
+            </div>
+          </section>
+        </div>
+        <div class="portletWrapper" id="portletwrapper-706c6f6e652e666f6f746572706f72746c6574730a636f6e746578740a2f506c6f6e650a616374696f6e73" data-portlethash="706c6f6e652e666f6f746572706f72746c6574730a636f6e746578740a2f506c6f6e650a616374696f6e73">
+            <section class="portlet portletActions">
+              <ul class="portletContent">  
+                  <li class="portletItem odd first ">
+                    <a href="#">
+                      <span>Site Map</span>
+                    </a>
+                  </li>
+                  <li class="portletItem even  ">
+                    <a href="#">
+                      <span>Accessibility</span>
+                    </a>
+                  </li> 
+                  <li class="portletItem odd  last">
+                    <a href="#" class="pat-modal" data-pat-modal="{}">
+                      <span>Contact</span>
+                    </a>
+                  </li>   
+              </ul>
+            </section>
+        </div>
+        <div class="portletWrapper" id="portletwrapper-706c6f6e652e666f6f746572706f72746c6574730a636f6e746578740a2f506c6f6e650a636f6c6f70686f6e" data-portlethash="706c6f6e652e666f6f746572706f72746c6574730a636f6e746578740a2f506c6f6e650a636f6c6f70686f6e">
+          <section class="portlet portletClassic" id="portal-colophon">
+            <div class="portletContent">
+              <a href="http://plone.org" target="_blank" title="This site was built using the Plone Open Source CMS/WCM.">Powered by Plone &amp; Python</a>
+            </div>
+          </section>
+        </div>
+    </footer>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')</script>
+    <script src="js/main.js"></script>
+
+
+</body>
+</html>
