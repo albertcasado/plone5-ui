@@ -2663,6 +2663,27 @@ body.section-front-page .breadcrumb {
   opacity: 1;
   transition: opacity .2s ease .5s;
 }
+.jqtree-tree {
+  list-style: none outside;
+  margin-bottom: 0;
+  padding: 0;
+  padding-left: 18px;
+}
+.jqtree-tree .jqtree-toggler {
+  left: -18px;
+  font-size: 75%;
+  top: 30%;
+  position: absolute;
+}
+.jqtree-tree .jqtree-element {
+  padding: 6px;
+}
+.jqtree-tree .jqtree-element:hover {
+  background: #f8f8f9;
+}
+.jqtree-tree .jqtree-selected > .jqtree-element {
+  background: #cccccc;
+}
 #portal-header {
   margin-bottom: 20px;
 }
