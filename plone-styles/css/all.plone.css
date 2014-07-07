@@ -2631,6 +2631,18 @@ body.section-front-page .breadcrumb {
   padding: 6px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.17);
 }
+.pat-tablesorter th:hover {
+  color: #007bb3;
+}
+.pat-tablesorter .sortdirection {
+  font-size: 75%;
+  opacity: .5;
+  position: relative;
+  top: -1px;
+  padding: 2px;
+  min-width: 15px;
+  display: inline-block;
+}
 #portal-header {
   margin-bottom: 20px;
 }
