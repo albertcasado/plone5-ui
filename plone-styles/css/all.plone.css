@@ -3029,3 +3029,201 @@ html {
     padding-bottom: 250px;
   }
 }
+body.template-login_form #content-core {
+  border: 1px solid #e5e5e5;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  background: #fcfcfd;
+  max-width: 300px;
+  margin: 0 auto;
+}
+body.template-login_form #content-core > :first-child {
+  border-radius: 4px 4px 0 0;
+}
+body.template-login_form #content-core > :last-child {
+  border-radius: 0 0 4px 4px;
+}
+body.template-login_form #content-core .portletHeader {
+  background: #f2f1f1;
+  font-weight: 100;
+  font-size: 18px;
+  padding: 13px 15px;
+  color: #696969;
+}
+body.template-login_form #content-core.portletCalendar .portletHeader {
+  text-align: center;
+  position: relative;
+}
+body.template-login_form #content-core.portletCalendar .portletHeader .calendarPrevious,
+body.template-login_form #content-core.portletCalendar .portletHeader .calendarNext {
+  width: 30px;
+  height: 30px;
+  padding: 0 1px 2px;
+  border-radius: 50%;
+  position: absolute;
+  display: inline-block;
+  left: 5px;
+  font-size: 24px;
+  margin-top: -3px;
+  line-height: 28px;
+  font-weight: 100;
+}
+body.template-login_form #content-core.portletCalendar .portletHeader .calendarPrevious:hover,
+body.template-login_form #content-core.portletCalendar .portletHeader .calendarNext:hover {
+  background: #ffffff;
+  text-decoration: none;
+}
+body.template-login_form #content-core.portletCalendar .portletHeader .calendarNext {
+  right: 5px;
+  left: inherit;
+}
+body.template-login_form #content-core .portletContent {
+  font-size: 14px;
+  border-top: 1px solid #e5e5e5;
+  background: #ffffff;
+  font-weight: 300;
+}
+body.template-login_form #content-core .portletContent > * {
+  padding: 10px 15px;
+  margin: 0;
+  font-weight: 300;
+  color: #696969;
+}
+body.template-login_form #content-core .portletContent > ul {
+  padding: 0;
+  list-style: none;
+  position: relative;
+}
+body.template-login_form #content-core .portletContent > ul > li a {
+  display: block;
+  padding: 10px 15px 26px 30px;
+  position: relative;
+  z-index: 1;
+}
+body.template-login_form #content-core .portletContent > ul > li > a {
+  border-top: 1px solid #e5e5e5;
+}
+body.template-login_form #content-core .portletContent > ul > li:first-child a {
+  border-top: 0;
+}
+body.template-login_form #content-core .portletContent > ul > li a:before {
+  content: "•";
+  position: absolute;
+  font-size: 25px;
+  margin-top: -9px;
+  left: 15px;
+  color: #a7daf2;
+}
+body.template-login_form #content-core .portletContent > ul ul {
+  padding-left: 15px;
+  list-style: none;
+}
+body.template-login_form #content-core .portletContent > ul time {
+  display: block;
+  z-index: 0;
+  padding: 0 15px 10px 30px;
+  font-weight: 100;
+  position: relative;
+  margin-top: -26px;
+  font-size: 12px;
+  color: #777777;
+}
+body.template-login_form #content-core .portletContent > ul li:hover {
+  background: #fcfcfd;
+}
+body.template-login_form #content-core .portletContent > ul li:hover a:before {
+  color: #64bee8;
+}
+body.template-login_form #content-core .portletContent table {
+  width: 100%;
+  text-align: center;
+  text-align: middle;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+body.template-login_form #content-core .portletContent table tr {
+  line-height: 30px;
+}
+body.template-login_form #content-core .portletContent table thead {
+  background: #fcfcfd;
+  border-bottom: 1px solid #e5e5e5;
+}
+body.template-login_form #content-core .portletContent table thead th {
+  color: #777777;
+  font-weight: 100;
+  height: 40px;
+  text-align: center;
+}
+body.template-login_form #content-core .portletContent table td > * {
+  border-radius: 50%;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+}
+body.template-login_form #content-core .portletContent table .cal_has_events {
+  position: relative;
+}
+body.template-login_form #content-core .portletContent table .cal_has_events a:hover {
+  background: #dbecfe;
+  text-decoration: none;
+  box-shadow: 0 0 0 5px #dbecfe;
+}
+body.template-login_form #content-core .portletContent table .cal_has_events a:after {
+  content: "•";
+  position: absolute;
+  margin-left: 50%;
+  left: -3px;
+  font-size: 20px;
+  color: #a7daf2;
+  margin-top: 9px;
+}
+body.template-login_form #content-core .portletContent table .cal_has_events a:hover:after {
+  color: #64bee8;
+}
+body.template-login_form #content-core .portletContent table .cal_next_month,
+body.template-login_form #content-core .portletContent table .cal_prev_month {
+  color: #cccccc;
+}
+body.template-login_form #content-core .portletContent table .cal_next_month.cal_has_events > a,
+body.template-login_form #content-core .portletContent table .cal_prev_month.cal_has_events > a {
+  color: #a7daf2;
+}
+body.template-login_form #content-core .portletContent table .cal_next_month.cal_has_events > a:after,
+body.template-login_form #content-core .portletContent table .cal_prev_month.cal_has_events > a:after {
+  color: #d3edf8;
+}
+body.template-login_form #content-core .portletContent table .cal_next_month.cal_has_events > a:hover,
+body.template-login_form #content-core .portletContent table .cal_prev_month.cal_has_events > a:hover {
+  color: #004666;
+}
+body.template-login_form #content-core .portletContent table .cal_next_month.cal_has_events > a:hover:after,
+body.template-login_form #content-core .portletContent table .cal_prev_month.cal_has_events > a:hover:after {
+  color: #64bee8;
+}
+body.template-login_form #content-core .portletContent table .today > * {
+  background: #e5e5e5;
+  font-weight: 500;
+  box-shadow: 0 0 0 5px #e5e5e5;
+}
+body.template-login_form #content-core .portletContent table tbody tr:first-child td > * {
+  margin-top: 10px;
+}
+body.template-login_form #content-core .portletContent table tbody tr:last-child td > * {
+  margin-bottom: 10px;
+}
+body.template-login_form #content-core .formControls {
+  border: 0;
+  background: none;
+  padding: 0;
+  box-shadow: none;
+}
+body.template-login_form #content-core .portletFooter {
+  border-top: 1px solid #e5e5e5;
+  background: #fcfcfd;
+  padding: 10px 15px;
+  font-size: 12px;
+  font-weight: 300;
+  box-shadow: inset 0 10px 10px -10px rgba(0, 0, 0, 0.05);
+}
