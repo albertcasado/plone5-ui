@@ -2420,6 +2420,18 @@ body.section-front-page .breadcrumb {
   margin-top: -3px;
   color: #777777;
 }
+.portlet.portletSearch .LSBox .searchField {
+  width: 70%;
+  display: inline-block;
+  border-radius: 4px 0 0 4px;
+}
+.portlet.portletSearch .LSBox .searchButton {
+  width: 30%;
+  margin-top: -2px;
+  position: relative;
+  margin-left: -1px;
+  display: inline-block;
+}
 #portal-sitemap {
   list-style: none;
   padding-left: 0;
@@ -2460,7 +2472,7 @@ body.section-front-page .breadcrumb {
 #textAdjust .increase-text {
   font-size: 18px;
 }
-.autotoc-nav {
+.pat-autotoc:not(.autotabs) .autotoc-nav {
   float: right;
   min-width: 150px;
   background-color: #f2f1f1;
@@ -2468,29 +2480,29 @@ body.section-front-page .breadcrumb {
   padding: 6px 12px;
   margin: 0 0 12px 12px;
 }
-.autotoc-nav a {
+.pat-autotoc:not(.autotabs) .autotoc-nav a {
   display: block;
 }
-.autotoc-nav .active,
-.autotoc-nav .active:hover {
+.pat-autotoc:not(.autotabs) .autotoc-nav .active,
+.pat-autotoc:not(.autotabs) .autotoc-nav .active:hover {
   color: #696969;
   cursor: default;
   text-decoration: none;
 }
-.autotoc-nav .autotoc-level-1 {
+.pat-autotoc:not(.autotabs) .autotoc-nav .autotoc-level-1 {
   margin-left: 0;
   font-size: 18px;
 }
-.autotoc-nav .autotoc-level-2 {
+.pat-autotoc:not(.autotabs) .autotoc-nav .autotoc-level-2 {
   margin-left: 12px;
   font-size: 14px;
 }
-.autotoc-nav .autotoc-level-3 {
+.pat-autotoc:not(.autotabs) .autotoc-nav .autotoc-level-3 {
   margin-left: 24px;
   font-size: 12px;
 }
 @media (max-width: 767px) {
-  .autotoc-nav {
+  .pat-autotoc .autotoc-nav {
     float: none;
     margin: 0 0 20px 0;
   }
