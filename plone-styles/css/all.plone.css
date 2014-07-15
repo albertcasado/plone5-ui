@@ -2420,6 +2420,14 @@ body.section-front-page .breadcrumb {
   margin-top: -3px;
   color: #777777;
 }
+.portletNavigationTree.portetSiteSetup a {
+  padding-left: 30px;
+}
+.portletNavigationTree.portetSiteSetup a img {
+  position: absolute;
+  margin-left: -22px;
+  margin-top: 2px;
+}
 .portlet.portletSearch .LSBox .searchField {
   width: 70%;
   display: inline-block;
@@ -3036,7 +3044,7 @@ body.template-login_form #content-core {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
   background: #fcfcfd;
   max-width: 300px;
-  margin: 0 auto;
+  margin: 0 auto 6px;
 }
 body.template-login_form #content-core > :first-child {
   border-radius: 4px 4px 0 0;
