@@ -26,7 +26,7 @@
 		border-top: @plone-portlet-border;
 		background: @plone-portlet-content-bg;
 		font-weight: @plone-font-weight-regular;
-		& > * { //all but ul and tables
+		& > *:not(.portalMessage) { //all but ul and tables and portalMessage
 			padding: 10px 15px;
 			margin: 0;
 			font-weight: @plone-font-weight-regular;
@@ -121,7 +121,7 @@
 	}
 }
 
-//*// Site Setup navigation
+//*// Site Setup
 .portletNavigationTree.portetSiteSetup {
 	a {
 		padding-left: 30px; //adjust icons of products
@@ -132,6 +132,17 @@
 		}
 	}
 }
+#upgrade-products .configlets,
+#install-products .configlets,
+#activated-products .configlets {
+	li {padding: @plone-padding-base-horizontal; border-top: 1px dotted @plone-table-border-color;}
+	li:first-child {border-top: 0;}
+	h3, p {margin: 0;}
+	.portletContent:last-child {margin-bottom: 0;}
+	.pull-right {margin: 0 0 @plone-padding-base-horizontal @plone-padding-base-horizontal;}
+}
+
+
 //*// Search
 .portlet.portletSearch {
 	.LSBox .searchField {width: 70%; display: inline-block; border-radius: @plone-border-radius-base 0 0 @plone-border-radius-base;}

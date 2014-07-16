@@ -44,7 +44,11 @@
 	> dt, > dd { display: inline;}
 	> dd {margin: 0;}
 }
-
+.portlet .portletContent > .portalMessage {
+	padding: @plone-alert-padding;
+	padding-left: @plone-alert-padding*3;
+	margin:15px;
+}
 
 .portalMessage.info {
 	.portalMessage-variant(@plone-alert-info-bg; @plone-alert-info-border; @plone-alert-info-text);

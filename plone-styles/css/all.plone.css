@@ -428,6 +428,12 @@ address {
   font-style: normal;
   line-height: 1.42857143;
 }
+.pull-right {
+  float: right !important;
+}
+.pull-left {
+  float: left !important;
+}
 code,
 kbd,
 pre,
@@ -2125,6 +2131,11 @@ body.section-front-page .breadcrumb {
 .portalMessage > dd {
   margin: 0;
 }
+.portlet .portletContent > .portalMessage {
+  padding: 15px;
+  padding-left: 45px;
+  margin: 15px;
+}
 .portalMessage.info {
   background-color: #aad6ea;
   border: 1px solid #9acee6;
@@ -2234,7 +2245,7 @@ body.section-front-page .breadcrumb {
   background: #ffffff;
   font-weight: 300;
 }
-.portlet .portletContent > * {
+.portlet .portletContent > *:not(.portalMessage) {
   padding: 10px 15px;
   margin: 0;
   font-weight: 300;
@@ -2427,6 +2438,35 @@ body.section-front-page .breadcrumb {
   position: absolute;
   margin-left: -22px;
   margin-top: 2px;
+}
+#upgrade-products .configlets li,
+#install-products .configlets li,
+#activated-products .configlets li {
+  padding: 12px;
+  border-top: 1px dotted #e5e5e5;
+}
+#upgrade-products .configlets li:first-child,
+#install-products .configlets li:first-child,
+#activated-products .configlets li:first-child {
+  border-top: 0;
+}
+#upgrade-products .configlets h3,
+#install-products .configlets h3,
+#activated-products .configlets h3,
+#upgrade-products .configlets p,
+#install-products .configlets p,
+#activated-products .configlets p {
+  margin: 0;
+}
+#upgrade-products .configlets .portletContent:last-child,
+#install-products .configlets .portletContent:last-child,
+#activated-products .configlets .portletContent:last-child {
+  margin-bottom: 0;
+}
+#upgrade-products .configlets .pull-right,
+#install-products .configlets .pull-right,
+#activated-products .configlets .pull-right {
+  margin: 0 0 12px 12px;
 }
 .portlet.portletSearch .LSBox .searchField {
   width: 70%;
@@ -3092,7 +3132,7 @@ body.template-login_form #content-core .portletContent {
   background: #ffffff;
   font-weight: 300;
 }
-body.template-login_form #content-core .portletContent > * {
+body.template-login_form #content-core .portletContent > *:not(.portalMessage) {
   padding: 10px 15px;
   margin: 0;
   font-weight: 300;
