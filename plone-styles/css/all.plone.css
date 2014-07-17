@@ -2245,7 +2245,8 @@ body.section-front-page .breadcrumb {
   background: #ffffff;
   font-weight: 300;
 }
-.portlet .portletContent > *:not(.portalMessage) {
+.portlet .portletContent > *,
+.portlet .portletContent > div:not(.portalMessage) {
   padding: 10px 15px;
   margin: 0;
   font-weight: 300;
@@ -3132,7 +3133,8 @@ body.template-login_form #content-core .portletContent {
   background: #ffffff;
   font-weight: 300;
 }
-body.template-login_form #content-core .portletContent > *:not(.portalMessage) {
+body.template-login_form #content-core .portletContent > *,
+body.template-login_form #content-core .portletContent > div:not(.portalMessage) {
   padding: 10px 15px;
   margin: 0;
   font-weight: 300;
