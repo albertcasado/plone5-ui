@@ -58,3 +58,8 @@
   .button-variant(@plone-btn-destructive-color; @plone-btn-destructive-bg; @plone-btn-destructive-border);
 }
 
+.link-parent {
+  .standalone; margin-bottom: @plone-padding-base-horizontal;
+  &:before {content:"↩ "; content: "↩ ";top: 3px;position: relative;}
+}
+
