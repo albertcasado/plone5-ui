@@ -54,3 +54,21 @@ body #portal-header {max-width: 960px; margin: 15px auto;}
 div.row {padding-bottom: 1px;} //hack
 
 //Everything 100% for mobile
+
+
+//*// Dashboard
+@media (min-width: @plone-grid-float-breakpoint) {
+	#dashboard {
+		margin-left: -15px;
+		margin-right: -15px;
+		position: relative;
+		.clearfix;
+	}
+	#dashboard-portlets1, #dashboard-portlets2, #dashboard-portlets3, #dashboard-portlets4 {
+		float: left;
+		padding-left: 15px;
+		padding-right: 15px;
+		top: 0;
+		width: 25%;
+	}
+}
