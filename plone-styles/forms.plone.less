@@ -247,3 +247,13 @@ label .required {
     margin-left: 12px;
   }
 }
+
+
+//*// Input + Submit groups (manual because we still have no standard for this)
+.searchField.portlet-search-gadget, 
+#sharing-user-group-search {width: 100%; display: inline-block;}
+
+.searchField.portlet-search-gadget + .searchButton,
+#sharing-user-group-search + #sharing-search-button  {position: relative; float:right;margin-top: -@plone-input-height-base;}
+
+
