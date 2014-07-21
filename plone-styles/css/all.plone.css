@@ -926,12 +926,14 @@ label .required:after {
   margin-left: 12px;
 }
 .searchField.portlet-search-gadget,
-#sharing-user-group-search {
+#sharing-user-group-search,
+#select-rules {
   width: 100%;
   display: inline-block;
 }
 .searchField.portlet-search-gadget + .searchButton,
-#sharing-user-group-search + #sharing-search-button {
+#sharing-user-group-search + #sharing-search-button,
+#select-rules + input {
   position: relative;
   float: right;
   margin-top: -34px;
