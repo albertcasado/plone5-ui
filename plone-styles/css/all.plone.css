@@ -2544,6 +2544,14 @@ body.section-front-page .breadcrumb {
   padding: 10px 15px 10px 15px;
   border-top: 1px solid #e5e5e5;
 }
+.portletNavigationTree nav.portletContent > ul > li strong {
+  padding: 10px 15px 10px 15px;
+  border-top: 1px solid #e5e5e5;
+  background: #fcfcfd;
+  color: #696969;
+  display: block;
+  font-weight: 300;
+}
 .portletNavigationTree .portletContent {
   border-top: 0;
 }
