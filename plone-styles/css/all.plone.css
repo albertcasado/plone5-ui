@@ -2417,7 +2417,7 @@ body.section-front-page .breadcrumb {
 .portlet .portletContent > ul > li > a {
   border-top: 1px solid #e5e5e5;
 }
-.portlet .portletContent > ul > li:first-child a {
+.portlet .portletContent > ul > li:first-child > a {
   border-top: 0;
 }
 .portlet .portletContent > ul > li a:before {
@@ -2708,7 +2708,7 @@ body.section-front-page .breadcrumb {
 .managedPortlet .portletContent > ul > li > a {
   border-top: 1px solid #e5e5e5;
 }
-.managedPortlet .portletContent > ul > li:first-child a {
+.managedPortlet .portletContent > ul > li:first-child > a {
   border-top: 0;
 }
 .managedPortlet .portletContent > ul > li a:before {
@@ -3620,7 +3620,7 @@ body.template-login_form #content-core .portletContent > ul > li a {
 body.template-login_form #content-core .portletContent > ul > li > a {
   border-top: 1px solid #e5e5e5;
 }
-body.template-login_form #content-core .portletContent > ul > li:first-child a {
+body.template-login_form #content-core .portletContent > ul > li:first-child > a {
   border-top: 0;
 }
 body.template-login_form #content-core .portletContent > ul > li a:before {
