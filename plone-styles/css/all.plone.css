@@ -2598,6 +2598,7 @@ body.section-front-page .breadcrumb {
   position: absolute;
   margin-left: -22px;
   margin-top: 2px;
+  display: none;
 }
 #upgrade-products .configlets li,
 #install-products .configlets li,
