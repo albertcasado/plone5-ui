@@ -388,6 +388,10 @@ mark {
   color: #777777;
   font-weight: 300;
 }
+.documentByLine {
+  color: #777777;
+  font-weight: 300;
+}
 .documentFirstHeading {
   padding-bottom: 9px;
   margin: 40px 0 20px;
