@@ -3799,6 +3799,10 @@ body.template-login_form #content-core .portletFooter {
   display: block;
   padding: 0 12px 6px;
 }
+.event_listing .sub_nav {
+  float: right;
+  margin-top: -51px;
+}
 .image-product {
   margin: 0;
   border-radius: 4px;
