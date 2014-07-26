@@ -3760,6 +3760,45 @@ body.template-login_form #content-core .portletFooter {
 .event.summary li > span {
   display: block;
 }
+.event_listing article {
+  border-top: 1px solid #e5e5e5;
+  padding: 12px 0 12px;
+}
+.event_listing article h2 {
+  margin: 0;
+  padding: 12px 0 12px;
+}
+.event_listing article:first-child {
+  border-top: 0;
+  margin-top: -6px;
+}
+.cal_date {
+  float: right;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.17);
+  text-align: center;
+  width: 100px;
+  margin: 12px 0 12px 12px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.cal_month {
+  background: #00afff;
+  font-weight: 300;
+  display: block;
+  color: #fff;
+  padding: 6px 12px;
+}
+.cal_day {
+  font-size: 36px;
+  font-weight: 500;
+  display: block;
+}
+.cal_wkday {
+  font-size: 12px;
+  font-weight: 100;
+  display: block;
+  padding: 0 12px 6px;
+}
 .image-product {
   margin: 0;
   border-radius: 4px;
