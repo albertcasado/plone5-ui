@@ -3805,6 +3805,86 @@ body.template-login_form #content-core .portletFooter {
 .template-event_listing .caltrigger {
   display: none;
 }
+.autotabs .autotoc-nav .events-month-prev,
+.autotabs .autotoc-nav .events-week-prev,
+.autotabs .autotoc-nav .events-day-prev {
+  position: relative;
+  border-top-left-radius: 0;
+  padding-left: 6px;
+}
+.autotabs .autotoc-nav .events-month-prev:before,
+.autotabs .autotoc-nav .events-week-prev:before,
+.autotabs .autotoc-nav .events-day-prev:before {
+  content: "";
+  position: absolute;
+  padding: 0 5px;
+  color: #e5e5e5;
+  border-right: 5px solid;
+  border-top: 23px solid transparent;
+  border-bottom: 23px solid transparent;
+  left: -6px;
+  top: -1px;
+  padding: 0 !important;
+}
+.autotabs .autotoc-nav .events-month-prev:after,
+.autotabs .autotoc-nav .events-week-prev:after,
+.autotabs .autotoc-nav .events-day-prev:after {
+  content: "";
+  position: absolute;
+  padding: 0 5px;
+  color: #fcfcfd;
+  border-right: 5px solid;
+  border-top: 23px solid transparent;
+  border-bottom: 23px solid transparent;
+  left: -5px;
+  top: -1px;
+  padding: 0 !important;
+}
+.autotabs .autotoc-nav .events-month-prev:hover:after,
+.autotabs .autotoc-nav .events-week-prev:hover:after,
+.autotabs .autotoc-nav .events-day-prev:hover:after {
+  color: #ffffff;
+}
+.autotabs .autotoc-nav .events-month-next,
+.autotabs .autotoc-nav .events-week-next,
+.autotabs .autotoc-nav .events-day-next {
+  position: relative;
+  border-top-right-radius: 0;
+  padding-right: 6px;
+}
+.autotabs .autotoc-nav .events-month-next:before,
+.autotabs .autotoc-nav .events-week-next:before,
+.autotabs .autotoc-nav .events-day-next:before {
+  content: "";
+  position: absolute;
+  padding: 0 5px;
+  color: #e5e5e5;
+  border-left: 5px solid;
+  border-top: 23px solid transparent;
+  border-bottom: 23px solid transparent;
+  right: -6px;
+  top: -1px;
+  padding: 0 !important;
+}
+.autotabs .autotoc-nav .events-month-next:after,
+.autotabs .autotoc-nav .events-week-next:after,
+.autotabs .autotoc-nav .events-day-next:after {
+  content: "";
+  position: absolute;
+  padding: 0 5px;
+  color: #fcfcfd;
+  border-left: 5px solid;
+  border-top: 23px solid transparent;
+  border-bottom: 23px solid transparent;
+  right: -5px;
+  top: -1px;
+  padding: 0 !important;
+}
+.autotabs .autotoc-nav .events-month-next:hover:after,
+.autotabs .autotoc-nav .events-week-next:hover:after,
+.autotabs .autotoc-nav .events-day-next:hover:after {
+  color: #ffffff;
+}
 .image-product {
   margin: 0;
   border-radius: 4px;
