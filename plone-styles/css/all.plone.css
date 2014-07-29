@@ -3802,6 +3802,9 @@ body.template-login_form #content-core .portletFooter {
 .event_listing .sub_nav {
   float: right;
 }
+.template-event_listing .caltrigger {
+  display: none;
+}
 .image-product {
   margin: 0;
   border-radius: 4px;
