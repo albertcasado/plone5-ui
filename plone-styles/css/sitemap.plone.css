@@ -1,9 +1,0 @@
-#portal-sitemap {
-  list-style: none;
-}
-#portal-sitemap > li {
-  font-size: plone-font-size-large;
-}
-#portal-sitemap ul {
-  list-style: disc;
-}
