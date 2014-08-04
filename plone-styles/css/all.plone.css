@@ -2836,37 +2836,6 @@ body.section-front-page .breadcrumb {
   font-weight: 300;
   box-shadow: inset 0 10px 10px -10px rgba(0, 0, 0, 0.05);
 }
-#portal-sitemap {
-  list-style: none;
-  padding-left: 0;
-}
-#portal-sitemap > li {
-  font-size: 18px;
-  border-top: 1px solid #e5e5e5;
-  padding: 6px 0;
-}
-#portal-sitemap ul {
-  position: relative;
-  font-size: 14px;
-  padding-left: 20px;
-  -moz-column-count: 3;
-  -moz-column-gap: 20px;
-  -webkit-column-count: 3;
-  -webkit-column-gap: 20px;
-  column-count: 3;
-  column-gap: 20px;
-}
-#portal-sitemap ul li {
-  position: relative;
-}
-#portal-sitemap ul li:before {
-  content: "•";
-  display: inline;
-  font-size: 25px;
-  color: #a7daf2;
-  top: 5px;
-  position: relative;
-}
 #textAdjust .decrease-text {
   font-size: 12px;
 }
@@ -3747,6 +3716,37 @@ body.template-login_form #content-core .portletFooter {
   font-size: 12px;
   font-weight: 300;
   box-shadow: inset 0 10px 10px -10px rgba(0, 0, 0, 0.05);
+}
+#portal-sitemap {
+  list-style: none;
+  padding-left: 0;
+}
+#portal-sitemap > li {
+  font-size: 18px;
+  border-top: 1px solid #e5e5e5;
+  padding: 6px 0;
+}
+#portal-sitemap ul {
+  position: relative;
+  font-size: 14px;
+  padding-left: 20px;
+  -moz-column-count: 3;
+  -moz-column-gap: 20px;
+  -webkit-column-count: 3;
+  -webkit-column-gap: 20px;
+  column-count: 3;
+  column-gap: 20px;
+}
+#portal-sitemap ul li {
+  position: relative;
+}
+#portal-sitemap ul li:before {
+  content: "•";
+  display: inline;
+  font-size: 25px;
+  color: #a7daf2;
+  top: 5px;
+  position: relative;
 }
 .event.summary {
   font-weight: 300;
