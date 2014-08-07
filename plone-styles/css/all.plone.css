@@ -3955,6 +3955,19 @@ body.template-login_form #content-core .portletFooter {
   background: #fcfcfd;
   margin: 6px 12px;
 }
+.portraitPhoto {
+  margin: 0;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.17);
+  overflow: hidden;
+  float: right !important;
+  border-radius: 50px;
+}
+.portraitPhoto figcaption {
+  font-size: 12px;
+  background: #fcfcfd;
+  margin: 6px 12px;
+}
 .newsImageContainer {
   float: right;
   margin: 0 0 6px 6px;
